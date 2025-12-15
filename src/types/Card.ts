@@ -10,7 +10,7 @@ export interface QuestionCard {
   type: 'question';
   id: string;
   number: number;
-  text: string;
+  question: string;
   answers: Answer[];
 }
 

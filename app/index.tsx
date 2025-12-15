@@ -16,11 +16,18 @@ export default function HomeScreen() {
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 }}>
-      <Text style={{ fontSize: 24, marginBottom: 20, fontWeight: 'bold' }}>Lavirant Cards</Text>
-      <Button title="Start Game" onPress={handleStartGame} />
-      <View style={{ marginTop: 10 }}>
-        <Button title="Reset Game" onPress={handleResetGame} />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, backgroundColor: '#f5f5f5' }}>
+      <Text style={{ fontSize: 40, marginBottom: 30, fontWeight: 'bold', color: '#2196F3' }}>
+        Lavirant Cards
+      </Text>
+      <Text style={{ fontSize: 16, marginBottom: 40, color: '#666', textAlign: 'center' }}>
+        Test your knowledge with our comprehensive question bank
+      </Text>
+      <View style={{ width: '100%', marginBottom: 15 }}>
+        <Button title="Start Game" onPress={handleStartGame} color="#4CAF50" />
+      </View>
+      <View style={{ width: '100%' }}>
+        <Button title="Reset Game" onPress={handleResetGame} color="#f44336" />
       </View>
     </View>
   );

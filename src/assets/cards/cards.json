@@ -1,68 +1,7898 @@
 [
   {
+    "id": "q-001",
     "type": "question",
-    "id": "q1",
     "number": 1,
-    "text": "What is the capital of France?",
+    "question": "Które państwo jest uznawane za największego na świecie producenta kawy?",
     "answers": [
       {
-        "id": "a1",
-        "text": "London",
-        "isCorrect": false
-      },
-      {
-        "id": "a2",
-        "text": "Paris",
+        "id": "A",
+        "text": "",
         "isCorrect": true
       },
       {
-        "id": "a3",
-        "text": "Berlin",
+        "id": "B",
+        "text": "Kolumbia",
         "isCorrect": false
       },
       {
-        "id": "a4",
-        "text": "Madrid",
+        "id": "C",
+        "text": "Meksyk",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Honduras",
         "isCorrect": false
       }
     ]
   },
   {
+    "id": "q-002",
     "type": "question",
-    "id": "q2",
     "number": 2,
-    "text": "Which planet is known as the Red Planet?",
+    "question": "Która z wymienionych osób jest uznawana za twórcę teorii heliocentrycznej?",
     "answers": [
       {
-        "id": "a5",
-        "text": "Venus",
+        "id": "A",
+        "text": "Galileo Galilei",
         "isCorrect": false
       },
       {
-        "id": "a6",
+        "id": "B",
+        "text": "Nicolaus",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Isaac Newton",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Johannes Kepler",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-003",
+    "type": "question",
+    "number": 3,
+    "question": "Wskaż największe miasto Australii:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sydney",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Melbourne",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Perth",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-004",
+    "type": "question",
+    "number": 4,
+    "question": "Kto jest twórcą teorii względności?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Isaac Newton",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Galileo Galilei",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stephen Hawking",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-005",
+    "type": "question",
+    "number": 5,
+    "question": "Wskaż wokalistę zespołu Queen:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Freddie Mercury",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elton John",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-006",
+    "type": "question",
+    "number": 6,
+    "question": "Który z wymienionych artystów namalował obraz noszący tytuł „Mona Lisa”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Leonardo da Vinci",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rafael",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Michał",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sandro",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-007",
+    "type": "question",
+    "number": 7,
+    "question": "Który z wymienionych kontynentów jest największy?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Europa",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-008",
+    "type": "question",
+    "number": 8,
+    "question": "Stolica Egiptu to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kair",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Luksor",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-010",
+    "type": "question",
+    "number": 10,
+    "question": "Wskaż autora utworu literackiego pt. „Mały Książę”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "J.R.R. Tolkien",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "J.K. Rowling",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stephen King",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-011",
+    "type": "question",
+    "number": 11,
+    "question": "Jaki jest najwyższy szczyt, znajdujący się na terenie Europy?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Mont",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Elbrus",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Matterhorn",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mont",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-012",
+    "type": "question",
+    "number": 12,
+    "question": "Która z wymienionych osób jest uznawana za twórcę teorii ewolucji?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Isaac Newton",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Galileo Galilei",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-013",
+    "type": "question",
+    "number": 13,
+    "question": "Wskaż największe pod względem ludności miasto w Chinach:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Szanghaj",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pekin",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hongkong",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tajpej",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-014",
+    "type": "question",
+    "number": 14,
+    "question": "Kto jest autorem dzieła literackiego pt. „Romeo i Julia”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "George Orwell",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "J.R.R. Tolkien",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "William Shakespeare",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mark Twain",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-015",
+    "type": "question",
+    "number": 15,
+    "question": "Rzym jest stolicą:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Włoch",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Niemiec",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Francji",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiszpanii",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-016",
+    "type": "question",
+    "number": 16,
+    "question": "Wskaż wokalistkę utworu „Shallow” z filmu „A Star is Born”:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lady Gaga",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Taylor Swift",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-017",
+    "type": "question",
+    "number": 17,
+    "question": "Która aktorka wcieliła się w rolę Sansy Stark w serialu „Gra o Tron”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Emilia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Maisie Williams",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sophie Turner",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Natalie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-018",
+    "type": "question",
+    "number": 18,
+    "question": "Kto napisał powieść pt. „Lalka”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pius Paschke",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Stefan Żeromski",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Stanisław Lem",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-019",
+    "type": "question",
+    "number": 19,
+    "question": "Wskaż wokalistę zespołu Lady Pank:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Janusz Panasewicz",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Grzegorz",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kazik Staszewski",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Zbigniew Hołdys",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-020",
+    "type": "question",
+    "number": 20,
+    "question": "Ile planet znajduje się w Układzie Słonecznym?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-021",
+    "type": "question",
+    "number": 21,
+    "question": "Jakiego koloru nie ma na flagach państw?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Fioletowego",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Zielonego",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Niebieskiego",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-022",
+    "type": "question",
+    "number": 22,
+    "question": "Z którego kraju pochodzi pierwszy znany na świecie samochód osobowy?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Niemcy",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "US",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Francja",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Włochy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-023",
+    "type": "question",
+    "number": 23,
+    "question": "Jakie zwierzę jest uznawane za największego ssaka na ziemi?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Niedźwiedź polarny",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Żyrafa",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Płetwal błękitny",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Słoń",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-024",
+    "type": "question",
+    "number": 24,
+    "question": "W którym roku została wynaleziona pierwsza maszyna do pisania?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1829",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1867",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1876",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1891",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-025",
+    "type": "question",
+    "number": 25,
+    "question": "W którym roku został wynaleziony pierwszy smartfon?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1992",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1993",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1994",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1995",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-026",
+    "type": "question",
+    "number": 26,
+    "question": "Które miasto jest rodzinnym miastem Karola Wojtyły?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wadowice",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Kraków",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Warszawa",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Poznań",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-027",
+    "type": "question",
+    "number": 27,
+    "question": "Pakt północnoatlantycki to inaczej",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pakt Ribbentrop-Mołotow",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "N",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nord Stream",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ONZ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-028",
+    "type": "question",
+    "number": 28,
+    "question": "Podaj wynik działania: 2+2 × 2+2 = ?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "8",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-029",
+    "type": "question",
+    "number": 29,
+    "question": "W którym roku zmarł Józef Stalin?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1956",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1955",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1954",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1953",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-030",
+    "type": "question",
+    "number": 30,
+    "question": "Tygrys to model czołgu charakterystyczny dla którego państwa w czasach II Wojny Światowej?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Polski",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Niemiec",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rosji",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-031",
+    "type": "question",
+    "number": 31,
+    "question": "Kto idzie „boso przez świat”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wojciech",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Robert Makłowicz",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Magdalena Gessler",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-032",
+    "type": "question",
+    "number": 32,
+    "question": "Który z bohaterów filmu pt. „Władca Pierścieni” nazywany jest „obieżyświatem”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Gandalf",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Frodo",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-033",
+    "type": "question",
+    "number": 33,
+    "question": "Które miasto jest stolicą San Marino?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Fiorentino",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Serravalle",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "San Marino",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-034",
+    "type": "question",
+    "number": 34,
+    "question": "Jakim symbolem oznaczone jest srebro na tablicy Mendelejewa?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sr",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-035",
+    "type": "question",
+    "number": 35,
+    "question": "Co oznacza liczba karatów diamentu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Masę diamentu",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Jakość diamentu",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kolor diamentu",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stopień szlifowania",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-036",
+    "type": "question",
+    "number": 36,
+    "question": "Wskaż hasło rewolucji francuskiej:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wolność, równość,",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solidarność, braterstwo wolność, braterstwo",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prawo do własności",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Niech żyje król",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-037",
+    "type": "question",
+    "number": 37,
+    "question": "Nazwiskiem, którego Polaka nazwano kopiec mieszczący się w Australii?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Mikołaj Kopernik",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Jan Matejko",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fryderyk",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tadeusz Kościuszko",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-038",
+    "type": "question",
+    "number": 38,
+    "question": "Która wersja systemu Windows była dostępna w sprzedaży jako pierwsza?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Windows 1.0",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Windows 3.1",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Windows 95",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Windows Millenium",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-039",
+    "type": "question",
+    "number": 39,
+    "question": "Kogo tyczy się powiedzenie: „zastał Polskę drewnianą, zostawił murowaną”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Mieszka I",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Jana III Sobieskiego",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kazimierza Wielkiego",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Zygmunta III Wazy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-040",
+    "type": "question",
+    "number": 40,
+    "question": "Dokończ powiedzenie „zamienił stryjek...”",
+    "answers": [
+      {
+        "id": "A",
+        "text": "siekierkę na kijek",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "swój piękny badylek",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gołębie na gile",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "się z wujkiem na chwilę",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-041",
+    "type": "question",
+    "number": 41,
+    "question": "Ile wynosi 1 cal?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "5,08 cm",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2,54 cm",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "10,16 cm",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "20,32 cm",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-042",
+    "type": "question",
+    "number": 42,
+    "question": "Ile metrów ma jeden hektar?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "10 000 m",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "100 m",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 000 m",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "100 000 m",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-043",
+    "type": "question",
+    "number": 43,
+    "question": "Nasycony roztwór wodny formaldehydu to substancja znana jako:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Metanol",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eter",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kwas mrówkowy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Formalina",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-044",
+    "type": "question",
+    "number": 44,
+    "question": "Kto wcielił się w rolę Jacka Dawsona w filmie „Titanic”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Leonardo",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tom Hanks",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Johnny",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-045",
+    "type": "question",
+    "number": 45,
+    "question": "Który z wymienionych odczynów pH jest kwaśny?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "pH = 3",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pH = 8",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pH = 9",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pH = 11",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-046",
+    "type": "question",
+    "number": 46,
+    "question": "Pantoprazol to związek chemiczny, stosowany między innymi w leczeniu:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-047",
+    "type": "question",
+    "number": 47,
+    "question": "Wskaźnik CRP w wynikach morfologii krwi odpowiada za:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Liczbę czerwonych",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Poziom glukozy we krwinek krwi",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Liczbę białych",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stany zapalne krwinek",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-048",
+    "type": "question",
+    "number": 48,
+    "question": "W którym roku miał miejsce Chrzest Polski?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "966",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "996",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1241",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1525",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-049",
+    "type": "question",
+    "number": 49,
+    "question": "Która z podanych liczb nie występuje jako próba złota?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "750",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "585",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "333",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "610",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-050",
+    "type": "question",
+    "number": 50,
+    "question": "Mahoń to rodzaj:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ptaka",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Zaprawy murarskiej",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-051",
+    "type": "question",
+    "number": 51,
+    "question": "Według mitologii greckiej Ares był bogiem:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wojny",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mórz",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ziemi",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mężczyzn",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-052",
+    "type": "question",
+    "number": 52,
+    "question": "Aceton to substancja powszechnie wykorzystywana do produkcji:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Rozpuszczalników",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kapsli",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wypełniaczy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-053",
+    "type": "question",
+    "number": 53,
+    "question": "Czym jest propolis?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "Kit pszczeli",
+        "isCorrect": true
+      },
+      {
+        "id": "A",
+        "text": "Miasto w starożytnej Grecji",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miasto w",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "polisa ubezpieczeniowa starożytnym Rzymie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-054",
+    "type": "question",
+    "number": 54,
+    "question": "Które miasto jest stolicą Kolumbii?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Medellin",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-055",
+    "type": "question",
+    "number": 55,
+    "question": "Między którymi kontynentami znajduje się cieśnina Beringa?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Europą, a",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-056",
+    "type": "question",
+    "number": 56,
+    "question": "Tekla w bajce pt. „Pszczółka Maja” była:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Mrówką",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ważką",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pajęczycą",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Gąsienicą",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-057",
+    "type": "question",
+    "number": 57,
+    "question": "Wskaż autora biblijnej Księgi Apokalipsy:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "św. Marek",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "św. Mateusz",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "św. Paweł",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "św. Jan",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-058",
+    "type": "question",
+    "number": 58,
+    "question": "Która z części ciała szacuje wiek konia?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Zęby",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kopyta",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ganasze",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-059",
+    "type": "question",
+    "number": 59,
+    "question": "Wydobywaniem, którego z surowców zajmuje się polska spółka KGHM?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Siarki",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ziemii okrzemkowej",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Miedzi",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-060",
+    "type": "question",
+    "number": 60,
+    "question": "Pablo Picasso uznawany jest za jednego z twórców:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Surrealizmu",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Kubizmu",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Formizmu",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-061",
+    "type": "question",
+    "number": 61,
+    "question": "Który zespół muzyczny wydał płytę pt. „The Dark Side of the Moon”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Queen",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metallica",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pink Floyd",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Led Zeppelin",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-062",
+    "type": "question",
+    "number": 62,
+    "question": "Która z podanych dat nie jest datą jednego z rozbiorów Polski?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1795",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1793",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1773",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1772",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-063",
+    "type": "question",
+    "number": 63,
+    "question": "Sowa o imieniu Hedwiga to towarzyszka:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kubusia Puchatka",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Geralta z Rivii",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Harry’ego Pottera",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-064",
+    "type": "question",
+    "number": 64,
+    "question": "Z jakiego mięsa robi się tatara?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "Z jagnięciny",
+        "isCorrect": false
+      },
+      {
+        "id": "A",
+        "text": "Z koniny",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Z wołowiny",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Z wieprzowiny",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-065",
+    "type": "question",
+    "number": 65,
+    "question": "Z czego tworzy się szkło?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ze stali",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Z piasku",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ze srebra",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Z fosforu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-066",
+    "type": "question",
+    "number": 66,
+    "question": "Czerwony karzeł jest typem:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "niskorosłego człowieka",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gwiazdy",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Kotła",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Niedźwiedzia",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-067",
+    "type": "question",
+    "number": 67,
+    "question": "„Pomyłka? Moja żona ma na drugie pomyłka!” to cytat z filmu noszącego tytuł:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kogel-Mogel",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Kiler",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Miś",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-068",
+    "type": "question",
+    "number": 68,
+    "question": "Które z podanych państw nie należy do Zjednoczonego Królestwa Wielkiej Brytanii?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Islandia",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Walia",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Szkocja",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-069",
+    "type": "question",
+    "number": 69,
+    "question": "Mięsień czworogłowy jest mięśniem:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ramienia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uda",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Łydki",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-070",
+    "type": "question",
+    "number": 70,
+    "question": "O nieudanym przedsięwzięciu mówimy, że „spaliło na panewce”. Czym jest wspomniana panewka?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ślepym nabojem",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "zagłębieniem na proch",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Łydki",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-071",
+    "type": "question",
+    "number": 71,
+    "question": "Przez które miasto przepływa rzeka Rawa?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Katowice",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mrągowo",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sopot",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Opole",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-072",
+    "type": "question",
+    "number": 72,
+    "question": "Ostatnia litera alfabetu greckiego to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Omikron",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Epsilon",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Omega",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Kappa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-073",
+    "type": "question",
+    "number": 73,
+    "question": "Za dostarczenie której substancji do komórek ciała odpowiada hemoglobina?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Węgiel",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Potas",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tlen",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Magnez",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-074",
+    "type": "question",
+    "number": 74,
+    "question": "Który z wymienionych europejskich krajów jest położony najbliżej Maroka?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Hiszpania",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Włochy",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Francja",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Portugalia",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-075",
+    "type": "question",
+    "number": 75,
+    "question": "Ile oczek znajduje się na kostce sześciennej naprzeciw czwórki?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sześć",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trzy",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pięć",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Jedno",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-076",
+    "type": "question",
+    "number": 76,
+    "question": "Chorobą wirusową nie jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Świnka",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polio",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Odra",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gruźlica",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-077",
+    "type": "question",
+    "number": 77,
+    "question": "Która z bil w snookerze ma najwięszką wartość?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Niebieska",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-078",
+    "type": "question",
+    "number": 78,
+    "question": "Kto napisał powieść pt. „Zbrodnia i kara”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fiodor",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Honore de",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-079",
+    "type": "question",
+    "number": 79,
+    "question": "Co ile lat odbywają się zimowe igrzyska olimpijskie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-080",
+    "type": "question",
+    "number": 80,
+    "question": "Ile potraw, według tradycji, powinno znajdować się na wigilijnym stole?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "14",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "11",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-081",
+    "type": "question",
+    "number": 81,
+    "question": "Które z podanych miast leży nad Morzem Bałtyckim?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Lębork",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Koszalin",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Słupsk",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kołobrzeg",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-082",
+    "type": "question",
+    "number": 82,
+    "question": "Do jakiego miasta udają się pielgrzymi, aby czcić Czarny Kamień?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Jerozolimy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fatimy",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mekki",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Medyny",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-083",
+    "type": "question",
+    "number": 83,
+    "question": "Która z wymienionych planet ma najmniej księżyców?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Jowisz",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
         "text": "Mars",
         "isCorrect": true
       },
       {
-        "id": "a7",
-        "text": "Jupiter",
+        "id": "C",
+        "text": "Saturn",
         "isCorrect": false
       },
       {
-        "id": "a8",
-        "text": "Saturn",
+        "id": "D",
+        "text": "Uran",
         "isCorrect": false
       }
     ]
   },
   {
-    "type": "reward",
-    "id": "r1",
-    "text": "Excellent! You gained 10 points!"
+    "id": "q-084",
+    "type": "question",
+    "number": 84,
+    "question": "Za rolę, w którym filmie Anthony Hopkins otrzymał Oscara?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "„",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "„",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "„Hannibal”",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "„Milczenie owiec”",
+        "isCorrect": true
+      }
+    ]
   },
   {
-    "type": "penalty",
-    "id": "p1",
-    "text": "Oops! You lost 5 points."
+    "id": "q-085",
+    "type": "question",
+    "number": 85,
+    "question": "Które ze słów jest napisane w sposób prawidłowy:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Włanczać",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "wogóle",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "w cudzysłowie",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "wziąść",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-087",
+    "type": "question",
+    "number": 87,
+    "question": "Co sypie się na spód doniczki, aby zapewnić lepsze napowietrzenie ziemi?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Keramzyt",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nawóz",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fusy z kawy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Liście herbaty",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-088",
+    "type": "question",
+    "number": 88,
+    "question": "Ile trwa ciąża u psa?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "5 miesięcy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Około 2 miesięcy",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Około 8 miesięcy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mniej niż miesiąc",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-089",
+    "type": "question",
+    "number": 89,
+    "question": "W jakim mieście w Polsce znajduje się Zamek Krzyżacki?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Malbork",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Lębork",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Frombork",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kluczbork",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-090",
+    "type": "question",
+    "number": 90,
+    "question": "W jakim mieście w Polsce odbywa się festiwal muzyki country?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kostrzyn nad Odrą",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Olsztyn",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mrągowo",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Opole",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-091",
+    "type": "question",
+    "number": 91,
+    "question": "Oczy, którego stworzenia składają się z kilku tysięcy małych oczek?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pszczoły",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Karalucha",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Konika morskiego",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-092",
+    "type": "question",
+    "number": 92,
+    "question": "W której części ciała człowieka znajduje się najwięcej kości?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ręce",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nogi",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Szyja",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Stopy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-093",
+    "type": "question",
+    "number": 93,
+    "question": "W jakim kraju znajduje się najwięcej wulkanów na świecie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indonezja",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Włochy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meksyk",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-094",
+    "type": "question",
+    "number": 94,
+    "question": "Petrol to barwa powstała z połączenia dwóch kolorów:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "niebieskiego i",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "jasno- i zielonego ciemnobrązowego",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "złotego i srebrnego",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meksyk",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-095",
+    "type": "question",
+    "number": 95,
+    "question": "Tkanina, z której szyje się mundury to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gabardyna",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Satyna",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mora",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-096",
+    "type": "question",
+    "number": 96,
+    "question": "Prawidłowe rozwinięcie skrótu PKWN brzmi:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Polski Komitet",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Polski Komitet Walki Wyzwolenia Narodowego Niepodległościowej",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Polskie Koło Wojska",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prawicowy Komitet Narodowego Wiernych Nacjonalistów",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-097",
+    "type": "question",
+    "number": 97,
+    "question": "Prawidłowe rozwinięcie skrótu PPR brzmi:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Polska Partia",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Polska Partia Robotnicza Rzeczpospolita",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Polska Platforma",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prawo Powszechnych Robotnicza Robotników",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-098",
+    "type": "question",
+    "number": 98,
+    "question": "W 1971 r. psycholog Philip Zimbardo przeprowadził eksperyment symulujący:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Życie rozbitków",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Życie w więzieniu na wyspie",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "przebywanie w",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Odbijanie kosmosie zakładników",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-099",
+    "type": "question",
+    "number": 99,
+    "question": "Monety bulionowe są zrobione z:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "pasty rosołowej",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "rolowanego mięsa",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "miedzi",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "złota",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-100",
+    "type": "question",
+    "number": 100,
+    "question": "Wskaż prawidłowe rozwinięcie skrótu TRJN:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tymczasowy Rząd",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trzecia Rzeczpospolita Jedności Narodowej Jedności Narodów",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Towarzystwo",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tatrzański Ruch Robotników Jednej Nacji Jesiennego Narciarstwa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-101",
+    "type": "question",
+    "number": 101,
+    "question": "Na czym polegał eksperyment Milgrama?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Na umieszczeniu kota w",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na zbadaniu siły zamkniętej skrzynce z trucizną psychologii tłumu",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na zbadaniu posłuszeństwa",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na odizolowaniu człowieka wobec autorytetów od społeczeństwa na 365 dni",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-103",
+    "type": "question",
+    "number": 103,
+    "question": "W którym wieku urodził się papież Pius X?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "W III",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "W XV",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "W XIX",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "W VIII",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-104",
+    "type": "question",
+    "number": 104,
+    "question": "Które ciasto było ulubionym ciastem Karola Wojtyły?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sernik",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Karpatka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kremówka",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-105",
+    "type": "question",
+    "number": 105,
+    "question": "Wskaż dokładną datę wybuchu I Wojny Światowej:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "28.06.1914",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "01.09.1939",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "11.11.1918",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "17.12.1953",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-106",
+    "type": "question",
+    "number": 106,
+    "question": "Wskaż, który wyraz został poprawnie napisany:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-107",
+    "type": "question",
+    "number": 107,
+    "question": "Kto wyreżyserował film pt. „Władca pierścieni”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Peter Jackson",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "J.R.R. Tolkien",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "J.K Rowling",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Steve Spielberg",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-108",
+    "type": "question",
+    "number": 108,
+    "question": "Jak miał na imię Snape, bohater sagi pt. „Harry Potter”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Severus",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Peter",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-109",
+    "type": "question",
+    "number": 109,
+    "question": "Hogwart nazywany był:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Szkołą Magii i",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Szkołą Magii i",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Szkołą Magii i Mugoli",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wyższą Szkołą Magii",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-110",
+    "type": "question",
+    "number": 110,
+    "question": "Co składa się z tralek?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Marionetka",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "centralka telefoniczna",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-111",
+    "type": "question",
+    "number": 111,
+    "question": "Który z podanych owoców jest zwyczajowo nazywany agrestem?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Porzeczka agrest",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "malina agrest",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-112",
+    "type": "question",
+    "number": 112,
+    "question": "Co nie jest prawdą o kluskach śląskich?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Są z gotowanych",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mają dziurkę na ziemniaków wylot",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "gotuje się we",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Zawierają orzechy wrzącej wodzie nerkowca",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-113",
+    "type": "question",
+    "number": 113,
+    "question": "W jaki sposób zmarł św. Szczepan, pierwszy chrześcijański męczennik?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Został pożarty przez lwy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Spłonął na stosie",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Został ukamieniowany",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Odarto go ze skóry",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-114",
+    "type": "question",
+    "number": 114,
+    "question": "Bat micwa to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Uroczystość religijna",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Inaczej bat mobil",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gatunek nietoperza",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pałeczka dyrygenta",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-115",
+    "type": "question",
+    "number": 115,
+    "question": "Gdzie kobiety miewają dwa symetryczne wgłębienia nazywane dołeczkami Wenus?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Na twarzy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pod piersiami",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nad pośladkami",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "na karku",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-117",
+    "type": "question",
+    "number": 117,
+    "question": "W jakim województwie leży Olsztyn?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Warmińsko-mazurskie",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pomorskie",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Podlaskie",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lubelskie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-118",
+    "type": "question",
+    "number": 118,
+    "question": "Co może znajdować się zarówno na stole, jak i na oponie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obrus",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Serweta",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-119",
+    "type": "question",
+    "number": 119,
+    "question": "NIK to skrót pochodzący od słów:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Najwyższa Instancja",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Najwyższa Izba Kontrolna Konstytucyjna",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Najwyższa Izba",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Najwyższa Izba Kasacyjna Kontroli",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-120",
+    "type": "question",
+    "number": 120,
+    "question": "Które z wymienionych warzyw zawiera nikotynę?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ziemniak",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ogórek",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sałata",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pietruszka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-121",
+    "type": "question",
+    "number": 121,
+    "question": "Kim jest neofita?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Osoba, która niedawno",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Osoba, która niedawno przyjęła zrezygnowała z wiary jakąś wiarę",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Osoba, która niedawno",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Osoba, która niedawno rozpoczęła nową działalność zrezygnowała z prowadzenia własnej gospodarczą działalności gospodarczej",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-122",
+    "type": "question",
+    "number": 122,
+    "question": "Czego dotyczy artykuł 148 Kodeksu Karnego?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pobicia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Zniszczenia mienia",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Zabójstwa",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Kradzieży",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-123",
+    "type": "question",
+    "number": 123,
+    "question": "10011 w systemie binarnym to w przełożeniu na system dziesiętny:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "18",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "17",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-124",
+    "type": "question",
+    "number": 124,
+    "question": "Gdzie leży Jezioro Garda?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "We Włoszech",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "W Portugalii",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "W Hiszpanii",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "W Polsce",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-125",
+    "type": "question",
+    "number": 125,
+    "question": "Wskaż najwyższy szczyt w Bieszczadach:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wieżyca",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orła Perć",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gęsia Szyja",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tarnica",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-126",
+    "type": "question",
+    "number": 126,
+    "question": "Ile (około) stopni Celsjusza wynosi temperatura na dnie jeziora zimą?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "12 stopni",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8 stopni",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4 stopnie",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "0 stopni",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-127",
+    "type": "question",
+    "number": 127,
+    "question": "Które europejskie miasto określane jest mianem wiecznego miasta?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Rzym",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Madryt",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paryż",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-128",
+    "type": "question",
+    "number": 128,
+    "question": "Kto odkrył Amerykę?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Krzysztof Kolumb",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ferdynand Magellan",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "James",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Marco Polo",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-129",
+    "type": "question",
+    "number": 129,
+    "question": "Kto odkrył penicylinę?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Maria Skłodowska-",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "James Watt",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "James Watson",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-130",
+    "type": "question",
+    "number": 130,
+    "question": "Która z wymienionych osób otrzymała pokojową nagrodę Nobla?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wisława Szymborska",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lech Wałęsa",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-131",
+    "type": "question",
+    "number": 131,
+    "question": "Ile kart bierze udział w grze, jeżeli gra się od dziewiątek?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "26",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "24",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "32",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "29",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-132",
+    "type": "question",
+    "number": 132,
+    "question": "Szwedy to nazwa:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Spodni z szeroką",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Spodni z prostymi nogawką nogawkam",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Spodni z dziurami",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Spodni dresowychi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-133",
+    "type": "question",
+    "number": 133,
+    "question": "Legenda światowego skateboardingu to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tony Stark",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tony Montana",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tony Hawk",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tony Martin",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-134",
+    "type": "question",
+    "number": 134,
+    "question": "Skąd pochodzi odmiana herbaty Cejlon?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sri Lanka",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indonezja",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Malezja",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nepal",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-135",
+    "type": "question",
+    "number": 135,
+    "question": "Co jest stolicą Nepalu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Patan",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pokhara",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Katmandu",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-136",
+    "type": "question",
+    "number": 136,
+    "question": "Procesy norymberskie były prowadzone przeciwko:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Politykom z krajów",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Zbrodniarzom UE łamiącym konstytucję wojennym z III Rzeszy",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Islamskim zamachowcom",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-137",
+    "type": "question",
+    "number": 137,
+    "question": "Który kolor nie występuje we fladze Portugalii?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Zielony",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-138",
+    "type": "question",
+    "number": 138,
+    "question": "„Obrotowy” to zawodnik w piłce ręcznej, o którym mówi się, że gra na:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Trójkącie",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Kwadracie",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rombie",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kole",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-139",
+    "type": "question",
+    "number": 139,
+    "question": "Co oznacza słowo “wolferine” w tłumaczeniu z języka angielskiego na język polski?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Szakal",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Jenot",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rosomak",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-140",
+    "type": "question",
+    "number": 140,
+    "question": "Który z wymienionych sportów jest uznawany za narodowy sport Tajlandii?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kick boxing",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Muay thai",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-141",
+    "type": "question",
+    "number": 141,
+    "question": "Wskaż, które z wymienionych zwierząt jest zmiennocieplne:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kobra indyjska",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Małpka kapucynka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Foka pospolita",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-142",
+    "type": "question",
+    "number": 142,
+    "question": "Epoka Wiosen i Jesieni to okres w dziejach:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tajlandii",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Japonii",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indii",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-143",
+    "type": "question",
+    "number": 143,
+    "question": "Wskaż datę śmierci Mikołaja Kopernika:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "24 maja 1543",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "13 czerwca 1675",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "11 kwietnia 1784",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "25 lipca 1412",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-144",
+    "type": "question",
+    "number": 144,
+    "question": "W którym roku zniesiono w Polsce karę śmierci?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kara śmierci nie występowała",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1970 nigdy w katalogu kar w Polsce",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1984",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1998",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-145",
+    "type": "question",
+    "number": 145,
+    "question": "Prawidłowe rozwinięcie skrótu PRL brzmi:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Partia Robotniczo-",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polska Republika Ludowa Ludowa",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Polska Rzeczpospolita",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Polska Ludowa Rzeczpospolita Lojalna",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-146",
+    "type": "question",
+    "number": 146,
+    "question": "Gdzie znajduje się most Tower Bridge?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "w San Francisco",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "w Nowym Yorku",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "w Londynie",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "w Nowym Orleanie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-147",
+    "type": "question",
+    "number": 147,
+    "question": "Ile ksiąg liczy stary testament?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "56",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "46",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "36",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "74",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-148",
+    "type": "question",
+    "number": 148,
+    "question": "Które z wymienionych osób zdobyły szczyt Mount Everest jako pierwsze w historii?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Edmund Hilary",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elisabeth Revol",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomasz Mackiewicz i Hermann",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-149",
+    "type": "question",
+    "number": 149,
+    "question": "W obrębie których państw znajdują się Himalaje?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Nepal, Kazachstan,",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indie,",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pakistan, Kazachstan,",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-150",
+    "type": "question",
+    "number": 150,
+    "question": "Departament Obrony Stanów Zjednoczonych nazywany jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pentagonem",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Oktagonem",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Heksagonem",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-151",
+    "type": "question",
+    "number": 151,
+    "question": "Gdzie mieści się Biały Dom?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "w Nowym Yorku",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "w San Francisco",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "w Waszyngtonie",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "w Londynie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-152",
+    "type": "question",
+    "number": 152,
+    "question": "W którym roku Polska wstąpiła do Unii Europejskiej?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "2004",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1998",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2001",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2007",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-153",
+    "type": "question",
+    "number": 153,
+    "question": "Kto zagrał rolę Tadeusza Soplicy w filmie Pan Tadeusz z 1999 roku?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Michał Żebrowski",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-154",
+    "type": "question",
+    "number": 154,
+    "question": "Kto zagrał rolę Heleny Kurcewiczównej w filmie pt. „Ogniem i Mieczem” z 1999 roku?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Izabella Scorupco",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ewa Wiśniewska",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Grażyna",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-155",
+    "type": "question",
+    "number": 155,
+    "question": "Tytułowy Reksio z popularnej bajki animowanej to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Koń",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pies",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sowa",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Papuga",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-156",
+    "type": "question",
+    "number": 156,
+    "question": "Co jest owocem grochu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kłębek",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Łuszczyna",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Strą",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-157",
+    "type": "question",
+    "number": 157,
+    "question": "Ile jest milimetrów w jednym metrze",
+    "answers": [
+      {
+        "id": "A",
+        "text": "100",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1000",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "10000",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-158",
+    "type": "question",
+    "number": 158,
+    "question": "Specjalistą od chorób serca jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Morfolog",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pulmonolog",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Urolog",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kardiolog",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-160",
+    "type": "question",
+    "number": 160,
+    "question": "Godzina „W”, czyli kryptonim rozpoczęcia w Warszawie akcji „Burza”, oznaczała godzinę:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "0:00",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "17:00",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "7:00",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "13:00",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-161",
+    "type": "question",
+    "number": 161,
+    "question": "Kogo pokonały wojska Rzeczypospolitej w bitwie pod Kircholmem?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tatarów",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Szwedów",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Turków",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kozaków",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-162",
+    "type": "question",
+    "number": 162,
+    "question": "Ile przedsionków ma ludzkie serce?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-163",
+    "type": "question",
+    "number": 163,
+    "question": "Lord Voldemort, postać stworzona przez J.K. Rowling, posiadała zniekształcony:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ząb",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Łokieć",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nos",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Kciuk",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-164",
+    "type": "question",
+    "number": 164,
+    "question": "Najmniejszym europejskim państwem jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Liechtenstein",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "San Marino",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Watykan",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-165",
+    "type": "question",
+    "number": 165,
+    "question": "System operacyjny Windows jest produkowany przez firmę:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Meta",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Microsoft",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Google",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-166",
+    "type": "question",
+    "number": 166,
+    "question": "Ile razy można przegrać w rosyjskiej ruletce?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-167",
+    "type": "question",
+    "number": 167,
+    "question": "Wacław II i Wacław III to królowie Polski z dynastii:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Piastów",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Jagiellonów",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Przemyślidów",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-168",
+    "type": "question",
+    "number": 168,
+    "question": "Jedną z cięciw okręgu jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Skala",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Średnica",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Wektor",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Łuk",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-169",
+    "type": "question",
+    "number": 169,
+    "question": "Jak nazywa się wyspa, na której mieści się Statua Wolności?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Fire Island",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Long Island",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Liberty Island",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Roosevelt Island",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-170",
+    "type": "question",
+    "number": 170,
+    "question": "Axel Rose to członek zespołu, noszącego nazwę:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ramones",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Guns N` Roses",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Kiss",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The ScorpionsIsland",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-171",
+    "type": "question",
+    "number": 171,
+    "question": "Który kompozytor pod koniec swojego życia był niemal całkowicie głuchy?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Piotr",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Jan Sebastian",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The Ludwig van",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-172",
+    "type": "question",
+    "number": 172,
+    "question": "Ulubioną klaczą Józefa Piłsudskiego była:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Wisienka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Jabłonka",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kasztanka",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-173",
+    "type": "question",
+    "number": 173,
+    "question": "Jaki jest główny, eksportowy produkt Sri Lanki?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Guma",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Kawa",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Herbata",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Śledzie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-174",
+    "type": "question",
+    "number": 174,
+    "question": "W którym roku upadła Polska Rzeczpospolita Ludowa?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1981",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1989",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1990",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1986",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-175",
+    "type": "question",
+    "number": 175,
+    "question": "Wskaż autora obrazu pt. „Ostatnia Wieczerza”:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pablo Picasso",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Leonardo da Vinci",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Michał",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rafael Santi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-176",
+    "type": "question",
+    "number": 176,
+    "question": "Kto zagrał główną rolę w serialu pt. „Strażnik Teksasu”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sylvester Stallone",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Steven Seagal",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-177",
+    "type": "question",
+    "number": 177,
+    "question": "W którym włoskim mieście rozgrywa się akcja ”Romea i Julii”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Rzym",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Palermo",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Werona",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Florencja",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-178",
+    "type": "question",
+    "number": 178,
+    "question": "Które z wymienionych państw nie ma dostępu do morza?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Rumunia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Macedonia Północna",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Monako",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-179",
+    "type": "question",
+    "number": 179,
+    "question": "Jaka jest maksymalna liczba setów w siatkówce?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Trzy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Siedem",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pięć",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-180",
+    "type": "question",
+    "number": 180,
+    "question": "Jak nazywa się żaba z programu Muppet Show?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Elmo",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oscar",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fozzie",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kermit",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-181",
+    "type": "question",
+    "number": 181,
+    "question": "Jak nazywał się wódz Kartaginy, jeden z największych wodzów z epoki starożytności?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Perykles",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ptolemeusz",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hannibal",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Spartakus",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-182",
+    "type": "question",
+    "number": 182,
+    "question": "Kto jest uznawany za twórcę Iliady?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Horacy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Homer",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Odyseusz",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wergiliusz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-183",
+    "type": "question",
+    "number": 183,
+    "question": "Wynikiem mnożenia 8 × 13 jest liczba podzielna przez:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-185",
+    "type": "question",
+    "number": 185,
+    "question": "Wskaż atrybut greckiego boga morza Posejdona:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Trójząb",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Piorun",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kaduceusz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-186",
+    "type": "question",
+    "number": 186,
+    "question": "Data ataku ZSRR na Polskę to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "17.09.1939",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1.09.1939",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "16.09.1939",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4.09.1939",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-187",
+    "type": "question",
+    "number": 187,
+    "question": "Do produkcji piwa stosuje się zazwyczaj słód:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orkiszowy",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pszeniczny",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Jęczmienny",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-188",
+    "type": "question",
+    "number": 188,
+    "question": "Jaki pierwiastek ma symbol Ag?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Złoto",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Srebro",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-189",
+    "type": "question",
+    "number": 189,
+    "question": "Adam i Ewa obchodzą imieniny:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "2 stycznia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "24 grudnia",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "16 października",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "8 kwietnia",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-190",
+    "type": "question",
+    "number": 190,
+    "question": "Największą wyspą na świecie jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Nowa Gwinea",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Grenlandia",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sumatra",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-191",
+    "type": "question",
+    "number": 191,
+    "question": "Jak nazywa się pierwsza Polka, która wystąpiła na Eurowizji?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Edyta Górniak",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Justyna",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Katarzyna Steczkowska Kowalska",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-192",
+    "type": "question",
+    "number": 192,
+    "question": "Samochody marki Melex są napędzane silnikiem:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Spalinowym",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elektrycznym",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Parowym",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-193",
+    "type": "question",
+    "number": 193,
+    "question": "Jak nazywała się żona Odyseusza?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Helena",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Kalipso",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Klitajmestra",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Penelopa",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-194",
+    "type": "question",
+    "number": 194,
+    "question": "Ile końców ma półprosta?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Jeden",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trzy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-196",
+    "type": "question",
+    "number": 196,
+    "question": "Esica jest częścią:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Jelita grubego",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mózgu",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Jelita cienkiego",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nerek",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-197",
+    "type": "question",
+    "number": 197,
+    "question": "Pierwszym oficjalnym odtwórcą roli Jamesa Bonda był:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sean",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "George Lazenby",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pierce",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-198",
+    "type": "question",
+    "number": 198,
+    "question": "Który z podanych minerałów jest najtwardszy?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Korund",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Topaz",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ortoklaz",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-199",
+    "type": "question",
+    "number": 199,
+    "question": "Herostrates, szewc owładnięty obsesją uzyskania wiecznej sławy, podpalił:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Posąg Zeusa w",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mauzoleum w Olimpii Halikarnasie",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kolosa Rodyjskiego",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-200",
+    "type": "question",
+    "number": 200,
+    "question": "Liczba ”pi” w przybliżeniu wynosi:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1,69",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1,23",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3,14",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "31,4",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-201",
+    "type": "question",
+    "number": 201,
+    "question": "Kto napisał komedię pt. „Skąpiec”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Molier",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Victor Hugo",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Wiliam Szekspir",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Franz Kafka",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-202",
+    "type": "question",
+    "number": 202,
+    "question": "Który z owoców zerwany niedojrzały taki pozostanie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gruszka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Śliwka",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wiśnia",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-203",
+    "type": "question",
+    "number": 203,
+    "question": "Pełne imię i nazwisko francuskiego komediopisarza Moliera brzmi:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pierre",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Jean de La Fontaine",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Jean",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-204",
+    "type": "question",
+    "number": 204,
+    "question": "W 1939 roku pisarz Stanisław Ignacy Witkiewicz, ps. Witkacy, popełnił samobójstwo przy użyciu:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rycyny",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Weronalu",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-205",
+    "type": "question",
+    "number": 205,
+    "question": "Wafel z delikatnego ciasta pieczony w specjalnych foremkach to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-206",
+    "type": "question",
+    "number": 206,
+    "question": "Najlżejszym pierwiastkiem jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-207",
+    "type": "question",
+    "number": 207,
+    "question": "Jaki pierwiastek ma symbol Si?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Krzem",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Siarka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Selen",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-208",
+    "type": "question",
+    "number": 208,
+    "question": "Partykułą nie jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Oby",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pod tytułem",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-209",
+    "type": "question",
+    "number": 209,
+    "question": "Najsłynniejsza koszykarska liga świata to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "NHL",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "N",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "NFL",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "NFS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-210",
+    "type": "question",
+    "number": 210,
+    "question": "Jak nazywa się sztuka pięknego pisania?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Lomografia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Poligrafia",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kaligrafia",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Kartografia",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-211",
+    "type": "question",
+    "number": 211,
+    "question": "Jak nazywa się sztuka pięknego pisania?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Lomografia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Poligrafia",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kaligrafia",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kartografia",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-212",
+    "type": "question",
+    "number": 212,
+    "question": "Modelem Ferrari jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enzo",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Murcielago",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gallardo",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-213",
+    "type": "question",
+    "number": 213,
+    "question": "Jaką azjatycką stolicę musimy zwiedzić, aby obejrzeć Zakazane Miasto?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tokio",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seul",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pekin",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-214",
+    "type": "question",
+    "number": 214,
+    "question": "Jak nazywa się gorące źródło, okresowo wyrzucające gorącą wodę i parę wodną?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wulkan",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Morena",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gejzer",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Potok",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-215",
+    "type": "question",
+    "number": 215,
+    "question": "Nietoperz jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ptakiem",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gadek",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ssakiem",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Płazem",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-216",
+    "type": "question",
+    "number": 216,
+    "question": "Odwrotnością różniczkowania jest:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Potęgowanie",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pierwiastkowanie",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sumowanko",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-217",
+    "type": "question",
+    "number": 217,
+    "question": "Który ocean jest największy?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Indyjski",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Spokojny",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-218",
+    "type": "question",
+    "number": 218,
+    "question": "Jak nazywała się stolica państwa Zakonu Krzyżackiego?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Szczecin",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Olsztyn",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gdańsk",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Malbork",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-219",
+    "type": "question",
+    "number": 219,
+    "question": "Jak nazywa się owoc leszczyny?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Szyszka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orzech",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Jarzębina",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-220",
+    "type": "question",
+    "number": 220,
+    "question": "Samochodowy gaźnik miesza paliwo z:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Olejem silnikowym",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Powietrzem",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-221",
+    "type": "question",
+    "number": 221,
+    "question": "Jaką część ciała odciął sobie Vincent van Gogh?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Nogę",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rękę",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ucho",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nos",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-224",
+    "type": "question",
+    "number": 224,
+    "question": "Która roślina jest symbolem Szkocji?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Koniczyna",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oset",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-225",
+    "type": "question",
+    "number": 225,
+    "question": "Częścią, którego oceanu jest Morze Hebrydzkie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Spokojnego",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indyjskiego",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-228",
+    "type": "question",
+    "number": 228,
+    "question": "Helena Rubinstein odniosła wielki sukces w branży:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Motoryzacyjnej",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Spożywczej",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Farmaceutycznej",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kosmetycznej",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-230",
+    "type": "question",
+    "number": 230,
+    "question": "Z której komedii Moliera pochodzi ten cytat: „zawistni umrą, ale zawiść pozostanie”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "„Mieszczanin",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "„",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "„Skąpiec”",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "”Świętoszek”",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-231",
+    "type": "question",
+    "number": 231,
+    "question": "W którym roku odbyła się pierwsza edycja Festiwalu w Cannes?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "1939",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1946",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1952",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1963",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-232",
+    "type": "question",
+    "number": 232,
+    "question": "Jaki międzynarodowy port lotniczy znajduje się najbliżej centrum Sydney?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kingsford Smith",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Richmond",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-233",
+    "type": "question",
+    "number": 233,
+    "question": "W jakim kraju znajduje się słynna ruina Machu Picchu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ekwador",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Peru",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-234",
+    "type": "question",
+    "number": 234,
+    "question": "Które z tych drzew nie jest iglaste?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Świerk",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sosna",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-235",
+    "type": "question",
+    "number": 235,
+    "question": "Które z tych państw nie posiada wybrzeża na Morzu Śródziemnym?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Francja",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiszpania",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Włochy",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Niemcy",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-236",
+    "type": "question",
+    "number": 236,
+    "question": "Które z tych miast nie jest stolicą swojego kraju?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nairobi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-237",
+    "type": "question",
+    "number": 237,
+    "question": "Które z tych miast jest położone najbliżej równika?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Nairobi",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Panama",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quito",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Kuala Lumpur",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-238",
+    "type": "question",
+    "number": 238,
+    "question": "Jaki tytuł nosi piosenka z filmu „Titanic”, która zdobyła Oscara?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "My Heart Will Go On",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "I Will",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Unchained Melody",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "The Power of Love",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-239",
+    "type": "question",
+    "number": 239,
+    "question": "Który z tych aktorów nie zagrał w filmie „Harry Potter i Kamień Filozoficzny”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Emma Watson",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rupert Grint",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ian McKellen",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-240",
+    "type": "question",
+    "number": 240,
+    "question": "Która z tych postaci nie pojawia się w grze wideo „Super Mario Bros”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Luigi",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sonic the Hedgehog",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-241",
+    "type": "question",
+    "number": 241,
+    "question": "Jak nazywa się słynna hiszpańska potrawa z ryżu i owoców morza?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Paella",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Risotto",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Frutti di mare",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-242",
+    "type": "question",
+    "number": 242,
+    "question": "Jak nazywa się tradycyjna koreańska potrawa z kiszonej kapusty?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pho",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Kimchi",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pad thai",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Samgyetang",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-243",
+    "type": "question",
+    "number": 243,
+    "question": "Jak nazywa się tradycyjna japońska zupa z makaronem i jajkiem?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ramen",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Soba",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Udon",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Miso",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-244",
+    "type": "question",
+    "number": 244,
+    "question": "Co oznacza skrót VPN?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Virtual Private",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Very Personal Network Network",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Virtual Public",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Very Public Network Network",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-245",
+    "type": "question",
+    "number": 245,
+    "question": "Co oznacza skrót RAM?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Random",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Read",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Real",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rapid",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-246",
+    "type": "question",
+    "number": 246,
+    "question": "Co oznacza skrót SPF, używany w kontekście kremów przeciwsłonecznych?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sun Protection",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sunburn Factor Protection Factor",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Skin Protection",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solar Protection Factor Factor",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-247",
+    "type": "question",
+    "number": 247,
+    "question": "Co oznacza skrót BB w kontekście kosmetyków do makijażu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-248",
+    "type": "question",
+    "number": 248,
+    "question": "Jaki gatunek zwierzęcia przedstawia logo WWF?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tygrysa",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orangutana syberyjskiego borneańskiego",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pandę wielką",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "nosorożca indyjskiego",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-249",
+    "type": "question",
+    "number": 249,
+    "question": "Jak nazywa się technika wyplatania koszyków z papierowej wikliny?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Origami",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quilling",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Makramé",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pajączkowanie",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-251",
+    "type": "question",
+    "number": 251,
+    "question": "Jakie było najpopularniejsze imię dla dziewczynki w Polsce w 2021 roku?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Lena",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Julia",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Zuzanna",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-252",
+    "type": "question",
+    "number": 252,
+    "question": "Który z rodzajów świec najdłużej się pali?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Parafinowe",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sojowe",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Z wosku",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Żelowa pszczelego",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-253",
+    "type": "question",
+    "number": 253,
+    "question": "Jak nazywa się międzynarodowy traktat, który ma na celu ochronę warstwy ozonowej?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Protokół z",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Konwencja Kioto waszyngtońska",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Porozumienie z",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Protokół z Paryża Montrealu",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-254",
+    "type": "question",
+    "number": 254,
+    "question": "Jak nazywa się wyspa, na którą turysta ma zakaz wstępu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Sentinel płn.",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reunion",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wolin",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-255",
+    "type": "question",
+    "number": 255,
+    "question": "Co to jest loratadyna?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suplement diety na łamliwość kości porost włosów",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Substancja leku",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "mieszkanka miasta przeciwhistaminowego Lloret de Mar",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-256",
+    "type": "question",
+    "number": 256,
+    "question": "Który z poniższych serwisów społecznościowych nie należy do Facebooka?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Instagram",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Whats",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Messenger",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "LinkedIn",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-257",
+    "type": "question",
+    "number": 257,
+    "question": "Jak nazywa się lęk przed wychodzeniem z domu i unikaniem sytuacji społecznych?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Trypofobia",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-258",
+    "type": "question",
+    "number": 258,
+    "question": "Technika, polegająca na wstawieniu produktu lub marki do filmu to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Product Placement",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-259",
+    "type": "question",
+    "number": 259,
+    "question": "Która z tych marek używa sloganu „I'm Lovin' It”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Mc",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "KF",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Subway",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-260",
+    "type": "question",
+    "number": 260,
+    "question": "Hipodrom to:",
+    "answers": [
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "A",
+        "text": "Olbrzymi hipopotam rzeczny",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Plac do wyścigów konnych",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-261",
+    "type": "question",
+    "number": 261,
+    "question": "Jaki jest cel wynalazku o nazwie „Chillow”?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "A",
+        "text": "Ogrzewanie ciała",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Podnoszenie",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sprawdzanie nastroju ciśnienia krwi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-262",
+    "type": "question",
+    "number": 262,
+    "question": "Co to jest „Pandorabots”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Program komputerowy",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internetowy sklep do obróbki dźwięku z biżuterią",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Serwis umożliwiający",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-263",
+    "type": "question",
+    "number": 263,
+    "question": "Które z poniższych zagadnień dotyczy stereotypowego myślenia?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Pozytywne nastawienie",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uogólnienie na podstawie do innych kultur pojedynczych przypadków",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Otwartość na doświadczenia",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Zainteresowanie różnorodnością",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-265",
+    "type": "question",
+    "number": 265,
+    "question": "Tendencja do ignorowania informacji, które są sprzeczne z naszymi przekonaniami to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Efekt podobieństwa",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Efekt potwierdzenia",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Efekt Halo",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Efekt",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-266",
+    "type": "question",
+    "number": 266,
+    "question": "Które miasto jest uważane za kolebkę renesansu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Florencja",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tokio",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paryż",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-267",
+    "type": "question",
+    "number": 267,
+    "question": "Który z wymienionych królów był u władzy, gdy wybuchła rewolucja francuska?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Ludwik XIV",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ludwik XV",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ludwik XVI",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Napoleon",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-268",
+    "type": "question",
+    "number": 268,
+    "question": "Jak nazywa się instrument służący do pomiaru ciśnienia atmosferycznego?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Termometr",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Higrometr",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-269",
+    "type": "question",
+    "number": 269,
+    "question": "W jakiej kulturze występowali druidzi?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Wikingów",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sumetów",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-270",
+    "type": "question",
+    "number": 270,
+    "question": "Ile wynosi suma wszystkich liczb na ruletce w kasynie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "666",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "777",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "888",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "999",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-271",
+    "type": "question",
+    "number": 271,
+    "question": "Czym jest efekt Dunninga-Krugera?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "Zakrzywienie czasoprzestrzeni",
+        "isCorrect": false
+      },
+      {
+        "id": "A",
+        "text": "Zjawisko psychologiczne polegające na błędzie poznawczym",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rozproszenie światła na białej ścianie",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wartość siły grawitacji",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-272",
+    "type": "question",
+    "number": 272,
+    "question": "Co oznacza skrót HDMI?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "High",
+        "isCorrect": false
+      },
+      {
+        "id": "A",
+        "text": "High",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "High",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "High",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-273",
+    "type": "question",
+    "number": 273,
+    "question": "Jak nazywa się najdłuższa kość w ludzkim ciele?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Kość promieniowa",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Łopatka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Kość udowa",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Kość krzyżowa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-276",
+    "type": "question",
+    "number": 276,
+    "question": "Która dyscyplina sportowa jest nazywana „królową sportów”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Piłka nożna",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Koszykówka",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lekkoatletyka",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tenis",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-279",
+    "type": "question",
+    "number": 279,
+    "question": "Który z bogów greckich był uważany za pana władzy podziemnej i umarłych?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Hades",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Posejdon",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-280",
+    "type": "question",
+    "number": 280,
+    "question": "Które mikroorganizmy są odpowiedzialne za chorobę zwaną AIDS?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Prątki",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Wirusy",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Grzyby",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Protisty",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-281",
+    "type": "question",
+    "number": 281,
+    "question": "Spod jakiego znaku zodiaku pochodzi osoba urodzona 21 sierpnia?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Waga",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lew",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Panna",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ryby",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-282",
+    "type": "question",
+    "number": 282,
+    "question": "Kto po raz pierwszy zmierzył laboratoryjnie prędkość światła?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Galileusz",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Isaac Newton",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-283",
+    "type": "question",
+    "number": 283,
+    "question": "Kto był szefem mafii w Chicago w czasach prohibicji?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Lucky Luciano",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meyer Lansky",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-284",
+    "type": "question",
+    "number": 284,
+    "question": "Z ilu kości składa się szkielet rekina?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Z 206",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Z 412",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Z 27",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "0",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-285",
+    "type": "question",
+    "number": 285,
+    "question": "Międzynarodowa Klasyfikacja Chorób oznaczana jest symbolem:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-286",
+    "type": "question",
+    "number": 286,
+    "question": "Panteizm to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "doktryna religijna, która",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nauka o pochodzeniu życia uznaje istnienie wielu bogów na ziemi",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "koncepcja, która zakłada istnienie",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "teoria, według której",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-287",
+    "type": "question",
+    "number": 287,
+    "question": "Solipsyzm to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Nauka o pochodzeniu",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teoria, według której ludzki",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pogląd, według którego istnieje tylko umysł jest ograniczony i niezdolny jednostkowy podmiot poznający, cała do poznania rzeczywistości zaś rzeczywistość jest jedynie zbiorem jego subiektywnych wrażeń",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-288",
+    "type": "question",
+    "number": 288,
+    "question": "Kolor czarny w kulturze zachodniej symbolizuje:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Radość i entuzjazm",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Smutek i żałoba",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Moc i władza.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-289",
+    "type": "question",
+    "number": 289,
+    "question": "Co symbolizuje kwiat lotosu w kulturze azjatyckiej?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Miłość i romantyzm",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Harmonię i duchowość",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Złość i agresję",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nadzieję i optymizm",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-290",
+    "type": "question",
+    "number": 290,
+    "question": "Która służba jest odpowiedzialna za ochronę prezydenta USA?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "Secret Service",
+        "isCorrect": true
+      },
+      {
+        "id": "A",
+        "text": "F",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "NS",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-291",
+    "type": "question",
+    "number": 291,
+    "question": "Co oznacza słowo \"eschatologia\"?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Studium śmierci",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Studium końca świata i umierania i końca czasów",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Studium",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Studium teologii powstawania religii chrześcijańskiej",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-292",
+    "type": "question",
+    "number": 292,
+    "question": "Co oznacza symbol NaCl?",
+    "answers": [
+      {
+        "id": "B",
+        "text": "Wodę sodową",
+        "isCorrect": false
+      },
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Kwas solny",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-293",
+    "type": "question",
+    "number": 293,
+    "question": "Wskaż, które miasto jest stolicą Jordanii",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Stambuł",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Kair",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teheran",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-294",
+    "type": "question",
+    "number": 294,
+    "question": "Kto napisał wiersz pt. \"Nic dwa razy”?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Wisława Szymborska",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Julian Tuwim",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sanah",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-295",
+    "type": "question",
+    "number": 295,
+    "question": "Wskaż, który opis odpowiada słowu \"seppuku\"",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tradycyjna japońską",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Japońska potrawa z sztukę walki suszonych ryb",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nazwa japońskiej wyspy w japońskiej kulturze na Morzu Wschodniochińskim",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-296",
+    "type": "question",
+    "number": 296,
+    "question": "Jakie zwierzę jest uważane za święte w hinduizmie?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Koń",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Krowa",
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Koń",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Kot",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-297",
+    "type": "question",
+    "number": 297,
+    "question": "Co to jest hanfu?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Klasyczna chińska",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rodzaj tradycyjnej sztuka walki chińskiej sukienki",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Japońska ceremonia",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Muzułmańska herbaciana modlitwa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-298",
+    "type": "question",
+    "number": 298,
+    "question": "Co to jest bogolanfini?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Tradycyjny taniec z RP",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Słodki napój z Nigerii",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Technika barwienia",
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Potrawa z mięsa tkanin w Mali krokodyla z Kamerunu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "q-299",
+    "type": "question",
+    "number": 299,
+    "question": "Co to jest mbira?",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Słodkie danie z",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Naczynie do Etiopii przechowywania wody z Libii",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tradycyjny obrzęd",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Instrument muzyczny w Kenii z Zimbabwe",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "q-300",
+    "type": "question",
+    "number": 300,
+    "question": "Porfiria to:",
+    "answers": [
+      {
+        "id": "A",
+        "text": "",
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Zaburzenie, którego wynikająca z mutacji genu LMN",
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Syndrom łaknienia",
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Grupa chorób metabolicznych, spaczonego, polegający na objawiających się nadwrażliwością na świadomym jedzeniu produktów, słońce, potocznie zwane wampiryzmem które nie nadają się do jedzenia",
+        "isCorrect": true
+      }
+    ]
   }
 ]

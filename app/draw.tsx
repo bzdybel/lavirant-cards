@@ -23,17 +23,21 @@ export default function DrawScreen() {
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 }}>
-      <Text style={{ fontSize: 20, marginBottom: 20, fontWeight: 'bold' }}>Draw a Card</Text>
-      <Button title="Question" onPress={handleDrawQuestion} />
-      <View style={{ marginTop: 10 }}>
-        <Button title="Reward" onPress={handleDrawReward} />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, backgroundColor: '#f5f5f5' }}>
+      <Text style={{ fontSize: 32, marginBottom: 40, fontWeight: 'bold', color: '#333' }}>
+        Draw a Card
+      </Text>
+      <View style={{ width: '100%', marginBottom: 15 }}>
+        <Button title="📚 Question" onPress={handleDrawQuestion} color="#2196F3" />
       </View>
-      <View style={{ marginTop: 10 }}>
-        <Button title="Penalty" onPress={handleDrawPenalty} />
+      <View style={{ width: '100%', marginBottom: 15 }}>
+        <Button title="🎉 Reward" onPress={handleDrawReward} color="#4CAF50" />
       </View>
-      <View style={{ marginTop: 20 }}>
-        <Button title="Back to Home" onPress={() => router.push('/')} />
+      <View style={{ width: '100%', marginBottom: 30 }}>
+        <Button title="⚠️ Penalty" onPress={handleDrawPenalty} color="#f44336" />
+      </View>
+      <View style={{ width: '100%' }}>
+        <Button title="Back to Home" onPress={() => router.push('/')} color="#666" />
       </View>
     </View>
   );
