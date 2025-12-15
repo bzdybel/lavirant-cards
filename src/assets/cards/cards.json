@@ -1,0 +1,68 @@
+[
+  {
+    "type": "question",
+    "id": "q1",
+    "number": 1,
+    "text": "What is the capital of France?",
+    "answers": [
+      {
+        "id": "a1",
+        "text": "London",
+        "isCorrect": false
+      },
+      {
+        "id": "a2",
+        "text": "Paris",
+        "isCorrect": true
+      },
+      {
+        "id": "a3",
+        "text": "Berlin",
+        "isCorrect": false
+      },
+      {
+        "id": "a4",
+        "text": "Madrid",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "id": "q2",
+    "number": 2,
+    "text": "Which planet is known as the Red Planet?",
+    "answers": [
+      {
+        "id": "a5",
+        "text": "Venus",
+        "isCorrect": false
+      },
+      {
+        "id": "a6",
+        "text": "Mars",
+        "isCorrect": true
+      },
+      {
+        "id": "a7",
+        "text": "Jupiter",
+        "isCorrect": false
+      },
+      {
+        "id": "a8",
+        "text": "Saturn",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "type": "reward",
+    "id": "r1",
+    "text": "Excellent! You gained 10 points!"
+  },
+  {
+    "type": "penalty",
+    "id": "p1",
+    "text": "Oops! You lost 5 points."
+  }
+]
