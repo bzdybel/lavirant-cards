@@ -1,128 +1,80 @@
 import { EffectCardDisplay, QuestionCardDisplay } from '@/src/components/CardDisplay';
 import { GameCard } from '@/src/components/GameCard';
 import { useGameStore } from '@/src/store/gameStore';
+import { CardType } from '@/src/types/Card';
 import React, { useRef, useState } from 'react';
 import { Animated, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+const CARD_TYPES: CardType[] = ['question', 'reward', 'penalty'];
+const ANIMATION_DURATION = 300;
+
 export default function HomeScreen() {
-  const drawCard = useGameStore((state) => state.drawCard);
-  const currentCard = useGameStore((state) => state.currentCard);
+  const { drawCard, currentCard } = useGameStore();
   const [isFlipped, setIsFlipped] = useState(false);
   const [revealCorrect, setRevealCorrect] = useState(false);
   const flipAnim = useRef(new Animated.Value(0)).current;
 
-  const handleDrawCard = (type: 'question' | 'reward' | 'penalty') => {
-    const card = drawCard(type);
+  const animateFlip = (toValue: number, onComplete?: () => void) => {
+    Animated.timing(flipAnim, {
+      toValue,
+      duration: ANIMATION_DURATION * 2,
+      useNativeDriver: true,
+    }).start(onComplete);
+  };
+
+  const handleDrawCard = (type: CardType) => {
+    drawCard(type);
     setIsFlipped(false);
     setRevealCorrect(false);
     flipAnim.setValue(0);
     
-    // Trigger flip animation after a short delay
     setTimeout(() => {
-      Animated.timing(flipAnim, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }).start(() => {
-        setIsFlipped(true);
-      });
-    }, 300);
-  };
-
-  const handleRevealAnswer = () => {
-    if (currentCard?.type === 'question') {
-      setRevealCorrect(true);
-    }
+      animateFlip(1, () => setIsFlipped(true));
+    }, ANIMATION_DURATION);
   };
 
   const handleReset = () => {
-    Animated.timing(flipAnim, {
-      toValue: 0,
-      duration: 600,
-      useNativeDriver: true,
-    }).start(() => {
+    animateFlip(0, () => {
       setIsFlipped(false);
       setRevealCorrect(false);
       useGameStore.setState({ currentCard: null });
     });
   };
 
-  const frontInterpolate = flipAnim.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0deg', '180deg'],
-  });
+  const createInterpolation = (outputRange: string[]) => 
+    flipAnim.interpolate({ inputRange: [0, 1], outputRange });
 
-  const backInterpolate = flipAnim.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['180deg', '360deg'],
-  });
+  const frontTransform = createInterpolation(['0deg', '180deg']);
+  const backTransform = createInterpolation(['180deg', '360deg']);
+  const frontOpacity = flipAnim.interpolate({ inputRange: [0, 0.5, 1], outputRange: [1, 0, 0] });
+  const backOpacity = flipAnim.interpolate({ inputRange: [0, 0.5, 1], outputRange: [0, 0, 1] });
 
-  const frontOpacity = flipAnim.interpolate({
-    inputRange: [0, 0.5, 1],
-    outputRange: [1, 0, 0],
-  });
-
-  const backOpacity = flipAnim.interpolate({
-    inputRange: [0, 0.5, 1],
-    outputRange: [0, 0, 1],
-  });
+  const isQuestion = currentCard?.type === 'question';
+  const showRevealButton = isQuestion && !revealCorrect && isFlipped;
 
   return (
     <View style={styles.container}>
       {!currentCard ? (
-        <ScrollView 
-          contentContainerStyle={styles.cardsContainer}
-          showsVerticalScrollIndicator={false}
-        >
-          <View style={styles.cardItem}>
-            <GameCard 
-              cardType="question" 
-              onPress={() => handleDrawCard('question')} 
-            />
-          </View>
-
-          <View style={styles.cardItem}>
-            <GameCard 
-              cardType="reward" 
-              onPress={() => handleDrawCard('reward')} 
-            />
-          </View>
-
-          <View style={styles.cardItem}>
-            <GameCard 
-              cardType="penalty" 
-              onPress={() => handleDrawCard('penalty')} 
-            />
-          </View>
+        <ScrollView contentContainerStyle={styles.cardsContainer} showsVerticalScrollIndicator={false}>
+          {CARD_TYPES.map(type => (
+            <View key={type} style={styles.cardItem}>
+              <GameCard cardType={type} onPress={() => handleDrawCard(type)} />
+            </View>
+          ))}
         </ScrollView>
       ) : (
         <View style={styles.cardDisplayContainer}>
           <View style={styles.flipContainer}>
-            {/* Front - GameCard */}
             <Animated.View
-              style={[
-                styles.flipCard,
-                {
-                  opacity: frontOpacity,
-                  transform: [{ rotateY: frontInterpolate }],
-                },
-              ]}
+              style={[styles.flipCard, { opacity: frontOpacity, transform: [{ rotateY: frontTransform }] }]}
             >
               <GameCard cardType={currentCard.type} onPress={() => {}} />
             </Animated.View>
 
-            {/* Back - Card Content */}
             <Animated.View
-              style={[
-                styles.flipCard,
-                styles.flipCardBack,
-                {
-                  opacity: backOpacity,
-                  transform: [{ rotateY: backInterpolate }],
-                },
-              ]}
+              style={[styles.flipCard, styles.flipCardBack, { opacity: backOpacity, transform: [{ rotateY: backTransform }] }]}
             >
-              {currentCard.type === 'question' ? (
+              {isQuestion ? (
                 <QuestionCardDisplay card={currentCard} revealCorrect={revealCorrect} />
               ) : (
                 <EffectCardDisplay card={currentCard} />
@@ -130,14 +82,12 @@ export default function HomeScreen() {
             </Animated.View>
           </View>
 
-          {/* Action Buttons */}
           <View style={styles.buttonsContainer}>
-            {currentCard.type === 'question' && !revealCorrect && isFlipped && (
-              <TouchableOpacity style={styles.button} onPress={handleRevealAnswer}>
+            {showRevealButton && (
+              <TouchableOpacity style={styles.button} onPress={() => setRevealCorrect(true)}>
                 <Text style={styles.buttonText}>Pokaż odpowiedź</Text>
               </TouchableOpacity>
             )}
-            
             {isFlipped && (
               <TouchableOpacity style={[styles.button, styles.resetButton]} onPress={handleReset}>
                 <Text style={styles.buttonText}>Powrót</Text>

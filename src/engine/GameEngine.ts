@@ -4,133 +4,69 @@ import rewardsData from '../assets/cards/rewards.json';
 import { Card, CardType, EffectCard, QuestionCard } from '../types/Card';
 import { shuffle } from '../utils/shuffle';
 
-export class GameEngine {
-  private questionDeck: QuestionCard[] = [];
-  private rewardDeck: Card[] = [];
-  private penaltyDeck: Card[] = [];
+type Deck<T = Card> = T[];
 
-  private questionDrawn: Set<string> = new Set();
-  private rewardDrawn: Set<string> = new Set();
-  private penaltyDrawn: Set<string> = new Set();
+export class GameEngine {
+  private decks: Record<CardType, Deck> = {
+    question: [],
+    reward: [],
+    penalty: [],
+  };
 
   constructor() {
     this.initializeDecks();
   }
 
+  private loadEffectCards(rawData: any[], type: 'reward' | 'penalty'): EffectCard[] {
+    return rawData.map((item) => ({
+      type,
+      id: item.id,
+      text: `${item.title}: ${item.content}`,
+    }));
+  }
+
   private initializeDecks(): void {
-    // Load questions
-    const questions = (questionsData as unknown as QuestionCard[]);
-
-    // Load penalties and convert to EffectCard format
-    const penaltiesRaw = (penaltiesData as any[]);
-    const penalties: EffectCard[] = penaltiesRaw.map((p) => ({
-      type: 'penalty' as const,
-      id: p.id,
-      text: `${p.title}: ${p.content}`,
-    }));
-
-    // Load rewards and convert to EffectCard format
-    const rewardsRaw = (rewardsData as any[]);
-    const rewards: EffectCard[] = rewardsRaw.map((r) => ({
-      type: 'reward' as const,
-      id: r.id,
-      text: `${r.title}: ${r.content}`,
-    }));
-
-    this.questionDeck = shuffle([...questions]);
-    this.rewardDeck = shuffle([...rewards]);
-    this.penaltyDeck = shuffle([...penalties]);
+    this.decks.question = shuffle([...questionsData] as QuestionCard[]);
+    this.decks.reward = shuffle(this.loadEffectCards(rewardsData as any[], 'reward'));
+    this.decks.penalty = shuffle(this.loadEffectCards(penaltiesData as any[], 'penalty'));
   }
 
-  drawQuestion(): QuestionCard {
-    if (this.questionDeck.length === 0) {
-      this.resetDeck('question');
+  private drawFromDeck(type: CardType): Card {
+    if (this.decks[type].length === 0) {
+      this.resetDeck(type);
     }
 
-    const card = this.questionDeck.shift();
+    const card = this.decks[type].shift();
     if (!card) {
-      throw new Error('No question cards available');
+      throw new Error(`No ${type} cards available`);
     }
 
-    this.questionDrawn.add(card.id);
-
-    // Shuffle answers
-    const shuffledAnswers = shuffle([...card.answers]);
-    return { ...card, answers: shuffledAnswers };
-  }
-
-  drawReward(): Card {
-    if (this.rewardDeck.length === 0) {
-      this.resetDeck('reward');
+    if (type === 'question') {
+      return { ...card, answers: shuffle([...(card as QuestionCard).answers]) } as QuestionCard;
     }
 
-    const card = this.rewardDeck.shift();
-    if (!card) {
-      throw new Error('No reward cards available');
-    }
-
-    this.rewardDrawn.add(card.id);
     return card;
   }
 
-  drawPenalty(): Card {
-    if (this.penaltyDeck.length === 0) {
-      this.resetDeck('penalty');
-    }
-
-    const card = this.penaltyDeck.shift();
-    if (!card) {
-      throw new Error('No penalty cards available');
-    }
-
-    this.penaltyDrawn.add(card.id);
-    return card;
-  }
-
-  resetDeck(type: CardType): void {
+  private resetDeck(type: CardType): void {
     switch (type) {
       case 'question':
-        const questions = (questionsData as unknown as QuestionCard[]);
-        this.questionDeck = shuffle([...questions]);
-        this.questionDrawn.clear();
+        this.decks.question = shuffle([...questionsData] as QuestionCard[]);
         break;
       case 'reward':
-        const rewardsRaw = (rewardsData as any[]);
-        const rewards: EffectCard[] = rewardsRaw.map((r) => ({
-          type: 'reward' as const,
-          id: r.id,
-          text: `${r.title}: ${r.content}`,
-        }));
-        this.rewardDeck = shuffle([...rewards]);
-        this.rewardDrawn.clear();
+        this.decks.reward = shuffle(this.loadEffectCards(rewardsData as any[], 'reward'));
         break;
       case 'penalty':
-        const penaltiesRaw = (penaltiesData as any[]);
-        const penalties: EffectCard[] = penaltiesRaw.map((p) => ({
-          type: 'penalty' as const,
-          id: p.id,
-          text: `${p.title}: ${p.content}`,
-        }));
-        this.penaltyDeck = shuffle([...penalties]);
-        this.penaltyDrawn.clear();
+        this.decks.penalty = shuffle(this.loadEffectCards(penaltiesData as any[], 'penalty'));
         break;
     }
-  }
-
-  resetAll(): void {
-    this.resetDeck('question');
-    this.resetDeck('reward');
-    this.resetDeck('penalty');
   }
 
   drawCard(type: CardType): Card {
-    switch (type) {
-      case 'question':
-        return this.drawQuestion();
-      case 'reward':
-        return this.drawReward();
-      case 'penalty':
-        return this.drawPenalty();
-    }
+    return this.drawFromDeck(type);
+  }
+
+  resetAll(): void {
+    this.initializeDecks();
   }
 }

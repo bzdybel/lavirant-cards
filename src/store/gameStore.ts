@@ -4,8 +4,7 @@ import { Card, CardType } from '../types/Card';
 
 interface GameStore {
   currentCard: Card | null;
-  gameEngine: GameEngine;
-  drawCard: (type: CardType) => void;
+  drawCard: (type: CardType) => Card;
   resetGame: () => void;
 }
 
@@ -13,10 +12,10 @@ const gameEngine = new GameEngine();
 
 export const useGameStore = create<GameStore>((set) => ({
   currentCard: null,
-  gameEngine,
   drawCard: (type: CardType) => {
     const card = gameEngine.drawCard(type);
     set({ currentCard: card });
+    return card;
   },
   resetGame: () => {
     gameEngine.resetAll();
