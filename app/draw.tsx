@@ -15,9 +15,6 @@ export default function DrawScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
-        Wybierz typ karty
-      </Text>
       
       <ScrollView 
         contentContainerStyle={styles.cardsContainer}
