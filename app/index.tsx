@@ -27,6 +27,67 @@ const hexToRgba = (hex: string, alpha: number) => {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
+const FancyBackground = () => {
+  return (
+    <View pointerEvents="none" style={styles.fancyBackground}>
+      {/* Base blobs */}
+      <View
+        style={[
+          styles.blob,
+          styles.blobGold,
+          { backgroundColor: hexToRgba(uiColors.brandGold, 0.14) },
+        ]}
+      />
+      <View
+        style={[
+          styles.blob,
+          styles.blobBlue,
+          { backgroundColor: hexToRgba(uiColors.card.back, 0.22) },
+        ]}
+      />
+      <View
+        style={[
+          styles.blob,
+          styles.blobRose,
+          { backgroundColor: hexToRgba(uiColors.effectLabel.penalty, 0.09) },
+        ]}
+      />
+
+      {/* Glow (soft bloom) */}
+      <View
+        style={[
+          styles.glow,
+          styles.glowGold,
+          {
+            backgroundColor: hexToRgba(uiColors.brandGold, 0.06),
+            borderColor: hexToRgba(uiColors.brandGold, 0.18),
+            shadowColor: uiColors.brandGold,
+          },
+        ]}
+      />
+      <View
+        style={[
+          styles.glow,
+          styles.glowBlue,
+          {
+            backgroundColor: hexToRgba(uiColors.card.back, 0.07),
+            borderColor: hexToRgba(uiColors.card.back, 0.18),
+            shadowColor: uiColors.card.back,
+          },
+        ]}
+      />
+
+      {/* Subtle vignette to keep readability */}
+      <View
+        style={[
+          styles.vignette,
+          { backgroundColor: hexToRgba(uiColors.overlayBackground, 0.12) },
+        ]}
+      />
+    </View>
+  );
+};
+
 const CARD_TYPES: CardType[] = ['question', 'reward', 'penalty'];
 const HERO_IN_DURATION = 220;
 const HERO_OUT_DURATION = 180;
@@ -169,35 +230,7 @@ export default function HomeScreen() {
   if (!isReady) {
     return (
       <View style={styles.loadingContainer}>
-        <View pointerEvents="none" style={styles.fancyBackground}>
-          <View
-            style={[
-              styles.blob,
-              styles.blobGold,
-              { backgroundColor: hexToRgba(uiColors.brandGold, 0.14) },
-            ]}
-          />
-          <View
-            style={[
-              styles.blob,
-              styles.blobBlue,
-              { backgroundColor: hexToRgba(uiColors.card.back, 0.22) },
-            ]}
-          />
-          <View
-            style={[
-              styles.blob,
-              styles.blobRose,
-              { backgroundColor: hexToRgba(uiColors.effectLabel.penalty, 0.09) },
-            ]}
-          />
-          <View
-            style={[
-              styles.vignette,
-              { backgroundColor: hexToRgba(uiColors.overlayBackground, 0.12) },
-            ]}
-          />
-        </View>
+        <FancyBackground />
         <ActivityIndicator size="large" color={uiColors.brandGold} />
       </View>
     );
@@ -217,35 +250,7 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       {/* Fancy background (modern, keeps current palette) */}
-      <View pointerEvents="none" style={styles.fancyBackground}>
-        <View
-          style={[
-            styles.blob,
-            styles.blobGold,
-            { backgroundColor: hexToRgba(uiColors.brandGold, 0.14) },
-          ]}
-        />
-        <View
-          style={[
-            styles.blob,
-            styles.blobBlue,
-            { backgroundColor: hexToRgba(uiColors.card.back, 0.22) },
-          ]}
-        />
-        <View
-          style={[
-            styles.blob,
-            styles.blobRose,
-            { backgroundColor: hexToRgba(uiColors.effectLabel.penalty, 0.09) },
-          ]}
-        />
-        <View
-          style={[
-            styles.vignette,
-            { backgroundColor: hexToRgba(uiColors.overlayBackground, 0.12) },
-          ]}
-        />
-      </View>
+      <FancyBackground />
 
       {/* Background overlay */}
       <Animated.View 
@@ -401,6 +406,26 @@ const styles = StyleSheet.create({
     top: 160,
     right: -180,
     transform: [{ rotate: '8deg' }],
+  },
+  glow: {
+    position: 'absolute',
+    borderRadius: 9999,
+    borderWidth: 1,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.65,
+    shadowRadius: 40,
+  },
+  glowGold: {
+    width: 520,
+    height: 520,
+    top: -230,
+    left: -190,
+  },
+  glowBlue: {
+    width: 620,
+    height: 620,
+    bottom: -330,
+    right: -310,
   },
   vignette: {
     ...StyleSheet.absoluteFillObject,
