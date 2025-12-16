@@ -17,6 +17,7 @@ export interface QuestionCard {
 export interface EffectCard {
   type: 'reward' | 'penalty';
   id: string;
+  title: string;
   text: string;
 }
 

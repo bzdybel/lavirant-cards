@@ -23,35 +23,64 @@ const CardContainer: React.FC<{ children: React.ReactNode; isDark?: boolean }> =
 
 export const QuestionCardDisplay: React.FC<QuestionCardDisplayProps> = ({ card, revealCorrect }) => {
   const correctAnswer = card.answers.find(a => a.isCorrect);
+  const answersById = new Map(card.answers.map((a) => [a.id, a] as const));
+  const answerA = answersById.get('A');
+  const answerB = answersById.get('B');
+  const answerC = answersById.get('C');
+  const answerD = answersById.get('D');
   
   return (
     <CardContainer isDark={revealCorrect}>
-      {!revealCorrect ? (
-        <View style={styles.cardContent}>
-          <Text style={styles.categoryLabel}>{uiText.cards.question}</Text>
-          <View style={styles.questionContainer}>
-            <Text style={styles.questionText} numberOfLines={4} adjustsFontSizeToFit>
-              {card.question}
-            </Text>
-          </View>
-          <View style={styles.answersGrid}>
-            {card.answers.map((answer) => (
-              <Text key={answer.id} style={styles.answerOption} numberOfLines={2}>
-                {answer.id}. {answer.text}
+      <View style={styles.cardContent}>
+        <Text style={styles.categoryLabel}>{uiText.cards.question}</Text>
+
+        {!revealCorrect ? (
+          <>
+            <View style={styles.mainTextContainer}>
+              <Text style={styles.mainText} numberOfLines={4} adjustsFontSizeToFit>
+                {card.question}
               </Text>
-            ))}
-          </View>
-        </View>
-      ) : (
-        <View style={styles.cardContentCenter}>
-          <Text style={styles.correctLabel}>{uiText.question.correctLabel}</Text>
-          <View style={styles.correctAnswerContainer}>
-            <Text style={styles.correctAnswer} numberOfLines={4} adjustsFontSizeToFit>
-              {correctAnswer?.id}. {correctAnswer?.text}
-            </Text>
-          </View>
-        </View>
-      )}
+            </View>
+
+            <View style={styles.answersGrid}>
+              <View style={styles.answersRow}>
+                <View style={styles.answerCell}>
+                  <Text style={styles.answerOption} numberOfLines={2}>
+                    {answerA ? `A. ${answerA.text}` : ''}
+                  </Text>
+                </View>
+                <View style={styles.answerCell}>
+                  <Text style={styles.answerOption} numberOfLines={2}>
+                    {answerB ? `B. ${answerB.text}` : ''}
+                  </Text>
+                </View>
+              </View>
+
+              <View style={styles.answersRow}>
+                <View style={styles.answerCell}>
+                  <Text style={styles.answerOption} numberOfLines={2}>
+                    {answerC ? `C. ${answerC.text}` : ''}
+                  </Text>
+                </View>
+                <View style={styles.answerCell}>
+                  <Text style={styles.answerOption} numberOfLines={2}>
+                    {answerD ? `D. ${answerD.text}` : ''}
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </>
+        ) : (
+          <>
+            <Text style={styles.subLabel}>{uiText.question.correctLabel}</Text>
+            <View style={styles.mainTextContainer}>
+              <Text style={styles.mainText} numberOfLines={4} adjustsFontSizeToFit>
+                {correctAnswer?.id}. {correctAnswer?.text}
+              </Text>
+            </View>
+          </>
+        )}
+      </View>
     </CardContainer>
   );
 };
@@ -65,16 +94,11 @@ export const EffectCardDisplay: React.FC<EffectCardDisplayProps> = ({ card }) =>
   
   return (
     <CardContainer isDark>
-      <View style={styles.effectCardContent}>
-        <View style={styles.effectHeader}>
-          <Text style={styles.brandTitle}>{uiText.app.brand}</Text>
-          <Text style={[styles.effectLabel, isReward ? styles.rewardLabel : styles.penaltyLabel]}>
-            {isReward ? uiText.cards.reward : uiText.cards.penalty}
-          </Text>
-          <Text style={styles.effectIcon}>{isReward ? '🎉' : '⚠️'}</Text>
-        </View>
-        <View style={styles.effectTextContainer}>
-          <Text style={styles.effectText} numberOfLines={6} adjustsFontSizeToFit>
+      <View style={styles.cardContent}>
+        <Text style={styles.categoryLabel}>{card.title}</Text>
+
+        <View style={styles.mainTextContainer}>
+          <Text style={styles.mainText} numberOfLines={6} adjustsFontSizeToFit>
             {card.text}
           </Text>
         </View>
@@ -110,102 +134,64 @@ const styles = StyleSheet.create({
   },
   cardContent: {
     flex: 1,
-    padding: 32,
+    padding: 28,
     justifyContent: 'space-between',
-  },
-  cardContentCenter: {
-    flex: 1,
-    padding: 32,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   categoryLabel: {
-    fontSize: 12,
+    fontSize: 20,
     color: uiColors.brandGold,
     letterSpacing: 4,
-    fontWeight: '400',
-  },
-  questionContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    paddingVertical: 10,
-  },
-  questionText: {
-    fontSize: 18,
-    fontWeight: '300',
-    color: uiColors.text.onDark,
+    fontWeight: '700',
     textAlign: 'center',
-    lineHeight: 26,
   },
-  answersGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 10,
-  },
-  answerOption: {
-    fontSize: 14,
-    color: uiColors.text.onDark,
-    width: '48%',
-    fontWeight: '400',
-    lineHeight: 20,
-  },
-  brandTitle: {
-    fontSize: 28,
-    fontWeight: '600',
-    color: uiColors.text.onDark,
-    marginBottom: 12,
-  },
-  correctLabel: {
+  subLabel: {
     fontSize: 16,
     color: uiColors.brandGold,
-    marginBottom: 8,
-  },
-  correctAnswerContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    maxWidth: '90%',
-  },
-  correctAnswer: {
-    fontSize: 20,
-    color: uiColors.text.onDark,
-    marginTop: 8,
-    fontWeight: '500',
+    fontWeight: '700',
     textAlign: 'center',
   },
-  effectCardContent: {
-    flex: 1,
-    padding: 24,
-    justifyContent: 'space-between',
-  },
-  effectHeader: {
-    alignItems: 'center',
-  },
-  effectTextContainer: {
+  mainTextContainer: {
     flex: 1,
     justifyContent: 'center',
     paddingVertical: 10,
   },
-  effectLabel: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    letterSpacing: 3,
-    marginBottom: 8,
-  },
-  rewardLabel: {
-    color: uiColors.effectLabel.reward,
-  },
-  penaltyLabel: {
-    color: uiColors.effectLabel.penalty,
-  },
-  effectIcon: {
-    fontSize: 40,
-    marginVertical: 8,
-  },
-  effectText: {
-    fontSize: 16,
+  mainText: {
+    fontSize: 20,
+    fontWeight: '600',
     color: uiColors.text.onDark,
     textAlign: 'center',
-    lineHeight: 24,
-    fontWeight: '400',
+    lineHeight: 28,
+  },
+  answersGrid: {
+    gap: 10,
+  },
+  answersRow: {
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'stretch',
+  },
+  answerCell: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
+  answerOption: {
+    fontSize: 15,
+    color: uiColors.text.onDark,
+    fontWeight: '600',
+    lineHeight: 21,
+    textAlign: 'left',
+  },
+  typeBadge: {
+    fontSize: 14,
+    fontWeight: '800',
+    letterSpacing: 3,
+    textAlign: 'center',
+  },
+  rewardBadge: {
+    color: uiColors.effectLabel.reward,
+  },
+  penaltyBadge: {
+    color: uiColors.effectLabel.penalty,
   },
 });

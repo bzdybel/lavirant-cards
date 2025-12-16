@@ -4,9 +4,9 @@
     "brand": "LA'VIRANT"
   },
   "cards": {
-    "question": "PYTANIE",
-    "reward": "NAGRODA",
-    "penalty": "KARA",
+    "question": "KARTA PYTANIA",
+    "reward": "KARTA NAGRODY",
+    "penalty": "KARTA KARY",
     "tap": "TAP"
   },
   "question": {

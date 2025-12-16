@@ -26,7 +26,8 @@ export function createGameEngine(): GameEngine {
     return rawData.map((item) => ({
       type,
       id: item.id,
-      text: `${item.title}: ${item.content}`,
+      title: item.title,
+      text: item.content,
     }));
   };
 
