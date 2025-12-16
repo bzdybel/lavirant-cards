@@ -1,44 +1,95 @@
+import { GameCard } from '@/src/components/GameCard';
 import { useGameStore } from '@/src/store/gameStore';
 import { useRouter } from 'expo-router';
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function DrawScreen() {
   const router = useRouter();
   const drawCard = useGameStore((state) => state.drawCard);
 
-  const handleDrawQuestion = () => {
-    drawCard('question');
-    router.push('/card');
-  };
-
-  const handleDrawReward = () => {
-    drawCard('reward');
-    router.push('/card');
-  };
-
-  const handleDrawPenalty = () => {
-    drawCard('penalty');
+  const handleDrawCard = (type: 'question' | 'reward' | 'penalty') => {
+    drawCard(type);
     router.push('/card');
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, backgroundColor: '#f5f5f5' }}>
-      <Text style={{ fontSize: 32, marginBottom: 40, fontWeight: 'bold', color: '#333' }}>
-        Draw a Card
+    <View style={styles.container}>
+      <Text style={styles.title}>
+        Wybierz typ karty
       </Text>
-      <View style={{ width: '100%', marginBottom: 15 }}>
-        <Button title="📚 Question" onPress={handleDrawQuestion} color="#2196F3" />
-      </View>
-      <View style={{ width: '100%', marginBottom: 15 }}>
-        <Button title="🎉 Reward" onPress={handleDrawReward} color="#4CAF50" />
-      </View>
-      <View style={{ width: '100%', marginBottom: 30 }}>
-        <Button title="⚠️ Penalty" onPress={handleDrawPenalty} color="#f44336" />
-      </View>
-      <View style={{ width: '100%' }}>
-        <Button title="Back to Home" onPress={() => router.push('/')} color="#666" />
-      </View>
+      
+      <ScrollView 
+        contentContainerStyle={styles.cardsContainer}
+        showsVerticalScrollIndicator={false}
+      >
+        <View style={styles.cardItem}>
+          <GameCard 
+            cardType="question" 
+            onPress={() => handleDrawCard('question')} 
+          />
+        </View>
+
+        <View style={styles.cardItem}>
+          <GameCard 
+            cardType="reward" 
+            onPress={() => handleDrawCard('reward')} 
+          />
+        </View>
+
+        <View style={styles.cardItem}>
+          <GameCard 
+            cardType="penalty" 
+            onPress={() => handleDrawCard('penalty')} 
+          />
+        </View>
+      </ScrollView>
+
+      <TouchableOpacity 
+        style={styles.backButton}
+        onPress={() => router.push('/')}
+      >
+        <Text style={styles.backButtonText}>Back to Home</Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#1a1a2e',
+    paddingTop: 60,
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 30,
+    fontWeight: '600',
+    color: '#fff',
+    textAlign: 'center',
+  },
+  cardsContainer: {
+    alignItems: 'center',
+    paddingVertical: 20,
+    gap: 30,
+  },
+  cardItem: {
+    marginBottom: 20,
+  },
+  backButton: {
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: 25,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+    marginVertical: 20,
+    alignSelf: 'center',
+  },
+  backButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '500',
+  },
+});

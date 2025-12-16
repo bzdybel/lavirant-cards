@@ -5,7 +5,7 @@ import { EffectCard, QuestionCard } from '../types/Card';
 
 export function CardScreen({ navigation }: any) {
   const currentCard = useGameStore((state) => state.currentCard);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [revealCorrect, setRevealCorrect] = useState<boolean>(false);
 
   if (!currentCard) {
     return (
@@ -19,11 +19,7 @@ export function CardScreen({ navigation }: any) {
   const questionCard = currentCard as QuestionCard;
   const effectCard = currentCard as EffectCard;
 
-  const handleAnswerSelect = (answerId: string) => {
-    if (!selectedAnswer) {
-      setSelectedAnswer(answerId);
-    }
-  };
+  const handleReveal = () => setRevealCorrect(true);
 
   return (
     <ScrollView style={{ flex: 1, padding: 20, backgroundColor: '#f5f5f5' }}>
@@ -38,21 +34,13 @@ export function CardScreen({ navigation }: any) {
             </Text>
 
             <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 15, color: '#333' }}>
-              Select an answer:
+              Answers
             </Text>
             {questionCard.answers.map((answer) => {
-              const isSelected = selectedAnswer === answer.id;
               const isCorrect = answer.isCorrect;
-              let borderColor = '#ccc';
-              let backgroundColor = '#fff';
-
-              if (isSelected && isCorrect) {
-                borderColor = '#4CAF50';
-                backgroundColor = '#f1f8f4';
-              } else if (isSelected && !isCorrect) {
-                borderColor = '#f44336';
-                backgroundColor = '#fef5f4';
-              }
+              const isHighlighted = revealCorrect && isCorrect;
+              const borderColor = isHighlighted ? '#4CAF50' : '#ccc';
+              const backgroundColor = isHighlighted ? '#f1f8f4' : '#fff';
 
               return (
                 <View
@@ -60,7 +48,7 @@ export function CardScreen({ navigation }: any) {
                   style={{
                     marginBottom: 12,
                     padding: 0,
-                    borderWidth: isSelected ? 3 : 2,
+                    borderWidth: isHighlighted ? 3 : 2,
                     borderColor,
                     borderRadius: 8,
                     backgroundColor,
@@ -78,38 +66,36 @@ export function CardScreen({ navigation }: any) {
                     >
                       {answer.id}. {answer.text}
                     </Text>
-                    {isSelected && (
+                    {isHighlighted && (
                       <Text
                         style={{
                           fontSize: 12,
-                          color: isCorrect ? '#4CAF50' : '#f44336',
+                          color: '#4CAF50',
                           fontWeight: 'bold',
                         }}
                       >
-                        {isCorrect ? '✓ Correct!' : '✗ Incorrect'}
+                        ✓ Correct
                       </Text>
                     )}
                   </View>
-                  {!isSelected && (
-                    <Button
-                      title="Select"
-                      onPress={() => handleAnswerSelect(answer.id)}
-                      color="#2196F3"
-                    />
-                  )}
-                  {isSelected && (
-                    <Button
-                      title="Next Question"
-                      onPress={() => {
-                        setSelectedAnswer(null);
-                        navigation.navigate('Draw');
-                      }}
-                      color={isCorrect ? '#4CAF50' : '#f44336'}
-                    />
-                  )}
                 </View>
               );
             })}
+
+            <View style={{ marginTop: 10 }}>
+              {!revealCorrect ? (
+                <Button title="Show Correct Answer" onPress={handleReveal} color="#2196F3" />
+              ) : (
+                <Button
+                  title="Next Question"
+                  onPress={() => {
+                    setRevealCorrect(false);
+                    navigation.navigate('Draw');
+                  }}
+                  color="#4CAF50"
+                />
+              )}
+            </View>
           </>
         ) : (
           <>

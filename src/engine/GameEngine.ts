@@ -1,6 +1,7 @@
-import questionsData from '../assets/cards/questions.json';
 import penaltiesData from '../assets/cards/pentalties.json';
-import { Card, CardType, QuestionCard, EffectCard } from '../types/Card';
+import questionsData from '../assets/cards/questions.json';
+import rewardsData from '../assets/cards/rewards.json';
+import { Card, CardType, EffectCard, QuestionCard } from '../types/Card';
 import { shuffle } from '../utils/shuffle';
 
 export class GameEngine {
@@ -28,8 +29,13 @@ export class GameEngine {
       text: `${p.title}: ${p.content}`,
     }));
 
-    // For now, rewards are empty (can be added similarly if needed)
-    const rewards: EffectCard[] = [];
+    // Load rewards and convert to EffectCard format
+    const rewardsRaw = (rewardsData as any[]);
+    const rewards: EffectCard[] = rewardsRaw.map((r) => ({
+      type: 'reward' as const,
+      id: r.id,
+      text: `${r.title}: ${r.content}`,
+    }));
 
     this.questionDeck = shuffle([...questions]);
     this.rewardDeck = shuffle([...rewards]);
@@ -89,7 +95,12 @@ export class GameEngine {
         this.questionDrawn.clear();
         break;
       case 'reward':
-        const rewards: EffectCard[] = [];
+        const rewardsRaw = (rewardsData as any[]);
+        const rewards: EffectCard[] = rewardsRaw.map((r) => ({
+          type: 'reward' as const,
+          id: r.id,
+          text: `${r.title}: ${r.content}`,
+        }));
         this.rewardDeck = shuffle([...rewards]);
         this.rewardDrawn.clear();
         break;
