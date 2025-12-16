@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { GameEngine } from '../engine/GameEngine';
+import { createGameEngine } from '../engine/GameEngine';
 import { Card, CardType } from '../types/Card';
 
 interface GameStore {
@@ -8,7 +8,7 @@ interface GameStore {
   resetGame: () => void;
 }
 
-const gameEngine = new GameEngine();
+const gameEngine = createGameEngine();
 
 export const useGameStore = create<GameStore>((set) => ({
   currentCard: null,

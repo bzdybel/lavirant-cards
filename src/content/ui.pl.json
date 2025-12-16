@@ -1,0 +1,19 @@
+{
+  "app": {
+    "title": "LA'VIRANT Cards",
+    "brand": "LA'VIRANT"
+  },
+  "cards": {
+    "question": "PYTANIE",
+    "reward": "NAGRODA",
+    "penalty": "KARA",
+    "tap": "TAP"
+  },
+  "question": {
+    "correctLabel": "Poprawna odpowiedź"
+  },
+  "buttons": {
+    "revealAnswer": "Pokaż odpowiedź",
+    "back": "Powrót"
+  }
+}

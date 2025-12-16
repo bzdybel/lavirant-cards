@@ -1,12 +1,38 @@
 import { EffectCardDisplay, QuestionCardDisplay } from '@/src/components/CardDisplay';
 import { GameCard } from '@/src/components/GameCard';
+import { uiText } from '@/src/content/ui';
 import { useGameStore } from '@/src/store/gameStore';
+import { uiColors } from '@/src/theme/ui';
 import { CardType } from '@/src/types/Card';
 import React, { useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, Animated, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Animated,
+  Easing,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+
+const hexToRgba = (hex: string, alpha: number) => {
+  const normalized = hex.replace('#', '');
+  const full = normalized.length === 3
+    ? normalized.split('').map((c) => c + c).join('')
+    : normalized;
+  const r = parseInt(full.slice(0, 2), 16);
+  const g = parseInt(full.slice(2, 4), 16);
+  const b = parseInt(full.slice(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
 
 const CARD_TYPES: CardType[] = ['question', 'reward', 'penalty'];
-const ANIMATION_DURATION = 300;
+const HERO_IN_DURATION = 220;
+const HERO_OUT_DURATION = 180;
+const FLIP_DURATION = 420;
+const EASE_OUT = Easing.out(Easing.cubic);
+const EASE_IN_OUT = Easing.inOut(Easing.cubic);
 
 export default function HomeScreen() {
   const { drawCard, currentCard } = useGameStore();
@@ -32,7 +58,8 @@ export default function HomeScreen() {
   const animateFlip = (toValue: number, onComplete?: () => void) => {
     Animated.timing(flipAnim, {
       toValue,
-      duration: ANIMATION_DURATION * 2,
+      duration: FLIP_DURATION,
+      easing: EASE_IN_OUT,
       useNativeDriver: true,
     }).start(onComplete);
   };
@@ -47,45 +74,39 @@ export default function HomeScreen() {
     
     // Hero animation: expand card to fullscreen with smooth transitions
     Animated.parallel([
-      // Expand from list position to center
-      Animated.spring(expandAnim, {
+      Animated.timing(expandAnim, {
         toValue: 1,
-        tension: 50,
-        friction: 7,
+        duration: HERO_IN_DURATION,
+        easing: EASE_OUT,
         useNativeDriver: true,
       }),
-      // Scale up slightly
-      Animated.spring(cardScale, {
-        toValue: 1.15,
-        tension: 50,
-        friction: 7,
+      Animated.timing(cardScale, {
+        toValue: 1.12,
+        duration: HERO_IN_DURATION,
+        easing: EASE_OUT,
         useNativeDriver: true,
       }),
-      // Move to center vertically
-      Animated.spring(cardTranslateY, {
-        toValue: -50,
-        tension: 50,
-        friction: 7,
+      Animated.timing(cardTranslateY, {
+        toValue: -48,
+        duration: HERO_IN_DURATION,
+        easing: EASE_OUT,
         useNativeDriver: true,
       }),
-      // Fade in overlay background
       Animated.timing(overlayOpacity, {
         toValue: 1,
-        duration: ANIMATION_DURATION,
+        duration: HERO_IN_DURATION,
+        easing: EASE_OUT,
         useNativeDriver: true,
       }),
-      // Blur background cards
       Animated.timing(backgroundBlur, {
         toValue: 1,
-        duration: ANIMATION_DURATION,
+        duration: HERO_IN_DURATION,
+        easing: EASE_OUT,
         useNativeDriver: true,
       }),
-    ]).start();
-
-    // Trigger flip after expansion
-    setTimeout(() => {
+    ]).start(() => {
       animateFlip(1, () => setIsFlipped(true));
-    }, ANIMATION_DURATION + 100);
+    });
   };
 
   const handleReset = () => {
@@ -95,32 +116,34 @@ export default function HomeScreen() {
     animateFlip(0, () => {
       // Reverse hero animation
       Animated.parallel([
-        Animated.spring(expandAnim, {
+        Animated.timing(expandAnim, {
           toValue: 0,
-          tension: 50,
-          friction: 7,
+          duration: HERO_OUT_DURATION,
+          easing: EASE_IN_OUT,
           useNativeDriver: true,
         }),
-        Animated.spring(cardScale, {
+        Animated.timing(cardScale, {
           toValue: 1,
-          tension: 50,
-          friction: 7,
+          duration: HERO_OUT_DURATION,
+          easing: EASE_IN_OUT,
           useNativeDriver: true,
         }),
-        Animated.spring(cardTranslateY, {
+        Animated.timing(cardTranslateY, {
           toValue: 0,
-          tension: 50,
-          friction: 7,
+          duration: HERO_OUT_DURATION,
+          easing: EASE_IN_OUT,
           useNativeDriver: true,
         }),
         Animated.timing(overlayOpacity, {
           toValue: 0,
-          duration: ANIMATION_DURATION,
+          duration: HERO_OUT_DURATION,
+          easing: EASE_IN_OUT,
           useNativeDriver: true,
         }),
         Animated.timing(backgroundBlur, {
           toValue: 0,
-          duration: ANIMATION_DURATION,
+          duration: HERO_OUT_DURATION,
+          easing: EASE_IN_OUT,
           useNativeDriver: true,
         }),
       ]).start(() => {
@@ -146,7 +169,36 @@ export default function HomeScreen() {
   if (!isReady) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#c9a24d" />
+        <View pointerEvents="none" style={styles.fancyBackground}>
+          <View
+            style={[
+              styles.blob,
+              styles.blobGold,
+              { backgroundColor: hexToRgba(uiColors.brandGold, 0.14) },
+            ]}
+          />
+          <View
+            style={[
+              styles.blob,
+              styles.blobBlue,
+              { backgroundColor: hexToRgba(uiColors.card.back, 0.22) },
+            ]}
+          />
+          <View
+            style={[
+              styles.blob,
+              styles.blobRose,
+              { backgroundColor: hexToRgba(uiColors.effectLabel.penalty, 0.09) },
+            ]}
+          />
+          <View
+            style={[
+              styles.vignette,
+              { backgroundColor: hexToRgba(uiColors.overlayBackground, 0.12) },
+            ]}
+          />
+        </View>
+        <ActivityIndicator size="large" color={uiColors.brandGold} />
       </View>
     );
   }
@@ -164,8 +216,40 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Fancy background (modern, keeps current palette) */}
+      <View pointerEvents="none" style={styles.fancyBackground}>
+        <View
+          style={[
+            styles.blob,
+            styles.blobGold,
+            { backgroundColor: hexToRgba(uiColors.brandGold, 0.14) },
+          ]}
+        />
+        <View
+          style={[
+            styles.blob,
+            styles.blobBlue,
+            { backgroundColor: hexToRgba(uiColors.card.back, 0.22) },
+          ]}
+        />
+        <View
+          style={[
+            styles.blob,
+            styles.blobRose,
+            { backgroundColor: hexToRgba(uiColors.effectLabel.penalty, 0.09) },
+          ]}
+        />
+        <View
+          style={[
+            styles.vignette,
+            { backgroundColor: hexToRgba(uiColors.overlayBackground, 0.12) },
+          ]}
+        />
+      </View>
+
       {/* Background overlay */}
       <Animated.View 
+        pointerEvents={currentCard ? 'auto' : 'none'}
         style={[
           styles.backgroundOverlay,
           {
@@ -173,18 +257,19 @@ export default function HomeScreen() {
               inputRange: [0, 1],
               outputRange: [0, 0.85],
             }),
-            pointerEvents: currentCard ? 'auto' : 'none',
-          }
+          },
         ]}
       />
 
       {/* Cards list with blur effect */}
       <Animated.View
-        style={{
-          flex: 1,
-          opacity: backgroundCardOpacity,
-          transform: [{ scale: backgroundCardScale }],
-        }}
+        style={[
+          styles.listLayer,
+          {
+            opacity: backgroundCardOpacity,
+            transform: [{ scale: backgroundCardScale }],
+          },
+        ]}
       >
         <ScrollView
           style={styles.cardsScroll}
@@ -232,7 +317,7 @@ export default function HomeScreen() {
                 styles.flipCard, 
                 { 
                   opacity: frontOpacity, 
-                  transform: [{ rotateY: frontTransform }],
+                  transform: [{ perspective: 1000 }, { rotateY: frontTransform }],
                 }
               ]}
             >
@@ -245,7 +330,7 @@ export default function HomeScreen() {
                 styles.flipCardBack, 
                 { 
                   opacity: backOpacity, 
-                  transform: [{ rotateY: backTransform }],
+                  transform: [{ perspective: 1000 }, { rotateY: backTransform }],
                 }
               ]}
             >
@@ -260,12 +345,12 @@ export default function HomeScreen() {
           <View style={styles.buttonsContainer}>
             {showRevealButton && (
               <TouchableOpacity style={styles.button} onPress={() => setRevealCorrect(true)}>
-                <Text style={styles.buttonText}>Pokaż odpowiedź</Text>
+                <Text style={styles.buttonText}>{uiText.buttons.revealAnswer}</Text>
               </TouchableOpacity>
             )}
             {isFlipped && (
               <TouchableOpacity style={[styles.button, styles.resetButton]} onPress={handleReset}>
-                <Text style={styles.buttonText}>Powrót</Text>
+                <Text style={styles.buttonText}>{uiText.buttons.back}</Text>
               </TouchableOpacity>
             )}
           </View>
@@ -278,15 +363,51 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a1a2e',
+    backgroundColor: uiColors.screenBackground,
     paddingTop: 60,
     paddingHorizontal: 20,
   },
   loadingContainer: {
     flex: 1,
-    backgroundColor: '#1a1a2e',
+    backgroundColor: uiColors.screenBackground,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  fancyBackground: {
+    ...StyleSheet.absoluteFillObject,
+    overflow: 'hidden',
+  },
+  blob: {
+    position: 'absolute',
+    borderRadius: 9999,
+  },
+  blobGold: {
+    width: 420,
+    height: 420,
+    top: -170,
+    left: -120,
+    transform: [{ rotate: '18deg' }],
+  },
+  blobBlue: {
+    width: 520,
+    height: 520,
+    bottom: -260,
+    right: -220,
+    transform: [{ rotate: '-12deg' }],
+  },
+  blobRose: {
+    width: 360,
+    height: 360,
+    top: 160,
+    right: -180,
+    transform: [{ rotate: '8deg' }],
+  },
+  vignette: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  listLayer: {
+    flex: 1,
+    zIndex: 10,
   },
   cardsContainer: {
     alignItems: 'center',
@@ -306,7 +427,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: '#000000',
+    backgroundColor: uiColors.overlayBackground,
     zIndex: 100,
   },
   heroCardContainer: {
@@ -339,17 +460,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   button: {
-    backgroundColor: '#c9a24d',
+    backgroundColor: uiColors.button.primary,
     paddingVertical: 15,
     paddingHorizontal: 40,
     borderRadius: 12,
     minWidth: 200,
   },
   resetButton: {
-    backgroundColor: '#2d4a5e',
+    backgroundColor: uiColors.button.secondary,
   },
   buttonText: {
-    color: '#ffffff',
+    color: uiColors.text.onDark,
     fontSize: 16,
     fontWeight: '600',
     textAlign: 'center',

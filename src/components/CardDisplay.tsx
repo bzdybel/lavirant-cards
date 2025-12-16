@@ -1,3 +1,5 @@
+import { uiText } from '@/src/content/ui';
+import { uiColors } from '@/src/theme/ui';
 import { EffectCard, QuestionCard } from '@/src/types/Card';
 import React from 'react';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
@@ -5,15 +7,6 @@ import { Dimensions, StyleSheet, Text, View } from 'react-native';
 const { width } = Dimensions.get('window');
 const CARD_WIDTH = Math.min(width * 0.9, 420);
 const CARD_HEIGHT = CARD_WIDTH * 0.62;
-
-const COLORS = {
-  gold: '#c9a24d',
-  white: '#ffffff',
-  darkBlue: '#0f2433',
-  mediumBlue: '#132b3d',
-  green: '#4CAF50',
-  red: '#f44336',
-};
 
 interface QuestionCardDisplayProps {
   card: QuestionCard;
@@ -35,7 +28,7 @@ export const QuestionCardDisplay: React.FC<QuestionCardDisplayProps> = ({ card, 
     <CardContainer isDark={revealCorrect}>
       {!revealCorrect ? (
         <View style={styles.cardContent}>
-          <Text style={styles.categoryLabel}>PYTANIE</Text>
+          <Text style={styles.categoryLabel}>{uiText.cards.question}</Text>
           <View style={styles.questionContainer}>
             <Text style={styles.questionText} numberOfLines={4} adjustsFontSizeToFit>
               {card.question}
@@ -51,7 +44,7 @@ export const QuestionCardDisplay: React.FC<QuestionCardDisplayProps> = ({ card, 
         </View>
       ) : (
         <View style={styles.cardContentCenter}>
-          <Text style={styles.correctLabel}>Poprawna odpowiedź</Text>
+          <Text style={styles.correctLabel}>{uiText.question.correctLabel}</Text>
           <View style={styles.correctAnswerContainer}>
             <Text style={styles.correctAnswer} numberOfLines={4} adjustsFontSizeToFit>
               {correctAnswer?.id}. {correctAnswer?.text}
@@ -74,9 +67,9 @@ export const EffectCardDisplay: React.FC<EffectCardDisplayProps> = ({ card }) =>
     <CardContainer isDark>
       <View style={styles.effectCardContent}>
         <View style={styles.effectHeader}>
-          <Text style={styles.brandTitle}>LA'VIRANT</Text>
+          <Text style={styles.brandTitle}>{uiText.app.brand}</Text>
           <Text style={[styles.effectLabel, isReward ? styles.rewardLabel : styles.penaltyLabel]}>
-            {isReward ? 'NAGRODA' : 'KARA'}
+            {isReward ? uiText.cards.reward : uiText.cards.penalty}
           </Text>
           <Text style={styles.effectIcon}>{isReward ? '🎉' : '⚠️'}</Text>
         </View>
@@ -102,18 +95,18 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: COLORS.gold,
-    shadowColor: '#000',
+    borderColor: uiColors.card.border,
+    shadowColor: uiColors.card.shadow,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.5,
     shadowRadius: 20,
     elevation: 15,
   },
   cardFront: {
-    backgroundColor: COLORS.darkBlue,
+    backgroundColor: uiColors.card.front,
   },
   cardBack: {
-    backgroundColor: COLORS.mediumBlue,
+    backgroundColor: uiColors.card.back,
   },
   cardContent: {
     flex: 1,
@@ -128,7 +121,7 @@ const styles = StyleSheet.create({
   },
   categoryLabel: {
     fontSize: 12,
-    color: COLORS.gold,
+    color: uiColors.brandGold,
     letterSpacing: 4,
     fontWeight: '400',
   },
@@ -140,7 +133,7 @@ const styles = StyleSheet.create({
   questionText: {
     fontSize: 18,
     fontWeight: '300',
-    color: COLORS.white,
+    color: uiColors.text.onDark,
     textAlign: 'center',
     lineHeight: 26,
   },
@@ -151,7 +144,7 @@ const styles = StyleSheet.create({
   },
   answerOption: {
     fontSize: 14,
-    color: COLORS.white,
+    color: uiColors.text.onDark,
     width: '48%',
     fontWeight: '400',
     lineHeight: 20,
@@ -159,12 +152,12 @@ const styles = StyleSheet.create({
   brandTitle: {
     fontSize: 28,
     fontWeight: '600',
-    color: COLORS.white,
+    color: uiColors.text.onDark,
     marginBottom: 12,
   },
   correctLabel: {
     fontSize: 16,
-    color: COLORS.gold,
+    color: uiColors.brandGold,
     marginBottom: 8,
   },
   correctAnswerContainer: {
@@ -174,7 +167,7 @@ const styles = StyleSheet.create({
   },
   correctAnswer: {
     fontSize: 20,
-    color: COLORS.white,
+    color: uiColors.text.onDark,
     marginTop: 8,
     fontWeight: '500',
     textAlign: 'center',
@@ -199,10 +192,10 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   rewardLabel: {
-    color: COLORS.green,
+    color: uiColors.effectLabel.reward,
   },
   penaltyLabel: {
-    color: COLORS.red,
+    color: uiColors.effectLabel.penalty,
   },
   effectIcon: {
     fontSize: 40,
@@ -210,7 +203,7 @@ const styles = StyleSheet.create({
   },
   effectText: {
     fontSize: 16,
-    color: COLORS.white,
+    color: uiColors.text.onDark,
     textAlign: 'center',
     lineHeight: 24,
     fontWeight: '400',
