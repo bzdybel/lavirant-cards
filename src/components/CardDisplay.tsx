@@ -21,10 +21,14 @@ export const QuestionCardDisplay: React.FC<QuestionCardDisplayProps> = ({ card, 
         <View style={[styles.card, styles.cardFront]}>
           <View style={styles.cardContent}>
             <Text style={styles.categoryLabel}>PYTANIE</Text>
-            <Text style={styles.questionText}>{card.question}</Text>
+            <View style={styles.questionContainer}>
+              <Text style={styles.questionText} numberOfLines={4} adjustsFontSizeToFit>
+                {card.question}
+              </Text>
+            </View>
             <View style={styles.answersGrid}>
               {card.answers.map((answer) => (
-                <Text key={answer.id} style={styles.answerOption}>
+                <Text key={answer.id} style={styles.answerOption} numberOfLines={2}>
                   {answer.id}. {answer.text}
                 </Text>
               ))}
@@ -36,9 +40,11 @@ export const QuestionCardDisplay: React.FC<QuestionCardDisplayProps> = ({ card, 
         <View style={[styles.card, styles.cardBack]}>
           <View style={styles.cardContentCenter}>
              <Text style={styles.correctLabel}>Poprawna odpowiedź</Text>
-            <Text style={styles.correctAnswer}>
-              {correctAnswer?.id}. {correctAnswer?.text}
-            </Text>
+            <View style={styles.correctAnswerContainer}>
+              <Text style={styles.correctAnswer} numberOfLines={4} adjustsFontSizeToFit>
+                {correctAnswer?.id}. {correctAnswer?.text}
+              </Text>
+            </View>
           </View>
         </View>
       )}
@@ -56,13 +62,19 @@ export const EffectCardDisplay: React.FC<EffectCardDisplayProps> = ({ card }) =>
   return (
     <View style={styles.container}>
       <View style={[styles.card, styles.cardBack]}>
-        <View style={styles.cardContentCenter}>
-          <Text style={styles.brandTitle}>LA'VIRANT</Text>
-          <Text style={[styles.effectLabel, isReward ? styles.rewardLabel : styles.penaltyLabel]}>
-            {isReward ? 'NAGRODA' : 'KARA'}
-          </Text>
-          <Text style={styles.effectIcon}>{isReward ? '🎉' : '⚠️'}</Text>
-          <Text style={styles.effectText}>{card.text}</Text>
+        <View style={styles.effectCardContent}>
+          <View style={styles.effectHeader}>
+            <Text style={styles.brandTitle}>LA'VIRANT</Text>
+            <Text style={[styles.effectLabel, isReward ? styles.rewardLabel : styles.penaltyLabel]}>
+              {isReward ? 'NAGRODA' : 'KARA'}
+            </Text>
+            <Text style={styles.effectIcon}>{isReward ? '🎉' : '⚠️'}</Text>
+          </View>
+          <View style={styles.effectTextContainer}>
+            <Text style={styles.effectText} numberOfLines={6} adjustsFontSizeToFit>
+              {card.text}
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -114,47 +126,71 @@ const styles = StyleSheet.create({
     letterSpacing: 4,
     fontWeight: '400',
   },
+  questionContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingVertical: 10,
+  },
   questionText: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '300',
     color: '#ffffff',
     textAlign: 'center',
-    lineHeight: 30,
-    marginVertical: 20,
+    lineHeight: 26,
   },
   answersGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 12,
+    gap: 10,
   },
   answerOption: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#ffffff',
     width: '48%',
     fontWeight: '400',
+    lineHeight: 20,
   },
   brandTitle: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: '600',
     color: '#ffffff',
-    marginBottom: 16,
+    marginBottom: 12,
   },
   correctLabel: {
-    fontSize: 18,
+    fontSize: 16,
     color: '#c9a24d',
     marginBottom: 8,
   },
+  correctAnswerContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    maxWidth: '90%',
+  },
   correctAnswer: {
-    fontSize: 24,
+    fontSize: 20,
     color: '#ffffff',
     marginTop: 8,
     fontWeight: '500',
+    textAlign: 'center',
+  },
+  effectCardContent: {
+    flex: 1,
+    padding: 24,
+    justifyContent: 'space-between',
+  },
+  effectHeader: {
+    alignItems: 'center',
+  },
+  effectTextContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingVertical: 10,
   },
   effectLabel: {
     fontSize: 18,
     fontWeight: 'bold',
     letterSpacing: 3,
-    marginBottom: 16,
+    marginBottom: 8,
   },
   rewardLabel: {
     color: '#4CAF50',
@@ -163,15 +199,14 @@ const styles = StyleSheet.create({
     color: '#f44336',
   },
   effectIcon: {
-    fontSize: 48,
-    marginVertical: 16,
+    fontSize: 40,
+    marginVertical: 8,
   },
   effectText: {
-    fontSize: 18,
+    fontSize: 16,
     color: '#ffffff',
     textAlign: 'center',
-    lineHeight: 28,
+    lineHeight: 24,
     fontWeight: '400',
-    marginTop: 16,
   },
 });

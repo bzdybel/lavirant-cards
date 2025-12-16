@@ -7,7 +7,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Brazylia",
         "isCorrect": true
       },
       {
@@ -78,7 +78,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Brisbane",
         "isCorrect": false
       }
     ]
@@ -91,7 +91,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Albert Einstein",
         "isCorrect": true
       },
       {
@@ -124,7 +124,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "David Bowie",
         "isCorrect": false
       },
       {
@@ -134,7 +134,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Bono",
         "isCorrect": false
       }
     ]
@@ -175,7 +175,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Azja",
         "isCorrect": true
       },
       {
@@ -185,12 +185,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Afryka",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Ameryka Północna",
         "isCorrect": false
       }
     ]
@@ -208,7 +208,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Aleksandria",
         "isCorrect": false
       },
       {
@@ -218,7 +218,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Giza",
         "isCorrect": false
       }
     ]
@@ -236,7 +236,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Antoine de Saint-Exupéry",
         "isCorrect": true
       },
       {
@@ -259,12 +259,12 @@
     "answers": [
       {
         "id": "A",
-        "text": "Mont",
+        "text": "Mont blanc",
         "isCorrect": true
       },
       {
         "id": "B",
-        "text": "Elbrus",
+        "text": "Moldoveanu",
         "isCorrect": false
       },
       {
@@ -274,7 +274,7 @@
       },
       {
         "id": "D",
-        "text": "Mont",
+        "text": "Dufourspitze",
         "isCorrect": false
       }
     ]
@@ -287,7 +287,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Albert Einstein",
         "isCorrect": false
       },
       {
@@ -302,7 +302,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Charles Darwin",
         "isCorrect": true
       }
     ]
@@ -399,7 +399,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Beyoncé",
         "isCorrect": false
       },
       {
@@ -409,7 +409,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Adele",
         "isCorrect": false
       },
       {
@@ -470,7 +470,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Bolesław Prus",
         "isCorrect": true
       }
     ]
@@ -544,7 +544,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Różowego",
         "isCorrect": false
       },
       {
@@ -801,7 +801,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "USA",
         "isCorrect": false
       },
       {
@@ -834,7 +834,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Ewa Wachowicz",
         "isCorrect": false
       }
     ]
@@ -852,7 +852,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Gandalf Szary",
         "isCorrect": true
       },
       {
@@ -862,7 +862,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Aragorn",
         "isCorrect": false
       }
     ]
@@ -880,7 +880,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Borgo Maggiore",
         "isCorrect": false
       },
       {
@@ -903,7 +903,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Ag",
         "isCorrect": true
       },
       {
@@ -918,7 +918,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Si",
         "isCorrect": false
       }
     ]
@@ -1183,12 +1183,12 @@
     "answers": [
       {
         "id": "A",
-        "text": "Leonardo",
+        "text": "Leonardo DiCaprio",
         "isCorrect": true
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Brad Pitt",
         "isCorrect": false
       },
       {
@@ -1198,7 +1198,7 @@
       },
       {
         "id": "D",
-        "text": "Johnny",
+        "text": "Johnny Depp",
         "isCorrect": false
       }
     ]
@@ -1239,22 +1239,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Migren",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Depresji",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Choroby refluksowej",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Cukrzycy",
         "isCorrect": false
       }
     ]
@@ -1356,12 +1356,12 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Drzewa",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Kamienia szlachetnego",
         "isCorrect": false
       },
       {
@@ -1412,7 +1412,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Tworzyw sztucznych",
         "isCorrect": false
       },
       {
@@ -1468,17 +1468,17 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Cali",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Bogota",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Cartagena",
         "isCorrect": false
       }
     ]
@@ -1491,22 +1491,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Azją a Afryką",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Azją a Ameryką Północną",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Azją a Australią",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "Europą, a",
+        "text": "Europą a Azją",
         "isCorrect": false
       }
     ]
@@ -1580,7 +1580,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Sierść",
         "isCorrect": false
       },
       {
@@ -1608,7 +1608,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Węgla",
         "isCorrect": false
       },
       {
@@ -1646,7 +1646,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Dadaizmu",
         "isCorrect": false
       }
     ]
@@ -1725,7 +1725,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Batmana",
         "isCorrect": false
       },
       {
@@ -1837,7 +1837,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Dzień Świra",
         "isCorrect": false
       },
       {
@@ -1870,7 +1870,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Anglia",
         "isCorrect": false
       }
     ]
@@ -1898,7 +1898,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Przedramienia",
         "isCorrect": false
       }
     ]
@@ -1926,7 +1926,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Patelni",
         "isCorrect": false
       }
     ]
@@ -2107,17 +2107,17 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Czerwona",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Różowa",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Czarna",
         "isCorrect": true
       },
       {
@@ -2135,22 +2135,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Lew Tołstoj",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Anton Czechow",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "Fiodor",
+        "text": "Fiodor Dostojewski",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "Honore de",
+        "text": "Honore de Balzac",
         "isCorrect": false
       }
     ]
@@ -2471,7 +2471,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Muchy",
         "isCorrect": false
       },
       {
@@ -2527,7 +2527,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Islandia",
         "isCorrect": false
       },
       {
@@ -2583,7 +2583,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Bawełna",
         "isCorrect": false
       },
       {
@@ -2817,7 +2817,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Szarlotka",
         "isCorrect": false
       },
       {
@@ -2863,22 +2863,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Osiemnascie",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Osiemnaście",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Ośiemnaście",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Ossiemnaście",
         "isCorrect": false
       }
     ]
@@ -2924,12 +2924,12 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Remus",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Sirius",
         "isCorrect": false
       },
       {
@@ -2975,12 +2975,12 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Płot",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Balustrada",
         "isCorrect": true
       },
       {
@@ -3013,12 +3013,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "truskawka agrest",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "wiśnia agrest",
         "isCorrect": false
       }
     ]
@@ -3171,7 +3171,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Talerz",
         "isCorrect": false
       },
       {
@@ -3181,7 +3181,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Bieżnik",
         "isCorrect": true
       },
       {
@@ -3438,7 +3438,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Londyn",
         "isCorrect": false
       }
     ]
@@ -3494,7 +3494,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Alexander Fleming",
         "isCorrect": true
       }
     ]
@@ -3512,7 +3512,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Czesław Miłosz",
         "isCorrect": false
       },
       {
@@ -3522,7 +3522,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Henryk Sienkiewicz",
         "isCorrect": false
       }
     ]
@@ -3657,7 +3657,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Biratnagar",
         "isCorrect": false
       },
       {
@@ -3680,12 +3680,12 @@
       },
       {
         "id": "B",
-        "text": "Zbrodniarzom UE łamiącym konstytucję wojennym z III Rzeszy",
+        "text": "Zbrodniarzom wojennym z III Rzeszy",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Komunistom z ZSRR",
         "isCorrect": false
       },
       {
@@ -3703,7 +3703,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Niebieski",
         "isCorrect": true
       },
       {
@@ -3713,12 +3713,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Czerwony",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Żółty",
         "isCorrect": false
       }
     ]
@@ -3774,7 +3774,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Wilk",
         "isCorrect": false
       }
     ]
@@ -3792,12 +3792,12 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Karate",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Judo",
         "isCorrect": false
       },
       {
@@ -3825,7 +3825,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Wilk szary",
         "isCorrect": false
       },
       {
@@ -3843,7 +3843,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "Tajlandii",
+        "text": "Chin",
         "isCorrect": true
       },
       {
@@ -3858,7 +3858,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Korei",
         "isCorrect": false
       }
     ]
@@ -4016,7 +4016,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Tenzing Norgay",
         "isCorrect": false
       },
       {
@@ -4044,17 +4044,17 @@
       },
       {
         "id": "B",
-        "text": "Indie,",
+        "text": "Indie, Nepal, Bhutan",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "Pakistan, Kazachstan,",
+        "text": "Pakistan, Kazachstan",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Afganistan, Iran",
         "isCorrect": false
       }
     ]
@@ -4077,7 +4077,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Kwadratem",
         "isCorrect": false
       },
       {
@@ -4151,17 +4151,17 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Bogusław Linda",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Daniel Olbrychski",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Marek Kondrat",
         "isCorrect": false
       },
       {
@@ -4189,12 +4189,12 @@
       },
       {
         "id": "C",
-        "text": "Grażyna",
+        "text": "Grażyna Szapołowska",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Magdalena Cielecka",
         "isCorrect": false
       }
     ]
@@ -4245,7 +4245,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Nasienie",
         "isCorrect": false
       },
       {
@@ -4436,7 +4436,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Monako",
         "isCorrect": false
       },
       {
@@ -4464,7 +4464,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Apple",
         "isCorrect": false
       },
       {
@@ -4515,7 +4515,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Andegawenów",
         "isCorrect": false
       },
       {
@@ -4632,17 +4632,17 @@
       },
       {
         "id": "B",
-        "text": "Jan Sebastian",
+        "text": "Jan Sebastian Bach",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "The Ludwig van",
+        "text": "Ludwig van Beethoven",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Wolfgang Amadeus Mozart",
         "isCorrect": false
       }
     ]
@@ -4655,7 +4655,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Gruszka",
         "isCorrect": false
       },
       {
@@ -4767,7 +4767,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Arnold Schwarzenegger",
         "isCorrect": false
       },
       {
@@ -4777,7 +4777,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Chuck Norris",
         "isCorrect": true
       },
       {
@@ -4828,7 +4828,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Chorwacja",
         "isCorrect": false
       },
       {
@@ -4866,7 +4866,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Cztery",
         "isCorrect": false
       }
     ]
@@ -4996,7 +4996,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Wieniec laurowy",
         "isCorrect": false
       },
       {
@@ -5047,7 +5047,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Żytni",
         "isCorrect": false
       },
       {
@@ -5075,7 +5075,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Miedź",
         "isCorrect": false
       },
       {
@@ -5090,7 +5090,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Platyna",
         "isCorrect": false
       }
     ]
@@ -5136,7 +5136,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Borneo",
         "isCorrect": false
       },
       {
@@ -5159,7 +5159,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Maryla Rodowicz",
         "isCorrect": false
       },
       {
@@ -5169,12 +5169,12 @@
       },
       {
         "id": "C",
-        "text": "Justyna",
+        "text": "Justyna Steczkowska",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "Katarzyna Steczkowska Kowalska",
+        "text": "Katarzyna Kowalska",
         "isCorrect": false
       }
     ]
@@ -5187,7 +5187,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Hybrydowym",
         "isCorrect": false
       },
       {
@@ -5243,7 +5243,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Zero",
         "isCorrect": false
       },
       {
@@ -5253,7 +5253,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Dwa",
         "isCorrect": false
       },
       {
@@ -5299,12 +5299,12 @@
     "answers": [
       {
         "id": "A",
-        "text": "Sean",
+        "text": "Sean Connery",
         "isCorrect": true
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Roger Moore",
         "isCorrect": false
       },
       {
@@ -5314,7 +5314,7 @@
       },
       {
         "id": "D",
-        "text": "Pierce",
+        "text": "Pierce Brosnan",
         "isCorrect": false
       }
     ]
@@ -5327,13 +5327,13 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
-        "isCorrect": false
+        "text": "Diament",
+        "isCorrect": true
       },
       {
         "id": "B",
         "text": "Korund",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": "C",
@@ -5370,7 +5370,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Świątynię Artemidy w Efezie",
         "isCorrect": true
       }
     ]
@@ -5439,7 +5439,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Jabłko",
         "isCorrect": false
       },
       {
@@ -5467,12 +5467,12 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Victor Hugo",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "Pierre",
+        "text": "Pierre Corneille",
         "isCorrect": false
       },
       {
@@ -5482,7 +5482,7 @@
       },
       {
         "id": "D",
-        "text": "Jean",
+        "text": "Jean-Baptiste Poquelin",
         "isCorrect": true
       }
     ]
@@ -5495,7 +5495,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Trucizny szczurzej",
         "isCorrect": false
       },
       {
@@ -5505,7 +5505,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Cyjanku",
         "isCorrect": false
       },
       {
@@ -5523,22 +5523,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Rurka",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Wafelek",
         "isCorrect": true
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Pączek",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Ciastko kruche",
         "isCorrect": false
       }
     ]
@@ -5551,22 +5551,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Hel",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Lit",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Wodór",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Azot",
         "isCorrect": false
       }
     ]
@@ -5594,7 +5594,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Srebro",
         "isCorrect": false
       }
     ]
@@ -5612,12 +5612,12 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Oto",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Niech",
         "isCorrect": false
       },
       {
@@ -5719,7 +5719,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "LaFerrari",
         "isCorrect": false
       },
       {
@@ -5752,7 +5752,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Bangkok",
         "isCorrect": false
       },
       {
@@ -5831,7 +5831,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Całkowanie",
         "isCorrect": true
       },
       {
@@ -5846,7 +5846,7 @@
       },
       {
         "id": "D",
-        "text": "Sumowanko",
+        "text": "Sumowanie",
         "isCorrect": false
       }
     ]
@@ -5869,12 +5869,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Atlantycki",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Arktyczny",
         "isCorrect": false
       }
     ]
@@ -5915,7 +5915,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Żołądź",
         "isCorrect": false
       },
       {
@@ -5953,12 +5953,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Wodą",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Azotem",
         "isCorrect": false
       }
     ]
@@ -6009,12 +6009,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Róża",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Wrzos",
         "isCorrect": false
       }
     ]
@@ -6037,12 +6037,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Arktycznego",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Atlantyckiego",
         "isCorrect": true
       }
     ]
@@ -6144,12 +6144,12 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Bankstown",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Camden",
         "isCorrect": false
       },
       {
@@ -6167,12 +6167,12 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Boliwia",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Chile",
         "isCorrect": false
       },
       {
@@ -6195,7 +6195,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Jodła",
         "isCorrect": false
       },
       {
@@ -6205,7 +6205,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Brzoza",
         "isCorrect": true
       },
       {
@@ -6251,17 +6251,17 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Praga",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Zurych",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Nowy Jork",
         "isCorrect": true
       },
       {
@@ -6340,7 +6340,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Daniel Radcliffe",
         "isCorrect": false
       },
       {
@@ -6368,12 +6368,12 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Toad",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Princess Peach",
         "isCorrect": false
       },
       {
@@ -6401,7 +6401,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Sushi",
         "isCorrect": false
       },
       {
@@ -6559,22 +6559,22 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Beauty Base",
         "isCorrect": false
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Beautiful Blend",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Blemish Balm",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Base Balm",
         "isCorrect": false
       }
     ]
@@ -6658,7 +6658,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Maja",
         "isCorrect": false
       }
     ]
@@ -6732,7 +6732,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Snake Island",
         "isCorrect": false
       },
       {
@@ -6755,7 +6755,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Składnik szczepionki",
         "isCorrect": false
       },
       {
@@ -6816,17 +6816,17 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Klaustrofobia",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Agorafobia",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Hydrofobia",
         "isCorrect": false
       }
     ]
@@ -6844,17 +6844,17 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Sponsoring",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Product Integration",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Brand Advertising",
         "isCorrect": false
       }
     ]
@@ -6872,7 +6872,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Burger King",
         "isCorrect": false
       },
       {
@@ -6895,7 +6895,7 @@
     "answers": [
       {
         "id": "B",
-        "text": "",
+        "text": "Arena sportowa",
         "isCorrect": false
       },
       {
@@ -6905,7 +6905,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Tor wyścigowy",
         "isCorrect": false
       },
       {
@@ -6923,7 +6923,7 @@
     "answers": [
       {
         "id": "B",
-        "text": "",
+        "text": "Chłodzenie poduszki",
         "isCorrect": true
       },
       {
@@ -6966,7 +6966,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Baza danych filmów",
         "isCorrect": false
       }
     ]
@@ -7040,7 +7040,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Wenecja",
         "isCorrect": false
       },
       {
@@ -7101,12 +7101,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Barometr",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Anemometr",
         "isCorrect": false
       }
     ]
@@ -7129,12 +7129,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Celtów",
         "isCorrect": true
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Rzymian",
         "isCorrect": false
       }
     ]
@@ -7297,12 +7297,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Zeus",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Ares",
         "isCorrect": false
       }
     ]
@@ -7381,12 +7381,12 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Albert Einstein",
         "isCorrect": false
       },
       {
         "id": "D",
-        "text": "",
+        "text": "Léon Foucault",
         "isCorrect": true
       }
     ]
@@ -7399,7 +7399,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Al Capone",
         "isCorrect": true
       },
       {
@@ -7414,7 +7414,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "John Gotti",
         "isCorrect": false
       }
     ]
@@ -7455,7 +7455,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "DSM",
         "isCorrect": false
       },
       {
@@ -7470,7 +7470,7 @@
       },
       {
         "id": "D",
-        "text": "",
+        "text": "WHO",
         "isCorrect": false
       }
     ]
@@ -7516,7 +7516,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Nauka o społeczeństwie",
         "isCorrect": false
       },
       {
@@ -7539,7 +7539,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Czystość i niewinność",
         "isCorrect": false
       },
       {
@@ -7605,7 +7605,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "CIA",
         "isCorrect": false
       },
       {
@@ -7656,12 +7656,12 @@
       },
       {
         "id": "A",
-        "text": "",
+        "text": "Chlor",
         "isCorrect": false
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Sól kuchenną",
         "isCorrect": true
       },
       {
@@ -7684,7 +7684,7 @@
       },
       {
         "id": "B",
-        "text": "",
+        "text": "Amman",
         "isCorrect": true
       },
       {
@@ -7707,7 +7707,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Adam Mickiewicz",
         "isCorrect": false
       },
       {
@@ -7745,7 +7745,7 @@
       },
       {
         "id": "C",
-        "text": "",
+        "text": "Rytualny akt samobójstwa",
         "isCorrect": true
       },
       {
@@ -7875,7 +7875,7 @@
     "answers": [
       {
         "id": "A",
-        "text": "",
+        "text": "Rodzaj kamienia szlachetnego",
         "isCorrect": false
       },
       {

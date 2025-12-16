@@ -26,7 +26,7 @@ export default function CardScreen() {
 
   const handleNext = () => {
     setRevealCorrect(false);
-    router.push('/draw');
+    router.push('/');
   };
 
   return (
@@ -54,9 +54,9 @@ export default function CardScreen() {
 
         <TouchableOpacity 
           style={styles.backButton}
-          onPress={() => router.push('/draw')}
+          onPress={() => router.push('/')}
         >
-          <Text style={styles.backButtonText}>Back to Draw</Text>
+          <Text style={styles.backButtonText}>Back to Home</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
