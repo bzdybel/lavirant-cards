@@ -2,8 +2,8 @@ import { EffectCardDisplay, QuestionCardDisplay } from '@/src/components/CardDis
 import { GameCard } from '@/src/components/GameCard';
 import { useGameStore } from '@/src/store/gameStore';
 import { CardType } from '@/src/types/Card';
-import React, { useRef, useState } from 'react';
-import { Animated, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import { ActivityIndicator, Animated, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const CARD_TYPES: CardType[] = ['question', 'reward', 'penalty'];
 const ANIMATION_DURATION = 300;
@@ -12,7 +12,22 @@ export default function HomeScreen() {
   const { drawCard, currentCard } = useGameStore();
   const [isFlipped, setIsFlipped] = useState(false);
   const [revealCorrect, setRevealCorrect] = useState(false);
+  const [isReady, setIsReady] = useState(false);
+  const [selectedType, setSelectedType] = useState<CardType | null>(null);
+  const [heroType, setHeroType] = useState<CardType | null>(null);
+  
+  // Animation values
   const flipAnim = useRef(new Animated.Value(0)).current;
+  const expandAnim = useRef(new Animated.Value(0)).current;
+  const overlayOpacity = useRef(new Animated.Value(0)).current;
+  const cardScale = useRef(new Animated.Value(1)).current;
+  const cardTranslateY = useRef(new Animated.Value(0)).current;
+  const backgroundBlur = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsReady(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   const animateFlip = (toValue: number, onComplete?: () => void) => {
     Animated.timing(flipAnim, {
@@ -23,21 +38,97 @@ export default function HomeScreen() {
   };
 
   const handleDrawCard = (type: CardType) => {
+    setSelectedType(type);
+    setHeroType(type);
     drawCard(type);
     setIsFlipped(false);
     setRevealCorrect(false);
     flipAnim.setValue(0);
     
+    // Hero animation: expand card to fullscreen with smooth transitions
+    Animated.parallel([
+      // Expand from list position to center
+      Animated.spring(expandAnim, {
+        toValue: 1,
+        tension: 50,
+        friction: 7,
+        useNativeDriver: true,
+      }),
+      // Scale up slightly
+      Animated.spring(cardScale, {
+        toValue: 1.15,
+        tension: 50,
+        friction: 7,
+        useNativeDriver: true,
+      }),
+      // Move to center vertically
+      Animated.spring(cardTranslateY, {
+        toValue: -50,
+        tension: 50,
+        friction: 7,
+        useNativeDriver: true,
+      }),
+      // Fade in overlay background
+      Animated.timing(overlayOpacity, {
+        toValue: 1,
+        duration: ANIMATION_DURATION,
+        useNativeDriver: true,
+      }),
+      // Blur background cards
+      Animated.timing(backgroundBlur, {
+        toValue: 1,
+        duration: ANIMATION_DURATION,
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // Trigger flip after expansion
     setTimeout(() => {
       animateFlip(1, () => setIsFlipped(true));
-    }, ANIMATION_DURATION);
+    }, ANIMATION_DURATION + 100);
   };
 
   const handleReset = () => {
+    // Make the list card visible immediately (don't wait for reverse springs)
+    setSelectedType(null);
+
     animateFlip(0, () => {
-      setIsFlipped(false);
-      setRevealCorrect(false);
-      useGameStore.setState({ currentCard: null });
+      // Reverse hero animation
+      Animated.parallel([
+        Animated.spring(expandAnim, {
+          toValue: 0,
+          tension: 50,
+          friction: 7,
+          useNativeDriver: true,
+        }),
+        Animated.spring(cardScale, {
+          toValue: 1,
+          tension: 50,
+          friction: 7,
+          useNativeDriver: true,
+        }),
+        Animated.spring(cardTranslateY, {
+          toValue: 0,
+          tension: 50,
+          friction: 7,
+          useNativeDriver: true,
+        }),
+        Animated.timing(overlayOpacity, {
+          toValue: 0,
+          duration: ANIMATION_DURATION,
+          useNativeDriver: true,
+        }),
+        Animated.timing(backgroundBlur, {
+          toValue: 0,
+          duration: ANIMATION_DURATION,
+          useNativeDriver: true,
+        }),
+      ]).start(() => {
+        setIsFlipped(false);
+        setRevealCorrect(false);
+        setHeroType(null);
+        useGameStore.setState({ currentCard: null });
+      });
     });
   };
 
@@ -52,27 +143,111 @@ export default function HomeScreen() {
   const isQuestion = currentCard?.type === 'question';
   const showRevealButton = isQuestion && !revealCorrect && isFlipped;
 
+  if (!isReady) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#c9a24d" />
+      </View>
+    );
+  }
+
+  // Calculate blur and opacity for background cards
+  const backgroundCardOpacity = backgroundBlur.interpolate({
+    inputRange: [0, 1],
+    outputRange: [1, 0.3],
+  });
+
+  const backgroundCardScale = backgroundBlur.interpolate({
+    inputRange: [0, 1],
+    outputRange: [1, 0.95],
+  });
+
   return (
     <View style={styles.container}>
-      {!currentCard ? (
-        <ScrollView contentContainerStyle={styles.cardsContainer} showsVerticalScrollIndicator={false}>
-          {CARD_TYPES.map(type => (
-            <View key={type} style={styles.cardItem}>
-              <GameCard cardType={type} onPress={() => handleDrawCard(type)} />
-            </View>
+      {/* Background overlay */}
+      <Animated.View 
+        style={[
+          styles.backgroundOverlay,
+          {
+            opacity: overlayOpacity.interpolate({
+              inputRange: [0, 1],
+              outputRange: [0, 0.85],
+            }),
+            pointerEvents: currentCard ? 'auto' : 'none',
+          }
+        ]}
+      />
+
+      {/* Cards list with blur effect */}
+      <Animated.View
+        style={{
+          flex: 1,
+          opacity: backgroundCardOpacity,
+          transform: [{ scale: backgroundCardScale }],
+        }}
+      >
+        <ScrollView
+          style={styles.cardsScroll}
+          contentContainerStyle={styles.cardsContainer}
+          showsVerticalScrollIndicator={false}
+        >
+          {CARD_TYPES.map((type) => (
+            <Animated.View 
+              key={type} 
+              style={[
+                styles.cardItem,
+                {
+                  opacity: selectedType === type ? 0 : 1,
+                }
+              ]}
+            >
+              <GameCard 
+                cardType={type} 
+                onPress={() => !currentCard && handleDrawCard(type)} 
+              />
+            </Animated.View>
           ))}
         </ScrollView>
-      ) : (
-        <View style={styles.cardDisplayContainer}>
+      </Animated.View>
+
+      {/* Hero card overlay - expanded and centered */}
+      {currentCard && heroType && (
+        <Animated.View 
+          style={[
+            styles.heroCardContainer,
+            {
+              opacity: overlayOpacity,
+              transform: [
+                { scale: cardScale },
+                { translateY: cardTranslateY },
+              ],
+            }
+          ]}
+          pointerEvents="box-none"
+        >
           <View style={styles.flipContainer}>
+            {/* Show the same card being flipped - not a duplicate */}
             <Animated.View
-              style={[styles.flipCard, { opacity: frontOpacity, transform: [{ rotateY: frontTransform }] }]}
+              style={[
+                styles.flipCard, 
+                { 
+                  opacity: frontOpacity, 
+                  transform: [{ rotateY: frontTransform }],
+                }
+              ]}
             >
-              <GameCard cardType={currentCard.type} onPress={() => {}} />
+              <GameCard cardType={heroType} onPress={() => {}} />
             </Animated.View>
 
             <Animated.View
-              style={[styles.flipCard, styles.flipCardBack, { opacity: backOpacity, transform: [{ rotateY: backTransform }] }]}
+              style={[
+                styles.flipCard, 
+                styles.flipCardBack, 
+                { 
+                  opacity: backOpacity, 
+                  transform: [{ rotateY: backTransform }],
+                }
+              ]}
             >
               {isQuestion ? (
                 <QuestionCardDisplay card={currentCard} revealCorrect={revealCorrect} />
@@ -94,7 +269,7 @@ export default function HomeScreen() {
               </TouchableOpacity>
             )}
           </View>
-        </View>
+        </Animated.View>
       )}
     </View>
   );
@@ -107,18 +282,42 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     paddingHorizontal: 20,
   },
+  loadingContainer: {
+    flex: 1,
+    backgroundColor: '#1a1a2e',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   cardsContainer: {
     alignItems: 'center',
     paddingVertical: 20,
+    paddingBottom: 60,
     gap: 30,
+  },
+  cardsScroll: {
+    flex: 1,
   },
   cardItem: {
     marginBottom: 20,
   },
-  cardDisplayContainer: {
-    flex: 1,
+  backgroundOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#000000',
+    zIndex: 100,
+  },
+  heroCardContainer: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    marginLeft: -210,
+    marginTop: -130,
     justifyContent: 'center',
     alignItems: 'center',
+    zIndex: 200,
   },
   flipContainer: {
     width: 420,
