@@ -59,8 +59,8 @@ const FancyBackground = () => {
           styles.glow,
           styles.glowGold,
           {
-            backgroundColor: hexToRgba(uiColors.brandGold, 0.06),
-            borderColor: hexToRgba(uiColors.brandGold, 0.18),
+            backgroundColor: hexToRgba(uiColors.brandGold, 0.09),
+            borderColor: hexToRgba(uiColors.brandGold, 0.22),
             shadowColor: uiColors.brandGold,
           },
         ]}
@@ -70,8 +70,8 @@ const FancyBackground = () => {
           styles.glow,
           styles.glowBlue,
           {
-            backgroundColor: hexToRgba(uiColors.card.back, 0.07),
-            borderColor: hexToRgba(uiColors.card.back, 0.18),
+            backgroundColor: hexToRgba(uiColors.card.back, 0.1),
+            borderColor: hexToRgba(uiColors.card.back, 0.22),
             shadowColor: uiColors.card.back,
           },
         ]}
@@ -260,7 +260,7 @@ export default function HomeScreen() {
           {
             opacity: overlayOpacity.interpolate({
               inputRange: [0, 1],
-              outputRange: [0, 0.85],
+              outputRange: [0, 0.65],
             }),
           },
         ]}
@@ -412,8 +412,8 @@ const styles = StyleSheet.create({
     borderRadius: 9999,
     borderWidth: 1,
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.65,
-    shadowRadius: 40,
+    shadowOpacity: 0.75,
+    shadowRadius: 52,
   },
   glowGold: {
     width: 520,
