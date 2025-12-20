@@ -27,6 +27,10 @@ export function CardTypeList(props: {
         style={styles.cardsScroll}
         contentContainerStyle={styles.cardsContainer}
         showsVerticalScrollIndicator={false}
+        scrollEnabled={!isBlocked}
+        bounces={false}
+        alwaysBounceVertical={false}
+        overScrollMode="never"
       >
         {types.map((type) => (
           <Animated.View
@@ -56,6 +60,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingBottom: 60,
     gap: 30,
+    paddingTop: 60
   },
   cardsScroll: {
     flex: 1,

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "lavirant-cards",
+    "name": "La'virant",
     "slug": "lavirant-cards",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.lavirantcards.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/logo.png",
@@ -43,6 +44,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cbf7712e-953f-420e-8bf9-718cef8a5f44"
+      }
     }
   }
 }

@@ -5,8 +5,8 @@ import { Dimensions, ImageBackground, StyleSheet, Text, TouchableOpacity, View }
 import { CardType } from '../types/Card';
 
 const { width } = Dimensions.get('window');
-const CARD_WIDTH = Math.min(width * 0.8, 380);
-const CARD_HEIGHT = CARD_WIDTH * 0.62;
+const DEFAULT_CARD_WIDTH = Math.min(width * 0.8, 380);
+const DEFAULT_CARD_HEIGHT = DEFAULT_CARD_WIDTH * 0.62;
 const CARD_CONFIG: Record<CardType, { label: string; backgroundColor: string }> = {
   question: { label: uiText.cards.question, backgroundColor: uiColors.cardTypeBackground.question },
   reward: { label: uiText.cards.reward, backgroundColor: uiColors.cardTypeBackground.reward },
@@ -16,16 +16,19 @@ const CARD_CONFIG: Record<CardType, { label: string; backgroundColor: string }> 
 interface GameCardProps {
   onPress?: () => void;
   cardType?: CardType;
+  size?: { width: number; height: number };
 }
 
-export const GameCard: React.FC<GameCardProps> = ({ onPress, cardType = 'question' }) => {
+export const GameCard: React.FC<GameCardProps> = ({ onPress, cardType = 'question', size }) => {
   const config = CARD_CONFIG[cardType];
   const isQuestion = cardType === 'question';
   const isPenalty = cardType === 'penalty';
   const isReward = cardType === 'reward';
 
+  const containerSize = size ?? { width: DEFAULT_CARD_WIDTH, height: DEFAULT_CARD_HEIGHT };
+
   return (
-    <TouchableOpacity onPress={onPress} activeOpacity={0.9} style={styles.container}>
+    <TouchableOpacity onPress={onPress} activeOpacity={0.9} style={[styles.container, containerSize]}>
       <View style={[styles.card, !isQuestion && !isPenalty && !isReward && { backgroundColor: config.backgroundColor }]}>
         {isQuestion ? (
           <ImageBackground
@@ -67,8 +70,6 @@ export const GameCard: React.FC<GameCardProps> = ({ onPress, cardType = 'questio
 
 const styles = StyleSheet.create({
   container: {
-    width: CARD_WIDTH,
-    height: CARD_HEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
   },

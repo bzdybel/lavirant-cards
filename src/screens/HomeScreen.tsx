@@ -35,6 +35,7 @@ export default function HomeScreen() {
       <FancyBackground />
 
       <Animated.View
+        pointerEvents={currentCard ? 'auto' : 'none'}
         style={[
           styles.backgroundOverlay,
           {
@@ -42,7 +43,6 @@ export default function HomeScreen() {
               inputRange: [0, 1],
               outputRange: [0, 0.65],
             }),
-            pointerEvents: currentCard ? 'auto' : 'none',
           },
         ]}
       />
@@ -82,7 +82,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: uiColors.screenBackground,
-    paddingTop: 60,
     paddingHorizontal: 20,
   },
   loadingContainer: {

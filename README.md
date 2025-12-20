@@ -16,12 +16,16 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+   Note: the iOS Simulator requires macOS + Xcode. On Windows, use Expo Go on a device (QR code) or run iOS on a Mac.
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+Note (Windows/Android): `npm run android` requires the Android SDK + Platform-Tools (`adb`). If those aren't installed/configured, the script will still start the Expo dev server and you can run the app via Expo Go (QR code).
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 

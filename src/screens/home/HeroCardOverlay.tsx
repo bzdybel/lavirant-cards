@@ -4,7 +4,7 @@ import { uiText } from '@/src/content/ui';
 import { uiColors } from '@/src/theme/ui';
 import type { Card, CardType } from '@/src/types/Card';
 import React from 'react';
-import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Animated, StyleSheet, Text, TouchableOpacity, useWindowDimensions, View } from 'react-native';
 
 export function HeroCardOverlay(props: {
   currentCard: Card;
@@ -22,6 +22,8 @@ export function HeroCardOverlay(props: {
   isFlipped: boolean;
   onReset: () => void;
 }) {
+  const { width: screenWidth, height: screenHeight } = useWindowDimensions();
+
   const {
     currentCard,
     heroType,
@@ -41,6 +43,48 @@ export function HeroCardOverlay(props: {
 
   const isQuestion = currentCard.type === 'question';
 
+  const [measuredHeight, setMeasuredHeight] = React.useState<number | null>(null);
+
+  React.useEffect(() => {
+    setMeasuredHeight(null);
+  }, [currentCard.id, revealCorrect]);
+
+  const fallbackAspect = currentCard.type === 'question' ? 0.82 : 0.62;
+
+  // The hero animation scales the card up (see useHomeCardController: HERO_SCALE).
+  // Compute base size so the *scaled* card still has comfortable side padding.
+  const maxHeroScale = 1.08;
+  const sidePadding = screenWidth < 360 ? 20 : 32;
+  const horizontalPadding = sidePadding * 2;
+  const maxCardWidth = 420;
+  const availableWidth = screenWidth - horizontalPadding;
+  const maxBaseWidth = Math.min(Math.max(availableWidth / maxHeroScale, 240), maxCardWidth);
+
+  // Keep enough vertical space for buttons and translations.
+  // (Tune smaller so tall question cards can actually grow.)
+  const reservedVertical = (screenHeight < 700 ? 140 : 190);
+  const maxBaseHeight = Math.max(240, (screenHeight - reservedVertical) / maxHeroScale);
+
+  const desiredHeight = measuredHeight ?? maxBaseWidth * fallbackAspect;
+  const baseHeight = Math.min(Math.max(desiredHeight, 240), maxBaseHeight);
+  // Keep width as large as possible; height expands to fit content.
+  const baseWidth = maxBaseWidth;
+
+  const isHeightClamped = desiredHeight > maxBaseHeight;
+
+  const onBackContentHeightChange = React.useCallback((nextHeight: number) => {
+    const rounded = Math.ceil(nextHeight);
+    setMeasuredHeight((prev) => {
+      if (prev == null) return rounded;
+      if (Math.abs(prev - rounded) <= 2) return prev;
+      return rounded;
+    });
+  }, []);
+
+  const cardSize = { width: baseWidth, height: baseHeight };
+
+  const buttonsMarginTop = screenHeight < 700 ? 18 : 40;
+
   return (
     <Animated.View
       style={[
@@ -52,7 +96,7 @@ export function HeroCardOverlay(props: {
         { pointerEvents: 'box-none' },
       ]}
     >
-      <View style={styles.flipContainer}>
+      <View style={[styles.flipContainer, cardSize]}>
         <Animated.View
           style={[
             styles.flipCard,
@@ -62,7 +106,7 @@ export function HeroCardOverlay(props: {
             },
           ]}
         >
-          <GameCard cardType={heroType} onPress={() => {}} />
+          <GameCard cardType={heroType} onPress={() => {}} size={cardSize} />
         </Animated.View>
 
         <Animated.View
@@ -76,14 +120,20 @@ export function HeroCardOverlay(props: {
           ]}
         >
           {isQuestion ? (
-            <QuestionCardDisplay card={currentCard} revealCorrect={revealCorrect} />
+            <QuestionCardDisplay
+              card={currentCard}
+              revealCorrect={revealCorrect}
+              size={cardSize}
+              onContentHeightChange={onBackContentHeightChange}
+              enableScrollOnOverflow={isHeightClamped}
+            />
           ) : (
-            <EffectCardDisplay card={currentCard} />
+            <EffectCardDisplay card={currentCard} size={cardSize} onContentHeightChange={onBackContentHeightChange} />
           )}
         </Animated.View>
       </View>
 
-      <View style={styles.buttonsContainer}>
+      <View style={[styles.buttonsContainer, { marginTop: buttonsMarginTop }]}>
         {showRevealButton && (
           <TouchableOpacity style={styles.button} onPress={onRevealCorrect}>
             <Text style={styles.buttonText}>{uiText.buttons.revealAnswer}</Text>
@@ -102,17 +152,15 @@ export function HeroCardOverlay(props: {
 const styles = StyleSheet.create({
   heroCardContainer: {
     position: 'absolute',
-    top: '50%',
-    left: '50%',
-    marginLeft: -210,
-    marginTop: -130,
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 200,
   },
   flipContainer: {
-    width: 420,
-    height: 260,
     position: 'relative',
   },
   flipCard: {
@@ -125,7 +173,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   buttonsContainer: {
-    marginTop: 40,
     gap: 15,
     alignItems: 'center',
   },

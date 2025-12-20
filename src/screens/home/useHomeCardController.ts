@@ -8,6 +8,8 @@ const FLIP_DURATION = 420;
 const EASE_OUT = Easing.out(Easing.cubic);
 const EASE_IN_OUT = Easing.inOut(Easing.cubic);
 
+const HERO_SCALE = 1.08;
+
 export type HomeCardController = {
   selectedType: CardType | null;
   heroType: CardType | null;
@@ -84,7 +86,7 @@ export function useHomeCardController(params: {
           useNativeDriver: true,
         }),
         Animated.timing(cardScale, {
-          toValue: 1.12,
+          toValue: HERO_SCALE,
           duration: HERO_IN_DURATION,
           easing: EASE_OUT,
           useNativeDriver: true,
