@@ -15,7 +15,7 @@
     "id": "r-003",
     "type": "reward",
     "title": "Za trzy",
-    "content": "Cofnij najlepszego gracza o 3 pola. Jeśli Ty jesteś najlepszym graczem, cofnij gracza bezpośrednio za Tobą."
+    "content": "Cofnij najlepszego gracza o 3 pola. Jeśli to Ty jesteś najlepszym graczem, cofnij gracza bezpośrednio za Tobą."
   },
   {
     "id": "r-004",
@@ -27,115 +27,115 @@
     "id": "r-005",
     "type": "reward",
     "title": "Oko za oko",
-    "content": "Wybierz osobę, która wylosuje kartę kary."
+    "content": "Wybierz osobę, która natychmiast losuje kartę kary."
   },
   {
     "id": "r-006",
     "type": "reward",
     "title": "Rotacja",
-    "content": "Możesz nakazać dwóm graczom zamienić się tablicami. Nie możesz być jednym z tych graczy."
+    "content": "Nakazujesz dwóm innym graczom zamienić się tablicami. Nie możesz być jednym z nich."
   },
   {
     "id": "r-007",
     "type": "reward",
     "title": "Prezes",
-    "content": "Do końca następnej rundy wszyscy gracze muszą zwracać się do Ciebie per pan/pani prezes. Każde złamanie skutkuje kartą kary."
+    "content": "Do końca najbliższej rundy wszyscy gracze muszą zwracać się do Ciebie per pan lub pani prezes. Każde złamanie skutkuje kartą kary."
   },
   {
     "id": "r-008",
     "type": "reward",
     "title": "Bezpieczna przystań",
-    "content": "Możesz nie odpowiadać na jedno pytanie, na które nie znasz odpowiedzi, nie tracąc punktów."
+    "content": "W najbliższym pytaniu możesz nie odpowiadać bez utraty punktów."
   },
   {
     "id": "r-009",
     "type": "reward",
-    "title": "Double Up!",
-    "content": "Jeśli odpowiesz poprawnie na najbliższe pytanie, możesz rzucić kostką dwa razy."
+    "title": "Double up!",
+    "content": "Jeśli poprawnie odpowiesz na najbliższe pytanie, wykonujesz dwa rzuty kostką."
   },
   {
     "id": "r-010",
     "type": "reward",
-    "title": "Free Pass",
-    "content": "Nie musisz odpowiadać na najbliższe pytanie, a mimo to masz prawo rzutu kostką."
+    "title": "Free pass",
+    "content": "W najbliższej rundzie nie odpowiadasz na pytanie i automatycznie wykonujesz rzut kostką."
   },
   {
     "id": "r-011",
     "type": "reward",
     "title": "Blokada",
-    "content": "Wyklucz jednego z graczy z rozgrywki na najbliższą rundę."
+    "content": "Wyklucz jednego z graczy z najbliższej rundy."
   },
   {
     "id": "r-012",
     "type": "reward",
     "title": "Cisza",
-    "content": "Zablokuj możliwość dyskutowania jednemu z graczy w najbliższej rundzie."
+    "content": "W najbliższej rundzie wybrany gracz nie może dyskutować."
   },
   {
     "id": "r-013",
     "type": "reward",
     "title": "Szef",
-    "content": "W najbliższej rundzie decydujesz, kto jest kłamcą. Pozostali gracze mogą dyskutować, ale nie głosują."
+    "content": "W najbliższej rundzie Ty decydujesz, kto jest kłamcą. Pozostali gracze mogą dyskutować, ale nie głosują."
   },
   {
     "id": "r-014",
     "type": "reward",
     "title": "Ochrona",
-    "content": "Jednorazowa ochrona przed karą. Po użyciu karta wraca do talii nagród."
+    "content": "Jeśli w najbliższej rundzie miałbyś otrzymać kartę kary, ignorujesz jej efekt."
   },
   {
     "id": "r-015",
     "type": "reward",
     "title": "Mam czas",
-    "content": "Zyskujesz dodatkowy czas na odpowiedź."
+    "content": "W najbliższym pytaniu masz dwukrotnie więcej czasu na odpowiedź."
   },
   {
     "id": "r-016",
     "type": "reward",
     "title": "Sprawdzam",
-    "content": "Możesz nakazać jednemu graczowi odsłonięcie tablicy. Jeśli okaże się neutralny, losujesz kartę kary."
+    "content": "Nakazujesz jednemu graczowi natychmiast odsłonić tablicę. Jeśli okaże się neutralny, losujesz kartę kary."
   },
   {
     "id": "r-017",
     "type": "reward",
     "title": "Anioł stróż",
-    "content": "Chroń wybranego gracza przed wylosowaniem karty kary. Zachowaj kartę do momentu użycia."
+    "content": "W najbliższej rundzie wybrany gracz jest odporny na kartę kary."
   },
   {
     "id": "r-018",
     "type": "reward",
     "title": "Parzysta – nieparzysta",
-    "content": "Gracz po Twojej lewej rzuca kostką. Parzysta: idziesz 2 pola do przodu. Nieparzysta: zostajesz w miejscu."
+    "content": "Gracz po Twojej lewej stronie rzuca kostką. Parzysta: idziesz 2 pola do przodu. Nieparzysta: zostajesz w miejscu."
   },
   {
     "id": "r-019",
     "type": "reward",
     "title": "Dodawanki cacanki",
-    "content": "Rzuć kostką trzy razy. Jeśli suma < 6, idziesz 2 pola do przodu. Jeśli > 6, idziesz 4 pola."
+    "content": "Rzuć kostką trzy razy. Jeśli suma jest mniejsza niż 6, idziesz 2 pola do przodu. Jeśli większa niż 6, idziesz 4 pola."
   },
   {
     "id": "r-020",
     "type": "reward",
     "title": "Ence-pence w której ręce",
-    "content": "Zgadnij, w której ręce gracz po prawej ukrył kostkę. Sukces: +2 pola. Porażka: stoisz."
+    "content": "Zgadnij, w której ręce gracz po prawej ukrył kostkę. Sukces: idziesz 2 pola do przodu. Porażka: zostajesz w miejscu."
   },
   {
     "id": "r-021",
     "type": "reward",
     "title": "Na górze róże, na dole fiołki",
-    "content": "Skaczesz na pole gracza przed Tobą. Jeśli nikogo nie ma – ruszasz się o 2 pola do przodu."
+    "content": "Skaczesz na pole gracza przed Tobą. Jeśli nikogo tam nie ma, ruszasz się o 2 pola do przodu."
   },
   {
     "id": "r-022",
     "type": "reward",
     "title": "Kogo zobaczę, temu nie wybaczę",
-    "content": "Gracze w odległości do 5 pól od Ciebie cofają się o 3 pola."
+    "content": "Wszyscy gracze w odległości do 5 pól od Ciebie cofają się o 3 pola."
   },
   {
     "id": "r-023",
     "type": "reward",
     "title": "Parasol",
-    "content": "Zachowaj kartę na wypadek kary. Po użyciu odłóż ją na spód talii nagród."
+    "content": "Jeśli w tej rundzie miałbyś zostać cofnięty lub zablokowany, ignorujesz ten efekt."
   },
   {
     "id": "r-024",
@@ -147,24 +147,36 @@
     "id": "r-025",
     "type": "reward",
     "title": "Królewska ścieżka",
-    "content": "Możesz przejść na najbliższe pole nagrody lub ruszyć się o 5 pól do przodu."
+    "content": "Natychmiast przechodzisz na najbliższe pole nagrody albo ruszasz się o 5 pól do przodu."
   },
   {
     "id": "r-026",
     "type": "reward",
     "title": "3 życzenia",
-    "content": "Ty idziesz 3 pola do przodu, a pozostali gracze cofają się o 3 pola."
+    "content": "Ty idziesz 3 pola do przodu, a wszyscy pozostali gracze cofają się o 3 pola."
   },
   {
     "id": "r-027",
     "type": "reward",
     "title": "Szczęśliwy traf (globalny)",
-    "content": "Wszyscy gracze rzucają kostką. Jeśli suma >16 – wszyscy poza Tobą cofają się o 4 pola. Jeśli <13 – Ty idziesz 3 pola do przodu."
+    "content": "Wszyscy gracze rzucają kostką. Jeśli suma jest większa niż 16, wszyscy poza Tobą cofają się o 4 pola. Jeśli mniejsza niż 13, Ty idziesz 3 pola do przodu."
   },
   {
     "id": "r-028",
     "type": "reward",
     "title": "Skok w dal",
-    "content": "Przeskakujesz na najbliższe pole nagrody, ale nie dobierasz kolejnej karty."
-  }
+    "content": "Przeskakujesz na najbliższe pole nagrody i nie losujesz kolejnej karty."
+  },
+{
+  "id": "r-029",
+  "type": "reward",
+  "title": "Zmiana perspektywy",
+  "content": "Zamień się miejscami na planszy z wybranym graczem, który znajduje się maksymalnie 4 pola od Ciebie."
+},
+{
+  "id": "r-029",
+  "type": "reward",
+  "title": "Komplement obowiązkowy",
+  "content": "Wybierz gracza i powiedz mu krótki, pozytywny komplement. Następnie oboje przesuwacie się o 1 pole do przodu."
+}
 ]

@@ -9,121 +9,121 @@
     "id": "p-002",
     "type": "penalty",
     "title": "Pechowy dzień",
-    "content": "Cofnij się o sumę cyfr dzisiejszego dnia (np. 15.03.2023 → 1 + 5 = 6)."
+    "content": "Cofnij się o sumę cyfr dzisiejszego dnia kalendarzowego."
   },
   {
     "id": "p-003",
     "type": "penalty",
-    "title": "Trudne pytania",
-    "content": "Gracz, który nie udzielił poprawnej odpowiedzi na kolejne pytanie, wykonuje rundę bez znajomości pytania."
+    "title": "Trudne pytanie",
+    "content": "W najbliższej rundzie odpowiadasz bez poznania treści pytania."
   },
   {
     "id": "p-004",
     "type": "penalty",
     "title": "Zamiana tablic",
-    "content": "Gracz musi wymienić swoją tablicę z innym graczem w najbliższej rundzie."
+    "content": "Natychmiast zamień swoją tablicę z wybranym graczem."
   },
   {
     "id": "p-005",
     "type": "penalty",
     "title": "Bez dyskusji",
-    "content": "Gracz nie może uczestniczyć w dyskusji po rundzie."
+    "content": "W najbliższej rundzie nie bierzesz udziału w dyskusji."
   },
   {
     "id": "p-006",
     "type": "penalty",
     "title": "Trzy sekundy",
-    "content": "Gracz ma trzy sekundy na odpowiedź na najbliższe pytanie. Jeśli jego tablica pozostanie otwarta po trzech sekundach, cofa się o trzy pola."
+    "content": "W najbliższym pytaniu masz 3 sekundy na odpowiedź. Jeśli nie zdążysz, cofasz się o 3 pola."
   },
   {
     "id": "p-007",
     "type": "penalty",
     "title": "Wykluczony",
-    "content": "Gracz nie może głosować w następnej rundzie."
+    "content": "W najbliższej rundzie nie bierzesz udziału w głosowaniu."
   },
   {
     "id": "p-008",
     "type": "penalty",
-    "title": "Do tyłu",
-    "content": "Gracz porusza się do tyłu przez jedną rundę."
+    "title": "Krok w tył",
+    "content": "W najbliższej rundzie zamiast ruchu do przodu cofasz się o wyrzuconą liczbę oczek."
   },
   {
     "id": "p-009",
     "type": "penalty",
     "title": "Pit stop",
-    "content": "Gracz pozostaje na swoim aktualnym polu w następnej rundzie."
+    "content": "W najbliższej rundzie pozostajesz na swoim aktualnym polu."
   },
   {
     "id": "p-010",
     "type": "penalty",
     "title": "Podziel się wiedzą",
-    "content": "Gracz musi pokazać swoją tablicę wraz z odpowiedzią osobie po swojej prawej stronie."
+    "content": "Natychmiast pokaż swoją tablicę z odpowiedzią graczowi po prawej stronie."
   },
   {
     "id": "p-011",
     "type": "penalty",
     "title": "Powrót do korzeni",
-    "content": "Idziesz na pole start."
+    "content": "Wracasz na pole start."
   },
   {
     "id": "p-012",
     "type": "penalty",
-    "title": "Czas na przerwę",
-    "content": "Nie bierzesz udziału w kolejnych dwóch rundach."
+    "title": "Przerwa techniczna",
+    "content": "Nie bierzesz udziału w najbliższej rundzie."
   },
   {
     "id": "p-013",
     "type": "penalty",
-    "title": "Łamaniec",
-    "content": "Jeśli pięć razy szybko i bezbłędnie powiesz „Jola lojalna, jola nielojalna”, zostajesz na miejscu. Jeśli się pomylisz, cofasz się o 8 pól. Prowadzący rozstrzyga spory."
+    "title": "Język się plącze",
+    "content": "W najbliższej rundzie nie możesz udzielać podpowiedzi innym graczom."
   },
   {
     "id": "p-014",
     "type": "penalty",
-    "title": "Sportowy świr",
-    "content": "Zrób 10 pompek lub 20 przysiadów, aby pozostać na miejscu. W przeciwnym razie cofasz się o 5 pól."
+    "title": "Ciszej nad tą planszą",
+    "content": "W najbliższej rundzie możesz mówić tylko szeptem. Złamanie zasady kończy Twój udział w dyskusji."
   },
   {
     "id": "p-015",
     "type": "penalty",
-    "title": "Głuchy telefon",
-    "content": "Zatkaj uszy. Gracz po prawej mówi jedno słowo. Masz 3 próby, by je odgadnąć. Jeśli się nie uda, cofasz się o 3 pola. Jeśli oszukujesz, wracasz na start."
+    "title": "Zła intuicja",
+    "content": "Rzuć kostką. Wynik 1–3: cofasz się o 2 pola. Wynik 4–6: zostajesz w miejscu."
   },
   {
     "id": "p-016",
     "type": "penalty",
     "title": "Geograf",
-    "content": "Wymień 3 państwa na literę obecnego miesiąca. Za każde brakujące państwo cofasz się o jedno pole."
+    "content": "Wymień 3 państwa na literę obecnego miesiąca. Za każde brakujące państwo cofasz się o 1 pole."
   },
   {
     "id": "p-017",
     "type": "penalty",
-    "title": "Zachowujesz się jak zwierzę",
-    "content": "Wydaj odgłos barana lub małpy, aby pozostać na miejscu. W przeciwnym razie cofasz się o wyrzuconą liczbę oczek."
+    "title": "Nie teraz",
+    "content": "W najbliższej rundzie nie możesz jako pierwszy zabrać głosu."
   },
   {
     "id": "p-018",
     "type": "penalty",
-    "title": "Kalambury",
-    "content": "Możesz brać udział w najbliższej dyskusji wyłącznie za pomocą gestów."
+    "title": "Gestykulacja",
+    "content": "W najbliższej rundzie możesz uczestniczyć w dyskusji wyłącznie za pomocą gestów."
   },
   {
     "id": "p-019",
     "type": "penalty",
     "title": "Parzysta – nieparzysta",
-    "content": "Gracz po twojej lewej rzuca kostką. Jeśli wypadnie parzysta liczba – cofasz się o 2 pola, jeśli nieparzysta – zostajesz na miejscu."
+    "content": "Gracz po Twojej lewej rzuca kostką. Parzysta: cofasz się o 2 pola. Nieparzysta: zostajesz w miejscu."
   },
   {
     "id": "p-020",
     "type": "penalty",
-    "title": "Głupi jasio",
-    "content": "Możesz używać w dyskusji tylko słów „tak” i „nie”. Złamanie zasady powoduje zakaz dalszej dyskusji. Kolejne złamanie – powrót na start."
+    "title": "Tak czy nie",
+    "content": "W najbliższej rundzie możesz używać w dyskusji tylko słów „tak” i „nie”. Złamanie zasady kończy Twój udział w dyskusji."
   },
   {
     "id": "p-021",
     "type": "penalty",
-    "title": "Raz na wozie, raz pod wozem",
-    "content": "Cofasz się o dwa pola."
+    "title": "Raz pod wozem",
+    "content": "Cofasz się o 2 pola."
   },
   {
     "id": "p-022",
@@ -135,6 +135,48 @@
     "id": "p-023",
     "type": "penalty",
     "title": "Papier, kamień, nożyce",
-    "content": "Gracze po lewej i prawej grają w papier, kamień, nożyce. Zwycięzca decyduje, o ile pól się cofasz (1–6). Jeśli trafisz na pole kary lub nagrody – losujesz nową kartę."
+    "content": "Gracze po lewej i prawej grają w papier, kamień, nożyce. Zwycięzca decyduje, o ile pól się cofasz (1–6)."
+  },
+  {
+    "id": "p-024",
+    "type": "penalty",
+    "title": "Chaos kontrolowany",
+    "content": "Wszyscy gracze zmieniają miejsce siedzenia zgodnie z ruchem wskazówek zegara."
+  },
+  {
+    "id": "p-025",
+    "type": "penalty",
+    "title": "Zły timing",
+    "content": "Jeśli w tej rundzie odpowiesz poprawnie, i tak nie wykonujesz ruchu."
+  },
+  {
+    "id": "p-026",
+    "type": "penalty",
+    "title": "Minimalizm",
+    "content": "W najbliższej rundzie możesz wypowiedzieć maksymalnie trzy słowa."
+  },
+  {
+    "id": "p-027",
+    "type": "penalty",
+    "title": "Nadmierna ostrożność",
+    "content": "W najbliższej rundzie nie możesz korzystać z żadnych podpowiedzi."
+  },
+  {
+    "id": "p-028",
+    "type": "penalty",
+    "title": "Los decyduje",
+    "content": "Rzuć kostką. Cofasz się o połowę wyrzuconej liczby oczek, zaokrąglając w dół."
+  },
+  {
+    "id": "p-029",
+    "type": "penalty",
+    "title": "Zawieszenie",
+    "content": "W najbliższej rundzie nie wykonujesz żadnej akcji poza obowiązkową odpowiedzią."
+  },
+  {
+    "id": "p-030",
+    "type": "penalty",
+    "title": "Efekt domina",
+    "content": "Cofasz się o 1 pole za każdego gracza, który znajduje się bezpośrednio za Tobą."
   }
 ]
