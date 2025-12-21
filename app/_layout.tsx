@@ -6,7 +6,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
-import { Image } from 'react-native';
+import { Image, Platform } from 'react-native';
 import 'react-native-reanimated';
 
 SplashScreen.preventAutoHideAsync();
@@ -14,7 +14,7 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({});
 
-  const logo = require('../assets/images/logo.png');
+  const logo = ''//require('../assets/images/icon.png');
 
   useEffect(() => {
     if (fontsLoaded) {
@@ -28,17 +28,30 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={DarkTheme}>
-      <Stack>
+      <Stack
+        screenOptions={{
+          headerShown: true,
+          headerTitleAlign: 'center',
+          headerStyle: ({
+            backgroundColor: uiColors.screenBackground,
+            height: Platform.OS === 'ios' ? 56 : undefined,
+          } as any),
+          headerTitle: () => (
+            <Image source={logo} style={{ width: 34, height: 34 }} resizeMode="contain" />
+          ),
+        }}
+      >
         <Stack.Screen
           name="index"
           options={{
             title: uiText.app.title,
-            headerShown: true,
-            headerTitleAlign: 'center',
-            headerStyle: { backgroundColor: uiColors.screenBackground },
-            headerTitle: () => (
-              <Image source={logo} style={{ width: 34, height: 34 }} resizeMode="contain" />
-            ),
+          }}
+        />
+
+        <Stack.Screen
+          name="home"
+          options={{
+            title: uiText.app.title,
           }}
         />
       </Stack>

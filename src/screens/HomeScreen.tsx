@@ -9,7 +9,7 @@ import { FancyBackground } from './home/FancyBackground';
 import { HeroCardOverlay } from './home/HeroCardOverlay';
 import { useHomeCardController } from './home/useHomeCardController';
 
-const CARD_TYPES: CardType[] = ['question', 'reward', 'penalty'];
+const CARD_TYPES: CardType[] = ['question', 'reward', 'penalty', 'penaltyGroup'];
 
 export default function HomeScreen() {
   const { drawCard, currentCard } = useGameStore();
@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: uiColors.screenBackground,
     paddingHorizontal: 20,
+    
   },
   loadingContainer: {
     flex: 1,

@@ -1,3 +1,4 @@
+import penaltiesGroupData from '../assets/cards/penalties-group.json';
 import penaltiesData from '../assets/cards/pentalties.json';
 import questionsData from '../assets/cards/questions.json';
 import rewardsData from '../assets/cards/rewards.json';
@@ -14,15 +15,17 @@ export function createGameEngine(): GameEngine {
     question: [],
     reward: [],
     penalty: [],
+    penaltyGroup: [],
   };
 
   let discardPiles: Record<CardType, Card[]> = {
     question: [],
     reward: [],
     penalty: [],
+    penaltyGroup: [],
   };
 
-  const loadEffectCards = (rawData: any[], type: 'reward' | 'penalty'): EffectCard[] => {
+  const loadEffectCards = (rawData: any[], type: EffectCard['type']): EffectCard[] => {
     return rawData.map((item) => ({
       type,
       id: item.id,
@@ -35,10 +38,12 @@ export function createGameEngine(): GameEngine {
     drawPiles.question = shuffle([...questionsData] as QuestionCard[]);
     drawPiles.reward = shuffle(loadEffectCards(rewardsData as any[], 'reward'));
     drawPiles.penalty = shuffle(loadEffectCards(penaltiesData as any[], 'penalty'));
+    drawPiles.penaltyGroup = shuffle(loadEffectCards(penaltiesGroupData as any[], 'penaltyGroup'));
 
     discardPiles.question = [];
     discardPiles.reward = [];
     discardPiles.penalty = [];
+    discardPiles.penaltyGroup = [];
   };
 
   const recycleDiscardIntoDraw = (type: CardType): void => {
@@ -70,6 +75,9 @@ export function createGameEngine(): GameEngine {
         break;
       case 'penalty':
         drawPiles.penalty = shuffle(loadEffectCards(penaltiesData as any[], 'penalty'));
+        break;
+      case 'penaltyGroup':
+        drawPiles.penaltyGroup = shuffle(loadEffectCards(penaltiesGroupData as any[], 'penaltyGroup'));
         break;
     }
   };

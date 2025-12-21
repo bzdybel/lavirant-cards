@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p-001",
+    "type": "penalty-group",
+    "title": "Basic",
+    "content": "Wszyscy cofają się o 3 pola."
+  },
+  {
+    "id": "p-002",
+    "type": "penalty-group",
+    "title": "Dyskryminacja płciowa",
+    "content": "Prowadzący grę rzuca kostką. Jeśli wypadnie parzysta liczba oczek – mężczyźni cofają się o 3 pola, jeśli nieparzysta – kobiety."
+  },
+  {
+    "id": "p-003",
+    "type": "penalty-group",
+    "title": "Urodziny",
+    "content": "Gracze, którzy urodzili się w miesiącu zawierającym literę „R”, cofają się o 4 pola."
+  },
+  {
+    "id": "p-004",
+    "type": "penalty-group",
+    "title": "Starsi milczą",
+    "content": "Gracze po 30 roku życia nie biorą udziału w najbliższej dyskusji."
+  },
+  {
+    "id": "p-005",
+    "type": "penalty-group",
+    "title": "Młodsi milczą",
+    "content": "Gracze przed 30 rokiem życia nie biorą udziału w najbliższej dyskusji. Jeżeli wszyscy są poniżej 30 roku życia – pobierz kolejną kartę."
+  },
+  {
+    "id": "p-006",
+    "type": "penalty-group",
+    "title": "Rachunek za telefon",
+    "content": "Jeśli ostatnie połączenie któregokolwiek z graczy trwało powyżej 5 minut, wszyscy gracze cofają się o 5 pól."
+  },
+  {
+    "id": "p-007",
+    "type": "penalty-group",
+    "title": "Przypadek? Nie sądzę",
+    "content": "Każdy z graczy rzuca kostką i cofa się o wyrzuconą liczbę oczek. Gracz, który wyrzuci 1, rzuca ponownie (dopóki nie wylosuje innej liczby) i cofa się o sumę oczek. Podczas cofania nie realizuje się pól nagród i kar."
+  },
+  {
+    "id": "p-008",
+    "type": "penalty-group",
+    "title": "Czego oczy nie widzą, tego sercu nie żal",
+    "content": "Każdy z graczy po kolei zamyka oczy, a następna osoba cofa jego pionek o dowolną liczbę pól od 1 do 8. Czynność powtarza się tak, aby kara dotknęła wszystkich graczy."
+  },
+  {
+    "id": "p-009",
+    "type": "penalty-group",
+    "title": "Cofanka",
+    "content": "Wszyscy gracze rzucają kostką. Osoby, które wyrzucą mniej niż 4 oczka, cofają się o 3 pola. Osoby, które wyrzucą więcej niż 4 oczka, cofają się o 1 pole."
+  },
+  {
+    "id": "p-010",
+    "type": "penalty-group",
+    "title": "Idź na dwójkę",
+    "content": "Cofnij się do najbliższego pola, którego numer zawiera cyfrę 2."
+  },
+  {
+    "id": "p-011",
+    "type": "penalty-group",
+    "title": "Jeden za wszystkich, wszyscy za jednego",
+    "content": "Każdy gracz cofa się o jedno pole za graczem stojącym bezpośrednio przed nim. Cofanie rozpoczyna gracz najbliżej mety. Osoba znajdująca się najdalej mety cofa się o jedno pole."
+  },
+  {
+    "id": "p-012",
+    "type": "penalty-group",
+    "title": "2 for u",
+    "content": "Każdy gracz cofa się pionkiem o dwa pola."
+  },
+  {
+    "id": "p-013",
+    "type": "penalty-group",
+    "title": "Szklana pułapka",
+    "content": "Wszyscy gracze, którzy mają obok siebie szklane naczynie do picia (np. kubek, szklankę, kieliszek), cofają się o 3 pola."
+  },
+  {
+    "id": "p-014",
+    "type": "penalty-group",
+    "title": "Nic dwa razy",
+    "content": "Prowadzący grę rzuca kostką. Jeżeli wyrzuci dwa razy tę samą liczbę oczek – wszyscy są bezpieczni. W przeciwnym razie wszyscy cofają się o dwa pola."
+  }
+]

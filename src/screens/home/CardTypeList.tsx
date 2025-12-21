@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 20,
     paddingBottom: 60,
-    gap: 30,
-    paddingTop: 60
+    gap: 20,
+    paddingTop: 10
   },
   cardsScroll: {
     flex: 1,

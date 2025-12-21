@@ -63,7 +63,7 @@ export function HeroCardOverlay(props: {
   // Keep enough vertical space for buttons and translations.
   // (Tune smaller so tall question cards can actually grow.)
   const reservedVertical = (screenHeight < 700 ? 140 : 190);
-  const maxBaseHeight = Math.max(240, (screenHeight - reservedVertical) / maxHeroScale);
+  const maxBaseHeight = Math.max(30, (screenHeight - reservedVertical) / maxHeroScale);
 
   const desiredHeight = measuredHeight ?? maxBaseWidth * fallbackAspect;
   const baseHeight = Math.min(Math.max(desiredHeight, 240), maxBaseHeight);

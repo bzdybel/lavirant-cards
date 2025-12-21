@@ -1,4 +1,4 @@
-export type CardType = 'question' | 'reward' | 'penalty';
+export type CardType = 'question' | 'reward' | 'penalty' | 'penaltyGroup';
 
 export interface Answer {
   id: string;
@@ -15,7 +15,7 @@ export interface QuestionCard {
 }
 
 export interface EffectCard {
-  type: 'reward' | 'penalty';
+  type: 'reward' | 'penalty' | 'penaltyGroup';
   id: string;
   title: string;
   text: string;

@@ -11,6 +11,7 @@ const CARD_CONFIG: Record<CardType, { label: string; backgroundColor: string }> 
   question: { label: uiText.cards.question, backgroundColor: uiColors.cardTypeBackground.question },
   reward: { label: uiText.cards.reward, backgroundColor: uiColors.cardTypeBackground.reward },
   penalty: { label: uiText.cards.penalty, backgroundColor: uiColors.cardTypeBackground.penalty },
+  penaltyGroup: { label: uiText.cards.penaltyGroup, backgroundColor: uiColors.cardTypeBackground.penaltyGroup },
 };
 
 interface GameCardProps {
@@ -23,13 +24,19 @@ export const GameCard: React.FC<GameCardProps> = ({ onPress, cardType = 'questio
   const config = CARD_CONFIG[cardType];
   const isQuestion = cardType === 'question';
   const isPenalty = cardType === 'penalty';
+  const isPenaltyGroup = cardType === 'penaltyGroup';
   const isReward = cardType === 'reward';
 
   const containerSize = size ?? { width: DEFAULT_CARD_WIDTH, height: DEFAULT_CARD_HEIGHT };
 
   return (
     <TouchableOpacity onPress={onPress} activeOpacity={0.9} style={[styles.container, containerSize]}>
-      <View style={[styles.card, !isQuestion && !isPenalty && !isReward && { backgroundColor: config.backgroundColor }]}>
+      <View
+        style={[
+          styles.card,
+          !isQuestion && !isPenalty && !isPenaltyGroup && !isReward && { backgroundColor: config.backgroundColor },
+        ]}
+      >
         {isQuestion ? (
           <ImageBackground
             source={require('../../assets/images/question-bg.png')}
@@ -50,7 +57,7 @@ export const GameCard: React.FC<GameCardProps> = ({ onPress, cardType = 'questio
           </ImageBackground>
         ) : null}
 
-        {isPenalty ? (
+        {isPenalty || isPenaltyGroup ? (
           <ImageBackground
             source={require('../../assets/images/penalty-bg.png')}
             resizeMode="cover"

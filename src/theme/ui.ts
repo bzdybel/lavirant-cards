@@ -17,6 +17,7 @@ export const uiColors = {
     question: colors.slate[950],
     reward: colors.emerald[950],
     penalty: colors.rose[950],
+    penaltyGroup: colors.rose[950],
   } satisfies Record<CardType, string>,
 
   effectLabel: {
