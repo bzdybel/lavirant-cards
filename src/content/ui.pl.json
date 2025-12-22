@@ -20,5 +20,14 @@
   },
   "accessibility": {
     "start": "Start"
+  },
+  "links": {
+    "privacyPolicy": "Polityka prywatności"
+  },
+  "errors": {
+    "missingPrivacyPolicyUrlTitle": "Brak linku",
+    "missingPrivacyPolicyUrlMessage": "Link do polityki prywatności nie jest skonfigurowany.",
+    "openPrivacyPolicyFailedTitle": "Nie udało się otworzyć",
+    "openPrivacyPolicyFailedMessage": "Nie udało się otworzyć polityki prywatności. Spróbuj ponownie później."
   }
 }

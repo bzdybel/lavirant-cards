@@ -1,16 +1,39 @@
+import { getPrivacyPolicyUrl } from '@/src/config/privacy';
 import { uiText } from '@/src/content/ui';
 import { FancyBackground } from '@/src/screens/home/FancyBackground';
 import { uiColors } from '@/src/theme/ui';
 import { router } from 'expo-router';
 import React from 'react';
-import { Dimensions, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert, Dimensions, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const { width } = Dimensions.get('window');
 
 export default function StartScreen() {
+  const insets = useSafeAreaInsets();
   const ringSize = Math.min(Math.max(Math.floor(width * 0.52), 190), 280);
   const innerSize = Math.max(160, ringSize - 18);
   const [isHovered, setIsHovered] = React.useState(false);
+
+  const onOpenPrivacyPolicy = React.useCallback(async () => {
+    const url = getPrivacyPolicyUrl();
+    if (!url) {
+      Alert.alert(uiText.errors.missingPrivacyPolicyUrlTitle, uiText.errors.missingPrivacyPolicyUrlMessage);
+      return;
+    }
+
+    try {
+      const canOpen = await Linking.canOpenURL(url);
+      if (!canOpen) {
+        Alert.alert(uiText.errors.openPrivacyPolicyFailedTitle, uiText.errors.openPrivacyPolicyFailedMessage);
+        return;
+      }
+
+      await Linking.openURL(url);
+    } catch {
+      Alert.alert(uiText.errors.openPrivacyPolicyFailedTitle, uiText.errors.openPrivacyPolicyFailedMessage);
+    }
+  }, []);
 
   return (
     <View style={styles.container}>
@@ -43,6 +66,17 @@ export default function StartScreen() {
           </Pressable>
         </View>
       </View>
+
+      <View style={[styles.footer, { paddingBottom: 18 + insets.bottom }]}> 
+        <Pressable
+          onPress={onOpenPrivacyPolicy}
+          style={styles.privacyLink}
+          accessibilityRole="link"
+          hitSlop={10}
+        >
+          <Text style={styles.privacyText}>{uiText.links.privacyPolicy}</Text>
+        </Pressable>
+      </View>
     </View>
   );
 }
@@ -57,6 +91,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
+  },
+  footer: {
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  privacyLink: {
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    opacity: 0.85,
+  },
+  privacyText: {
+    color: uiColors.brandGold,
+    fontSize: 13,
+    fontWeight: '600',
+    letterSpacing: 1,
+    textAlign: 'center',
   },
   ring: {
     alignItems: 'center',
