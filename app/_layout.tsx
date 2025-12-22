@@ -1,28 +1,53 @@
 import { uiText } from '@/src/content/ui';
 import { uiColors } from '@/src/theme/ui';
 import { DarkTheme, ThemeProvider } from '@react-navigation/native';
+import { Asset } from 'expo-asset';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Image, Platform } from 'react-native';
 import 'react-native-reanimated';
 
-SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync().catch(() => {
+  // Ignore if it's already prevented.
+});
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({});
+  const [assetsLoaded, setAssetsLoaded] = useState(false);
 
-  const logo = ''//require('../assets/images/icon.png');
+  const logo = require('../assets/images/logo.png');
+  const questionBg = require('../assets/images/question-bg.png');
+  const rewardBg = require('../assets/images/reward-bg.png');
+  const penaltyBg = require('../assets/images/penalty-bg.png');
 
   useEffect(() => {
-    if (fontsLoaded) {
+    let isMounted = true;
+
+    async function preload() {
+      try {
+        await Asset.loadAsync([logo, questionBg, rewardBg, penaltyBg]);
+      } finally {
+        if (isMounted) setAssetsLoaded(true);
+      }
+    }
+
+    preload();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [logo, questionBg, rewardBg, penaltyBg]);
+
+  useEffect(() => {
+    if (fontsLoaded && assetsLoaded) {
       SplashScreen.hideAsync();
     }
-  }, [fontsLoaded]);
+  }, [fontsLoaded, assetsLoaded]);
 
-  if (!fontsLoaded) {
+  if (!fontsLoaded || !assetsLoaded) {
     return null;
   }
 
@@ -35,9 +60,12 @@ export default function RootLayout() {
           headerStyle: ({
             backgroundColor: uiColors.screenBackground,
             height: Platform.OS === 'ios' ? 56 : undefined,
+            borderBottomWidth: 1,
+            borderBottomColor: uiColors.card.border,
           } as any),
+          headerShadowVisible: false,
           headerTitle: () => (
-            <Image source={logo} style={{ width: 34, height: 34 }} resizeMode="contain" />
+            <Image source={logo} style={{ width: 54, height: 54 }} resizeMode="contain" />
           ),
         }}
       >

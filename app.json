@@ -4,7 +4,7 @@
     "slug": "lavirant-cards",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/question-bg.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "lavirantcards",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -15,23 +15,23 @@
       "package": "com.lavirantcards.app",
       "adaptiveIcon": {
         "backgroundColor": "#12222f",
-        "foregroundImage": "./assets/images/question-bg.png",
-        "backgroundImage": "./assets/images/question-bg.png",
-        "monochromeImage": "./assets/images/question-bg.png"
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundImage": "./assets/images/logo.png",
+        "monochromeImage": "./assets/images/logo.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/question-bg.png"
+      "favicon": "./assets/images/logo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/question-bg.png",
+          "image": "./assets/images/logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#12222f",
