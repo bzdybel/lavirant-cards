@@ -19,9 +19,9 @@ export default function RootLayout() {
   const [assetsLoaded, setAssetsLoaded] = useState(false);
 
   const logo = require('../assets/images/logo.png');
-  const questionBg = require('../assets/images/question-bg.png');
-  const rewardBg = require('../assets/images/reward-bg.png');
-  const penaltyBg = require('../assets/images/penalty-bg.png');
+  const questionBg = require('../assets/images/question-bg.webp');
+  const rewardBg = require('../assets/images/reward-bg.webp');
+  const penaltyBg = require('../assets/images/penalty-bg.webp');
 
   useEffect(() => {
     let isMounted = true;

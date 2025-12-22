@@ -18,22 +18,22 @@ const CARD_CONFIG: Record<CardType, CardVisualConfig> = {
   question: {
     label: uiText.cards.question,
     backgroundColor: uiColors.cardTypeBackground.question,
-    backgroundImage: require('../../assets/images/question-bg.png'),
+    backgroundImage: require('../../assets/images/question-bg.webp'),
   },
   reward: {
     label: uiText.cards.reward,
     backgroundColor: uiColors.cardTypeBackground.reward,
-    backgroundImage: require('../../assets/images/reward-bg.png'),
+    backgroundImage: require('../../assets/images/reward-bg.webp'),
   },
   penalty: {
     label: uiText.cards.penalty,
     backgroundColor: uiColors.cardTypeBackground.penalty,
-    backgroundImage: require('../../assets/images/penalty-bg.png'),
+    backgroundImage: require('../../assets/images/penalty-bg.webp'),
   },
   penaltyGroup: {
     label: uiText.cards.penaltyGroup,
     backgroundColor: uiColors.cardTypeBackground.penaltyGroup,
-    backgroundImage: require('../../assets/images/penalty-bg.png'),
+    backgroundImage: require('../../assets/images/penalty-bg.webp'),
   },
 };
 
