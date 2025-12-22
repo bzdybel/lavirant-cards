@@ -59,8 +59,6 @@ export default function StartScreen() {
             accessibilityRole="button"
             accessibilityLabel={uiText.accessibility.start}
           >
-            <View pointerEvents="none" style={[styles.topGlow, isHovered && styles.topGlowHover]} />
-            <View pointerEvents="none" style={[styles.bottomShade, isHovered && styles.bottomShadeHover]} />
             <View pointerEvents="none" style={[styles.innerRing, isHovered && styles.innerRingHover]} />
             <Text style={styles.startText}>{uiText.buttons.start}</Text>
           </Pressable>
@@ -115,10 +113,10 @@ const styles = StyleSheet.create({
     borderColor: uiColors.card.border,
     backgroundColor: uiColors.screenBackground,
     shadowColor: uiColors.brandGold,
-    shadowOffset: { width: 0, height: 16 },
-    shadowOpacity: 0.24,
-    shadowRadius: 30,
-    elevation: 12,
+    shadowOffset: { width: 0, height: 30 },
+    shadowOpacity: 0.52,
+    shadowRadius: 200,
+    elevation: 22,
   },
   button: {
     alignItems: 'center',
@@ -137,23 +135,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.66,
     shadowRadius: 26,
     elevation: 12,
-  },
-  topGlow: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: uiColors.brandGold,
-    opacity: 0.07,
-  },
-  topGlowHover: {
-    opacity: 0.11,
-  },
-  bottomShade: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: uiColors.overlayBackground,
-    opacity: 0.18,
-    transform: [{ translateY: 18 }],
-  },
-  bottomShadeHover: {
-    opacity: 0.14,
   },
   innerRing: {
     ...StyleSheet.absoluteFillObject,
