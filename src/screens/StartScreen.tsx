@@ -1,3 +1,4 @@
+import { uiText } from '@/src/content/ui';
 import { FancyBackground } from '@/src/screens/home/FancyBackground';
 import { uiColors } from '@/src/theme/ui';
 import { router } from 'expo-router';
@@ -33,12 +34,12 @@ export default function StartScreen() {
               isHovered && styles.buttonHover,
             ]}
             accessibilityRole="button"
-            accessibilityLabel="Start"
+            accessibilityLabel={uiText.accessibility.start}
           >
             <View pointerEvents="none" style={[styles.topGlow, isHovered && styles.topGlowHover]} />
             <View pointerEvents="none" style={[styles.bottomShade, isHovered && styles.bottomShadeHover]} />
             <View pointerEvents="none" style={[styles.innerRing, isHovered && styles.innerRingHover]} />
-            <Text style={styles.startText}>START</Text>
+            <Text style={styles.startText}>{uiText.buttons.start}</Text>
           </Pressable>
         </View>
       </View>

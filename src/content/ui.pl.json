@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "LA'VIRANT Cards",
+    "title": "LA'VIRANT",
     "brand": "LA'VIRANT"
   },
   "cards": {
@@ -15,6 +15,10 @@
   },
   "buttons": {
     "revealAnswer": "Pokaż odpowiedź",
-    "back": "Powrót"
+    "back": "Powrót",
+    "start": "START"
+  },
+  "accessibility": {
+    "start": "Start"
   }
 }
