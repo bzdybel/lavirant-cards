@@ -1,5 +1,5 @@
 export function getPrivacyPolicyUrl(): string | null {
-  const defaultUrl = 'https://google.com';
+  const defaultUrl = 'https://bzdybel.github.io/lavirant-cards/privacy.html';
 
   const envValue =
     typeof process !== 'undefined' &&
