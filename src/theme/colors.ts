@@ -22,4 +22,4 @@ export const colors = {
     950: '#000000',
   },
   white: '#ffffff',
-} as const;
+};

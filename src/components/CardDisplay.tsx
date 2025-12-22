@@ -62,7 +62,10 @@ export const QuestionCardDisplay: React.FC<QuestionCardDisplayProps> = ({
   enableScrollOnOverflow,
 }) => {
   const correctAnswer = card.answers.find(a => a.isCorrect);
-  const answersById = new Map(card.answers.map((a) => [a.id, a] as const));
+  const answersById = new Map<string, (typeof card.answers)[number]>();
+  for (const answer of card.answers) {
+    answersById.set(answer.id, answer);
+  }
   const answerA = answersById.get('A');
   const answerB = answersById.get('B');
   const answerC = answersById.get('C');

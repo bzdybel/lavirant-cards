@@ -5,6 +5,20 @@ import rewardsData from '../assets/cards/rewards.json';
 import { Card, CardType, EffectCard, QuestionCard } from '../types/Card';
 import { shuffle } from '../utils/shuffle';
 
+type RawEffectCard = {
+  id: string;
+  title: string;
+  content: string;
+};
+
+type RawQuestionCard = {
+  id: string;
+  type: string;
+  number: number;
+  question: string;
+  answers: QuestionCard['answers'];
+};
+
 export type GameEngine = {
   drawCard: (type: CardType) => Card;
   resetAll: () => void;
@@ -25,7 +39,15 @@ export function createGameEngine(): GameEngine {
     penaltyGroup: [],
   };
 
-  const loadEffectCards = (rawData: any[], type: EffectCard['type']): EffectCard[] => {
+  const toQuestionCard = (raw: RawQuestionCard): QuestionCard => ({
+    id: raw.id,
+    type: 'question',
+    number: raw.number,
+    question: raw.question,
+    answers: raw.answers,
+  });
+
+  const loadEffectCards = (rawData: RawEffectCard[], type: EffectCard['type']): EffectCard[] => {
     return rawData.map((item) => ({
       type,
       id: item.id,
@@ -35,10 +57,15 @@ export function createGameEngine(): GameEngine {
   };
 
   const initializePiles = (): void => {
-    drawPiles.question = shuffle([...questionsData] as QuestionCard[]);
-    drawPiles.reward = shuffle(loadEffectCards(rewardsData as any[], 'reward'));
-    drawPiles.penalty = shuffle(loadEffectCards(penaltiesData as any[], 'penalty'));
-    drawPiles.penaltyGroup = shuffle(loadEffectCards(penaltiesGroupData as any[], 'penaltyGroup'));
+    const rawQuestions: RawQuestionCard[] = [...questionsData];
+    const rawRewards: RawEffectCard[] = [...rewardsData];
+    const rawPenalties: RawEffectCard[] = [...penaltiesData];
+    const rawGroupPenalties: RawEffectCard[] = [...penaltiesGroupData];
+
+    drawPiles.question = shuffle(rawQuestions.map(toQuestionCard));
+    drawPiles.reward = shuffle(loadEffectCards(rawRewards, 'reward'));
+    drawPiles.penalty = shuffle(loadEffectCards(rawPenalties, 'penalty'));
+    drawPiles.penaltyGroup = shuffle(loadEffectCards(rawGroupPenalties, 'penaltyGroup'));
 
     discardPiles.question = [];
     discardPiles.reward = [];
@@ -67,17 +94,19 @@ export function createGameEngine(): GameEngine {
 
     // Fallback: reload from source data (only if source is empty or corrupted)
     switch (type) {
-      case 'question':
-        drawPiles.question = shuffle([...questionsData] as QuestionCard[]);
+      case 'question': {
+        const rawQuestions: RawQuestionCard[] = [...questionsData];
+        drawPiles.question = shuffle(rawQuestions.map(toQuestionCard));
         break;
+      }
       case 'reward':
-        drawPiles.reward = shuffle(loadEffectCards(rewardsData as any[], 'reward'));
+        drawPiles.reward = shuffle(loadEffectCards([...rewardsData], 'reward'));
         break;
       case 'penalty':
-        drawPiles.penalty = shuffle(loadEffectCards(penaltiesData as any[], 'penalty'));
+        drawPiles.penalty = shuffle(loadEffectCards([...penaltiesData], 'penalty'));
         break;
       case 'penaltyGroup':
-        drawPiles.penaltyGroup = shuffle(loadEffectCards(penaltiesGroupData as any[], 'penaltyGroup'));
+        drawPiles.penaltyGroup = shuffle(loadEffectCards([...penaltiesGroupData], 'penaltyGroup'));
         break;
     }
   };
@@ -92,9 +121,8 @@ export function createGameEngine(): GameEngine {
 
     discardPiles[type].push(card);
 
-    if (type === 'question') {
-      const question = card as QuestionCard;
-      return { ...question, answers: shuffle([...question.answers]) };
+    if (card.type === 'question') {
+      return { ...card, answers: shuffle([...card.answers]) };
     }
 
     return card;

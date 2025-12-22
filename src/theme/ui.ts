@@ -33,4 +33,4 @@ export const uiColors = {
   text: {
     onDark: colors.white,
   },
-} as const;
+};

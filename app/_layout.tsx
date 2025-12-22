@@ -7,7 +7,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
-import { Image, Platform } from 'react-native';
+import { Image } from 'react-native';
 import 'react-native-reanimated';
 
 SplashScreen.preventAutoHideAsync().catch(() => {
@@ -57,13 +57,10 @@ export default function RootLayout() {
         screenOptions={{
           headerShown: true,
           headerTitleAlign: 'center',
-          headerStyle: ({
-            backgroundColor: uiColors.screenBackground,
-            height: Platform.OS === 'ios' ? 56 : undefined,
-            borderBottomWidth: 1,
-            borderBottomColor: uiColors.card.border,
-          } as any),
-          headerShadowVisible: false,
+          headerStyle: { backgroundColor: uiColors.screenBackground },
+          // expo-router/native-stack headerStyle typing is intentionally narrow;
+          // use the native shadow for separation instead of custom borders/heights.
+          headerShadowVisible: true,
           headerTitle: () => (
             <Image source={logo} style={{ width: 54, height: 54 }} resizeMode="contain" />
           ),
