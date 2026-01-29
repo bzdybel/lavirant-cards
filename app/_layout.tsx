@@ -18,7 +18,7 @@ export default function RootLayout() {
   const [fontsLoaded] = useFonts({});
   const [assetsLoaded, setAssetsLoaded] = useState(false);
 
-  const logo = require('../assets/images/logo.png');
+  const logo = require('../assets/images/logo3.svg');
   const questionBg = require('../assets/images/question-bg.webp');
   const rewardBg = require('../assets/images/reward-bg.webp');
   const penaltyBg = require('../assets/images/penalty-bg.webp');
