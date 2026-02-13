@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "La'virant",
+    "name": "Lavirant",
     "slug": "lavirant-cards",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo4.svg",
+    "icon": "png",
     "scheme": "lavirantcards",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -18,9 +18,9 @@
       "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#12222f",
-        "foregroundImage": "./assets/images/logo4.svg",
-        "backgroundImage": "./assets/images/logo4.svg",
-        "monochromeImage": "./assets/images/logo4.svg"
+        "foregroundImage": "./assets/images/logo4.png",
+        "backgroundImage": "./assets/images/logo4.png",
+        "monochromeImage": "./assets/images/logo4.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
@@ -34,7 +34,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo4.svg",
+          "image": "./assets/images/logo4.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#12222f",
