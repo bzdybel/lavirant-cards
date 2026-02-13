@@ -4,37 +4,41 @@
     "slug": "lavirant-cards",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "png",
+
+    "icon": "./assets/images/icon.png",
+
     "scheme": "lavirantcards",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
     "ios": {
       "bundleIdentifier": "pl.lavirant.app",
       "buildNumber": "1",
       "supportsTablet": true
     },
+
     "android": {
       "package": "pl.lavirant.app",
       "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#12222f",
-        "foregroundImage": "./assets/images/logo4.png",
-        "backgroundImage": "./assets/images/logo4.png",
-        "monochromeImage": "./assets/images/logo4.png"
+        "foregroundImage": "./assets/images/adaptive-foreground.png",
+        "backgroundColor": "#12222f"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
+
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo4.png",
+          "image": "./assets/images/logo5.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#12222f",
@@ -44,10 +48,12 @@
         }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
     },
+
     "extra": {
       "router": {},
       "eas": {
