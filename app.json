@@ -2,7 +2,7 @@
   "expo": {
     "name": "Lavirant",
     "slug": "lavirant-cards",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
 
     "icon": "./assets/images/logo-new.png",
@@ -19,9 +19,9 @@
 
     "android": {
       "package": "pl.lavirant.app",
-      "versionCode": 1,
+      "versionCode": 3,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-foreground.png",
+        "foregroundImage": "./assets/images/logo-new.png",
         "backgroundColor": "#12222f"
       },
       "edgeToEdgeEnabled": true,
